@@ -21,6 +21,22 @@ body {
   height: 200px;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Stack the image and text vertically */
+  justify-content: center;
+  align-items: center;
+  /* Add any additional styling for the bubbles */
+}
+
+.bubble img {
+  /* Adjust the image size as needed */
+  height: 100px;
+  object-fit: cover; /* Maintain aspect ratio for the image */
+  /* Add any additional styling for the images */
+}
+
+.bubble span {
+  /* Add any additional styling for the text inside the bubbles */
 }
 
 #bubble1 {
