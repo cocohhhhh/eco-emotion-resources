@@ -31,12 +31,25 @@ body {
 .bubble img {
   /* Adjust the image size as needed */
   height: 100px;
-  object-fit: cover; /* Maintain aspect ratio for the image */
+  object-fit: contain; /* Fit the image within the container while preserving aspect ratio */
   /* Add any additional styling for the images */
 }
 
 .bubble span {
   /* Add any additional styling for the text inside the bubbles */
+}
+
+.smaller {
+  max-width: 50px; /* Adjust the width to make smaller bubbles */
+  max-height: 50px; /* Adjust the height to make smaller bubbles */
+}
+
+.smaller img {
+  /* Adjust the image size as needed */
+  max-width:90%;
+  max-height: 60%;
+  object-fit: contain; /* Fit the image within the container while preserving aspect ratio */
+  /* Add any additional styling for the images */
 }
 
 #bubble1 {
@@ -62,4 +75,9 @@ body {
 #bubble5 {
   background-color: #999999;
   transform: translate(-190.21px, -61.80px) rotate(0deg); /* Move to the left side of the circle */
+}
+
+#epflcourses {
+  background-color: #00ffff;
+  transform: translate(120px, -260px) rotate(0deg); /* Top-right */
 }
