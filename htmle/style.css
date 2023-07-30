@@ -1,36 +1,49 @@
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .bubble {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  /* Customize the colors for each bubble */
-  #bubble1 {
-    background-color: #ff0000;
-  }
-  
-  #bubble2 {
-    background-color: #00ff00;
-  }
-  
-  #bubble3 {
-    background-color: #0000ff;
-  }
-  
-  #bubble4 {
-    background-color: #ffff00;
-  }
-  
-  #bubble5 {
-    background-color: #00ffff;
-  }
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f1d1d; /* Set the background color to black */
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; /* Adjust the container's width and height as needed */
+  height: 400px;
+}
+
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#bubble1 {
+  background-color: #ffffff;
+  transform: translate(0, -200px) rotate(0deg); /* Move to the right side of the circle */
+}
+
+#bubble2 {
+  background-color: #e5e5e5;
+  transform: translate(190.21px, -61.80px) rotate(0deg); /* Move to the bottom-right side of the circle */
+}
+
+#bubble3 {
+  background-color: #cccccc;
+  transform: translate(117.56px, 161.80px) rotate(0deg); /* Move to the bottom side of the circle */
+}
+
+#bubble4 {
+  background-color: #b2b2b2;
+  transform: translate(-117.56px, 161.80px) rotate(0deg); /* Move to the bottom-left side of the circle */
+}
+
+#bubble5 {
+  background-color: #999999;
+  transform: translate(-190.21px, -61.80px) rotate(0deg); /* Move to the left side of the circle */
+}
