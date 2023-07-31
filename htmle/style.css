@@ -11,8 +11,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px; /* Adjust the container's width and height as needed */
-  height: 400px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
 }
 
 .bubble {
@@ -42,12 +43,23 @@ body {
 .smaller {
   max-width: 50px; /* Adjust the width to make smaller bubbles */
   max-height: 50px; /* Adjust the height to make smaller bubbles */
+  display: flex; /* Use flexbox for the anchor tag */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.smaller a {
+  display: flex; /* Use flexbox for the anchor tag */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  width: 100%; /* Occupy the full width of the container */
+  height: 100%; /* Occupy the full height of the container */
 }
 
 .smaller img {
   /* Adjust the image size as needed */
-  max-width:90%;
-  max-height: 60%;
+  max-width:80%;
+  max-height: 80%;
   object-fit: contain; /* Fit the image within the container while preserving aspect ratio */
   /* Add any additional styling for the images */
 }
@@ -78,6 +90,6 @@ body {
 }
 
 #epflcourses {
-  background-color: #00ffff;
+  background-color: #fffefe;
   transform: translate(120px, -260px) rotate(0deg); /* Top-right */
 }
