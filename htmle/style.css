@@ -26,6 +26,7 @@ body {
   flex-direction: column; /* Stack the image and text vertically */
   justify-content: center;
   align-items: center;
+  background-color: #ffffff; /* Add a background color for the bubbles */
   /* Add any additional styling for the bubbles */
 }
 
@@ -38,6 +39,11 @@ body {
 
 .bubble span {
   /* Add any additional styling for the text inside the bubbles */
+}
+
+.bubble:hover {
+  background-color: #ff0000; /* Change to the highlight color of your choice */
+  /* Add any additional styles you want for the highlight effect */
 }
 
 .smaller {
@@ -58,8 +64,8 @@ body {
 
 .smaller img {
   /* Adjust the image size as needed */
-  max-width:80%;
-  max-height: 80%;
+  max-width:90%;
+  max-height: 90%;
   object-fit: contain; /* Fit the image within the container while preserving aspect ratio */
   /* Add any additional styling for the images */
 }
@@ -92,4 +98,19 @@ body {
 #epflcourses {
   background-color: #fffefe;
   transform: translate(120px, -260px) rotate(0deg); /* Top-right */
+}
+
+#CSAW {
+  background-color: #fffefe;
+  transform: translate(-120px, -260px) rotate(0deg); /* Top-right */
+}
+
+#Fresque {
+  background-color: #fffefe;
+  transform: translate(130px, -200px) rotate(0deg); /* Top-right */
+}
+
+#Semaine {
+  background-color: #fffefe;
+  transform: translate(-130px, -200px) rotate(0deg); /* Top-right */
 }
