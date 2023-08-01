@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f1d1d; /* Set the background color to black */
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+}
+
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Stack the image and text vertically */
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Add a background color for the bubbles */
+  /* Add any additional styling for the bubbles */
+}
+
+.bubble img {
+  /* Adjust the image size as needed */
+  height: 100px;
+  object-fit: contain; /* Fit the image within the container while preserving aspect ratio */
+  /* Add any additional styling for the images */
+}
+
+.bubble span {
+  /* Add any additional styling for the text inside the bubbles */
+}
+
+.bubble:hover {
+  background-color: #ff0000; /* Change to the highlight color of your choice */
+  /* Add any additional styles you want for the highlight effect */
+}
+
+.smaller {
+  max-width: 50px; /* Adjust the width to make smaller bubbles */
+  max-height: 50px; /* Adjust the height to make smaller bubbles */
+  display: flex; /* Use flexbox for the anchor tag */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.smaller a {
+  display: flex; /* Use flexbox for the anchor tag */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  width: 100%; /* Occupy the full width of the container */
+  height: 100%; /* Occupy the full height of the container */
+}
+
+.smaller img {
+  /* Adjust the image size as needed */
+  max-width:90%;
+  max-height: 90%;
+  object-fit: contain; /* Fit the image within the container while preserving aspect ratio */
+  /* Add any additional styling for the images */
+}
+
+#bubble1 {
+  background-color: #ffffff;
+  transform: translate(0, -200px) rotate(0deg); /* Move to the right side of the circle */
+}
+
+#bubble2 {
+  background-color: #e5e5e5;
+  transform: translate(190.21px, -61.80px) rotate(0deg); /* Move to the bottom-right side of the circle */
+}
+
+#bubble3 {
+  background-color: #cccccc;
+  transform: translate(117.56px, 161.80px) rotate(0deg); /* Move to the bottom side of the circle */
+}
+
+#bubble4 {
+  background-color: #b2b2b2;
+  transform: translate(-117.56px, 161.80px) rotate(0deg); /* Move to the bottom-left side of the circle */
+}
+
+#bubble5 {
+  background-color: #999999;
+  transform: translate(-190.21px, -61.80px) rotate(0deg); /* Move to the left side of the circle */
+}
+
+#epflcourses {
+  background-color: #fffefe;
+  transform: translate(120px, -260px) rotate(0deg); 
+}
+
+#CSAW {
+  background-color: #fffefe;
+  transform: translate(-120px, -260px) rotate(0deg); 
+}
+
+#Fresque {
+  background-color: #fffefe;
+  transform: translate(130px, -200px) rotate(0deg); 
+}
+
+#Semaine {
+  background-color: #fffefe;
+  transform: translate(-130px, -200px) rotate(0deg);
+}
