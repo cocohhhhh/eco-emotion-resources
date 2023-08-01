@@ -64,8 +64,8 @@ body {
 
 .smaller img {
   /* Adjust the image size as needed */
-  max-width:90%;
-  max-height: 90%;
+  max-width:70%;
+  max-height: 70%;
   object-fit: contain; /* Fit the image within the container while preserving aspect ratio */
   /* Add any additional styling for the images */
 }
@@ -113,4 +113,14 @@ body {
 #Semaine {
   background-color: #fffefe;
   transform: translate(-130px, -200px) rotate(0deg);
+}
+
+#Coaching {
+  background-color: #fffefe;
+  transform: translate(180px, -260px) rotate(0deg); 
+}
+
+#Canard {
+  background-color: #fffefe;
+  transform: translate(190px, -200px) rotate(0deg); 
 }
