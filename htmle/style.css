@@ -97,20 +97,18 @@ body {
 
 #epflcourses {
   background-color: #fffefe;
-  transform: translate(120px, -260px) rotate(0deg); /* Top-right */
+  transform: translate(120px, -260px) rotate(0deg); 
 }
 
 #CSAW {
   background-color: #fffefe;
-  transform: translate(-120px, -260px) rotate(0deg); /* Top-right */
-}
+  transform: translate(-120px, -260px) rotate(0deg); 
 
 #Fresque {
   background-color: #fffefe;
-  transform: translate(130px, -200px) rotate(0deg); /* Top-right */
-}
+  transform: translate(130px, -200px) rotate(0deg); 
 
 #Semaine {
   background-color: #fffefe;
-  transform: translate(-130px, -200px) rotate(0deg); /* Top-right */
+  transform: translate(-130px, -200px) rotate(0deg);
 }
