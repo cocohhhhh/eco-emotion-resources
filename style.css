@@ -42,7 +42,7 @@ body {
 }
 
 .bubble:hover {
-  background-color: #ff0000; /* Change to the highlight color of your choice */
+  background-color: #ff0000 !important; /* Change to the highlight color of your choice */
   /* Add any additional styles you want for the highlight effect */
 }
 
