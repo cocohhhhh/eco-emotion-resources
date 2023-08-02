@@ -100,12 +100,12 @@ body {
   transform: translate(120px, -260px) rotate(0deg); 
 }
 
-#CSAW {
+#Fresque {
   background-color: #fffefe;
   transform: translate(-120px, -260px) rotate(0deg); 
 }
 
-#Fresque {
+#CSAW {
   background-color: #fffefe;
   transform: translate(130px, -200px) rotate(0deg); 
 }
@@ -117,10 +117,10 @@ body {
 
 #Coaching {
   background-color: #fffefe;
-  transform: translate(180px, -260px) rotate(0deg); 
+  transform: translate(175px, -240px) rotate(0deg); 
 }
 
 #Canard {
   background-color: #fffefe;
-  transform: translate(190px, -200px) rotate(0deg); 
+  transform: translate(-175px, -240px) rotate(0deg); 
 }
