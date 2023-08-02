@@ -96,31 +96,81 @@ body {
 }
 
 #epflcourses {
-  background-color: #fffefe;
+  background-color: #ffffff;
   transform: translate(120px, -260px) rotate(0deg); 
 }
 
 #Fresque {
-  background-color: #fffefe;
+  background-color: #ffffff;
   transform: translate(-120px, -260px) rotate(0deg); 
 }
 
 #CSAW {
-  background-color: #fffefe;
+  background-color: #ffffff;
   transform: translate(130px, -200px) rotate(0deg); 
 }
 
 #Semaine {
-  background-color: #fffefe;
+  background-color: #ffffff;
   transform: translate(-130px, -200px) rotate(0deg);
 }
 
 #Coaching {
-  background-color: #fffefe;
+  background-color: #ffffff;
   transform: translate(175px, -240px) rotate(0deg); 
 }
 
 #Canard {
-  background-color: #fffefe;
+  background-color: #ffffff;
   transform: translate(-175px, -240px) rotate(0deg); 
+}
+
+#Debouches {
+  background-color: #e5e5e5;
+  transform: translate(290px, -160px) rotate(0deg); 
+}
+
+#Carriere {
+  background-color: #e5e5e5;
+  transform: translate(320px, -110px) rotate(0deg); 
+}
+
+#Velo {
+  background-color: #e5e5e5;
+  transform: translate(330px, -50px) rotate(0deg); 
+}
+
+#Fix {
+  background-color: #e5e5e5;
+  transform: translate(310px, 10px) rotate(0deg); 
+}
+
+#Smart {
+  background-color: #e5e5e5;
+  transform: translate(370px, -5px) rotate(0deg); 
+}
+
+#Biblio {
+  background-color: #e5e5e5;
+  transform: translate(350px, -160px) rotate(0deg); 
+}
+
+#Meubleco {
+  background-color: #e5e5e5;
+  transform: translate(375px, -90px) rotate(0deg); 
+}
+
+#Vorace {
+  background-color: #e5e5e5;
+  transform: translate(405px, -140px) rotate(0deg); 
+}
+
+#Castor {
+  background-color: #e5e5e5;
+  transform: translate(415px, -45px) rotate(0deg); 
+}
+
+#Marche {
+  background-color: #e5e5e5;
+  transform: translate(450px, -95px) rotate(0deg); 
 }
