@@ -18,8 +18,8 @@ body {
 
 .bubble {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -113,7 +113,7 @@ body {
 
 #bubble3 {
   background-color: #99d88e;
-  transform: translate(117.56px, 161.80px) rotate(0deg);
+  transform: translate(-190.21px, -61.80px) rotate(0deg);
 }
 
 #bubble4 {
@@ -123,7 +123,7 @@ body {
 
 #bubble5 {
   background-color: #80b577;
-  transform: translate(-190.21px, -61.80px) rotate(0deg);
+  transform: translate(117.56px, 161.80px) rotate(0deg);
 }
 
 /*first category*/
@@ -237,7 +237,38 @@ body {
   transform: translate(-370px, -5px) rotate(0deg); 
 }
 
-/* !!!!!!UNIPOLYY!!!!!!!! */
+#Planqueer {
+  background-color: #99d88e;
+  transform: translate(-350px, -160px) rotate(0deg); 
+}
+
+#Queermanence {
+  background-color: #99d88e;
+  transform: translate(-375px, -90px) rotate(0deg); 
+}
+
+#Amnesty {
+  background-color: #99d88e;
+  transform: translate(-405px, -140px) rotate(0deg); 
+}
+
+#EVA {
+  background-color: #99d88e;
+  transform: translate(-420px, -30px) rotate(0deg); 
+}
+
+#Bassenges {
+  background-color: #99d88e;
+  transform: translate(-460px, -120px) rotate(0deg); 
+}
+
+#UPFL {
+  background-color: #99d88e;
+  transform: translate(-470px, -65px) rotate(0deg); 
+}
+
+/**third category**/
+
 /**
 #Convergeance {
   background-color: #99d88e;
