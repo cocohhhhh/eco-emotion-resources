@@ -212,8 +212,33 @@ body {
 
 /*third category*/
 
-/* !!!!!!UNIPOLYY!!!!!!!! */
+#Convergeance {
+  background-color: #99d88e;
+  transform: translate(-290px, -160px) rotate(0deg); 
+}
 
+#Zero {
+  background-color: #99d88e;
+  transform: translate(-320px, -110px) rotate(0deg); 
+}
+
+#Ingenieur {
+  background-color: #99d88e;
+  transform: translate(-330px, -50px) rotate(0deg); 
+}
+
+#Unipoly {
+  background-color: #99d88e;
+  transform: translate(-310px, 10px) rotate(0deg); 
+}
+
+#Polyquity {
+  background-color: #99d88e;
+  transform: translate(-370px, -5px) rotate(0deg); 
+}
+
+/* !!!!!!UNIPOLYY!!!!!!!! */
+/**
 #Convergeance {
   background-color: #99d88e;
   transform: translate(240px, 100px) rotate(0deg); 
@@ -228,3 +253,9 @@ body {
   background-color: #99d88e;
   transform: translate(240px, 220px) rotate(0deg); 
 }
+
+#Polyquity {
+  background-color: #99d88e;
+  transform: translate(200px, 270px) rotate(0deg); 
+}
+**/
