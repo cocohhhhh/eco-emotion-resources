@@ -11,8 +11,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
+  padding-top: 100px;
   border-radius: 50%;
 }
 
@@ -130,141 +131,141 @@ body {
 
 #epflcourses {
   background-color: #b2fba5;
-  transform: translate(120px, -260px) rotate(0deg); 
+  transform: translate(0px, -325px) rotate(0deg); 
 }
 
 #Fresque {
   background-color: #b2fba5;
-  transform: translate(-120px, -260px) rotate(0deg); 
+  transform: translate(62.5px, -308.25px) rotate(0deg); 
 }
 
 #CSAW {
   background-color: #b2fba5;
-  transform: translate(130px, -200px) rotate(0deg); 
+  transform: translate(108.25px, -262.5px) rotate(0deg); 
 }
 
 #Semaine {
   background-color: #b2fba5;
-  transform: translate(-130px, -200px) rotate(0deg);
-}
-
-#Coaching {
-  background-color: #b2fba5;
-  transform: translate(175px, -240px) rotate(0deg);
+  transform: translate(-62.5px, -308.25px) rotate(0deg);
 }
 
 #Canard {
   background-color: #b2fba5;
-  transform: translate(-175px, -240px) rotate(0deg); 
+  transform: translate(-108.25px, -262.5px) rotate(0deg); 
 }
 
 /*Second category*/
 
 #Debouches {
   background-color: #a6e999;
-  transform: translate(290px, -160px) rotate(0deg); 
+  transform: translate(315.21px, -61.8px) rotate(0deg); 
 }
 
 #Carriere {
   background-color: #a6e999;
-  transform: translate(320px, -110px) rotate(0deg); 
+  transform: translate(295.40px, -132.33px) rotate(0deg); 
 }
 
 #Velo {
   background-color: #a6e999;
-  transform: translate(330px, -50px) rotate(0deg); 
+  transform: translate(242.05px, -178.55px) rotate(0deg); 
 }
 
 #Fix {
   background-color: #a6e999;
-  transform: translate(310px, 10px) rotate(0deg); 
+  transform: translate(172.38px, -188.52px) rotate(0deg); 
 }
 
 #Smart {
   background-color: #a6e999;
-  transform: translate(370px, -5px) rotate(0deg); 
+  transform: translate(108.37px, -159.28px) rotate(0deg); 
 }
 
 #Biblio {
   background-color: #a6e999;
-  transform: translate(350px, -160px) rotate(0deg); 
+  transform: translate(70.30px, -100.09px) rotate(0deg); 
 }
 
 #Meubleco {
   background-color: #a6e999;
-  transform: translate(375px, -90px) rotate(0deg); 
+  transform: translate(70.4px, -29.51px) rotate(0deg); 
 }
 
 #Vorace {
   background-color: #a6e999;
-  transform: translate(405px, -140px) rotate(0deg); 
+  transform: translate(108.37px, 29.68px) rotate(0deg); 
 }
 
 #Castor {
   background-color: #a6e999;
-  transform: translate(415px, -45px) rotate(0deg); 
+  transform: translate(172.38px, 58.92px) rotate(0deg); 
 }
 
 #Marche {
   background-color: #a6e999;
-  transform: translate(450px, -95px) rotate(0deg); 
+  transform: translate(242.40px, 48.95px) rotate(0deg); 
+}
+
+#Coaching {
+  background-color: #b2fba5;
+  transform: translate(295.40px, 2.73px) rotate(0deg);
 }
 
 /*third category*/
 
 #Convergeance {
   background-color: #99d88e;
-  transform: translate(-290px, -160px) rotate(0deg); 
+  transform: translate(-315.21px, -61.8px) rotate(0deg); 
 }
 
 #Zero {
   background-color: #99d88e;
-  transform: translate(-320px, -110px) rotate(0deg); 
+  transform: translate(-295.40px, -132.33px) rotate(0deg); 
 }
 
 #Ingenieur {
   background-color: #99d88e;
-  transform: translate(-330px, -50px) rotate(0deg); 
+  transform: translate(-242.05px, -178.55px) rotate(0deg); 
 }
 
 #Unipoly {
   background-color: #99d88e;
-  transform: translate(-310px, 10px) rotate(0deg); 
+  transform: translate(-172.38px, -188.52px) rotate(0deg); 
 }
 
 #Polyquity {
   background-color: #99d88e;
-  transform: translate(-370px, -5px) rotate(0deg); 
+  transform: translate(-108.37px, -159.28px) rotate(0deg); 
 }
 
 #Planqueer {
   background-color: #99d88e;
-  transform: translate(-350px, -160px) rotate(0deg); 
+  transform: translate(-70.30px, -100.09px) rotate(0deg); 
 }
 
 #Queermanence {
   background-color: #99d88e;
-  transform: translate(-375px, -90px) rotate(0deg); 
+  transform: translate(-70.4px, -29.51px) rotate(0deg); 
 }
 
 #Amnesty {
   background-color: #99d88e;
-  transform: translate(-405px, -140px) rotate(0deg); 
+  transform: translate(-108.37px, 29.68px) rotate(0deg); 
 }
 
 #EVA {
   background-color: #99d88e;
-  transform: translate(-420px, -30px) rotate(0deg); 
+  transform: translate(-172.38px, 58.92px) rotate(0deg); 
 }
 
 #Bassenges {
   background-color: #99d88e;
-  transform: translate(-460px, -120px) rotate(0deg); 
+  transform: translate(-242.40px, 48.95px) rotate(0deg); 
 }
 
 #UPFL {
   background-color: #99d88e;
-  transform: translate(-470px, -65px) rotate(0deg); 
+  transform: translate(-295.40px, 2.73px) rotate(0deg); 
 }
 
 /**third category**/
