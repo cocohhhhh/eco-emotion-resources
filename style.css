@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1f1d1d; /* Set the background color to black */
+  background-color: #fdfd96;
 }
 
 .circle-container {
@@ -26,15 +26,13 @@ body {
   flex-direction: column; /* Stack the image and text vertically */
   justify-content: center;
   align-items: center;
-  background-color: #ffffff; /* Add a background color for the bubbles */
-  /* Add any additional styling for the bubbles */
+  background-color: #77dd77;
 }
 
 .bubble img {
   /* Adjust the image size as needed */
   height: 100px;
-  object-fit: contain; /* Fit the image within the container while preserving aspect ratio */
-  /* Add any additional styling for the images */
+  object-fit: contain;
 }
 
 .bubble span {
@@ -42,75 +40,191 @@ body {
 }
 
 .bubble:hover {
-  background-color: #ff0000 !important; /* Change to the highlight color of your choice */
-  /* Add any additional styles you want for the highlight effect */
+  background-color: #39ff15 !important; /* Change to the highlight color of your choice */
+  transition: background-color 0.2s ease;
+  z-index: 2;
 }
 
 .smaller {
-  max-width: 50px; /* Adjust the width to make smaller bubbles */
-  max-height: 50px; /* Adjust the height to make smaller bubbles */
-  display: flex; /* Use flexbox for the anchor tag */
-  align-items: center; /* Center the content vertically */
-  justify-content: center; /* Center the content horizontally */
+  max-width: 50px;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .smaller a {
-  display: flex; /* Use flexbox for the anchor tag */
-  align-items: center; /* Center the content vertically */
-  justify-content: center; /* Center the content horizontally */
-  width: 100%; /* Occupy the full width of the container */
-  height: 100%; /* Occupy the full height of the container */
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 100%;
+  height: 100%;
 }
 
 .smaller img {
   /* Adjust the image size as needed */
-  max-width:90%;
-  max-height: 90%;
+  max-width:70%;
+  max-height: 70%;
   object-fit: contain; /* Fit the image within the container while preserving aspect ratio */
-  /* Add any additional styling for the images */
+}
+
+.text-description {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 7px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  white-space: normal;
+  width: 400%; /* Adjust the maximum width to your preference */
+  visibility: hidden;
+  opacity: 0; 
+  z-index: 1; 
+  text-align: justify;
+  transition: opacity 0.2s ease;
+}
+
+.text-description h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px; /* Add a margin between the title and the text */
+  text-align: center;
+}
+
+/* Show the text description on hover */
+.smaller:hover .text-description {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
 }
 
 #bubble1 {
-  background-color: #ffffff;
-  transform: translate(0, -200px) rotate(0deg); /* Move to the right side of the circle */
+  background-color: #b2fba5;
+  transform: translate(0, -200px) rotate(0deg);
 }
 
 #bubble2 {
-  background-color: #e5e5e5;
-  transform: translate(190.21px, -61.80px) rotate(0deg); /* Move to the bottom-right side of the circle */
+  background-color: #a6e999;
+  transform: translate(190.21px, -61.80px) rotate(0deg);
 }
 
 #bubble3 {
-  background-color: #cccccc;
-  transform: translate(117.56px, 161.80px) rotate(0deg); /* Move to the bottom side of the circle */
+  background-color: #99d88e;
+  transform: translate(117.56px, 161.80px) rotate(0deg);
 }
 
 #bubble4 {
-  background-color: #b2b2b2;
-  transform: translate(-117.56px, 161.80px) rotate(0deg); /* Move to the bottom-left side of the circle */
+  background-color: #8dc682;
+  transform: translate(-117.56px, 161.80px) rotate(0deg);
 }
 
 #bubble5 {
-  background-color: #999999;
-  transform: translate(-190.21px, -61.80px) rotate(0deg); /* Move to the left side of the circle */
+  background-color: #80b577;
+  transform: translate(-190.21px, -61.80px) rotate(0deg);
 }
 
+/*first category*/
+
 #epflcourses {
-  background-color: #fffefe;
+  background-color: #b2fba5;
   transform: translate(120px, -260px) rotate(0deg); 
 }
 
-#CSAW {
-  background-color: #fffefe;
+#Fresque {
+  background-color: #b2fba5;
   transform: translate(-120px, -260px) rotate(0deg); 
 }
 
-#Fresque {
-  background-color: #fffefe;
+#CSAW {
+  background-color: #b2fba5;
   transform: translate(130px, -200px) rotate(0deg); 
 }
 
 #Semaine {
-  background-color: #fffefe;
+  background-color: #b2fba5;
   transform: translate(-130px, -200px) rotate(0deg);
+}
+
+#Coaching {
+  background-color: #b2fba5;
+  transform: translate(175px, -240px) rotate(0deg);
+}
+
+#Canard {
+  background-color: #b2fba5;
+  transform: translate(-175px, -240px) rotate(0deg); 
+}
+
+/*Second category*/
+
+#Debouches {
+  background-color: #a6e999;
+  transform: translate(290px, -160px) rotate(0deg); 
+}
+
+#Carriere {
+  background-color: #a6e999;
+  transform: translate(320px, -110px) rotate(0deg); 
+}
+
+#Velo {
+  background-color: #a6e999;
+  transform: translate(330px, -50px) rotate(0deg); 
+}
+
+#Fix {
+  background-color: #a6e999;
+  transform: translate(310px, 10px) rotate(0deg); 
+}
+
+#Smart {
+  background-color: #a6e999;
+  transform: translate(370px, -5px) rotate(0deg); 
+}
+
+#Biblio {
+  background-color: #a6e999;
+  transform: translate(350px, -160px) rotate(0deg); 
+}
+
+#Meubleco {
+  background-color: #a6e999;
+  transform: translate(375px, -90px) rotate(0deg); 
+}
+
+#Vorace {
+  background-color: #a6e999;
+  transform: translate(405px, -140px) rotate(0deg); 
+}
+
+#Castor {
+  background-color: #a6e999;
+  transform: translate(415px, -45px) rotate(0deg); 
+}
+
+#Marche {
+  background-color: #a6e999;
+  transform: translate(450px, -95px) rotate(0deg); 
+}
+
+/*third category*/
+
+/* !!!!!!UNIPOLYY!!!!!!!! */
+
+#Convergeance {
+  background-color: #99d88e;
+  transform: translate(240px, 100px) rotate(0deg); 
+}
+
+#Zero {
+  background-color: #99d88e;
+  transform: translate(250px, 160px) rotate(0deg); 
+}
+
+#Ingenieur {
+  background-color: #99d88e;
+  transform: translate(240px, 220px) rotate(0deg); 
 }

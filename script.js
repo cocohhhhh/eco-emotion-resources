@@ -1,4 +1,4 @@
-document.getElementById('bubble1').addEventListener('click', function() {
+  document.getElementById('bubble1').addEventListener('click', function() {
     window.location.href = 'page1.html';
   });
   
