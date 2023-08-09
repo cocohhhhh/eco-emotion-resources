@@ -1,54 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Inform yourself</title>
     <style>
         .left-container {
             float: left;
             width: 80%;
-            background-color: #ccc;
+            background-color: #fff;
             height: 100%;
         }
 
         .right-container {
-            float: left;
+            float: right;
             width: 20%;
-            background-color: #bbb;
+            background-color: #fff;
             height: 100%;
         }
 
+        .resource-container {
+            padding-top: 50px;
+            display: flex; /* Use flexbox to create a horizontal layout */
+            align-items: center; /* Align items vertically */
+        }
+
         .resource-img {
-            width: 30%;
-            display: inline; /* Change to inline-block */
-            vertical-align: middle; /* Align images and text vertically */
+            width: 100px; /* Set the fixed width of the image container */
+            margin-left: 20px; /* Add some spacing between the box and the left border */
+            margin-right: 50px; /* Add some spacing between image and text */
+        }
+
+        /* Optional: Control how the image is resized within its container */
+        .resource-img img {
+            width: 100%; /* Ensure the image fills the container horizontally */
+            height: 100%; /* Ensure the image fills the container vertically */
+            object-fit: cover; /* Resize the image to cover the container while preserving aspect ratio */
         }
 
         .resource-text {
-            width: 70%;
-            display: inline; /* Change to inline-block */
-            vertical-align: middle; /* Align images and text vertically */
+            padding-left: 20px;
+            width: 70%; /* Set the width of the text container */
+            background-color: aliceblue;
+        }
+        .resource-title {
+            font-size: 16px;
+            font-weight: bold;
         }
 
-        .bubble {
-            padding: 10px;
+        .category-container {
+            display: flex; /* Use flexbox to create a horizontal layout */
+            align-items: center; /* Align items vertically */
+            padding-bottom: 30px;
+        }
+
+        .category-img {
+            width: 100px; /* Set the fixed width of the image container */
+            margin-left: 20px; /* Add some spacing between the box and the left border */
+            margin-right: 50px; /* Add some spacing between image and text */
+        }
+
+        /* Optional: Control how the image is resized within its container */
+        .category-img img {
+            width: 100%; /* Ensure the image fills the container horizontally */
+            height: 100%; /* Ensure the image fills the container vertically */
+            object-fit: cover; /* Resize the image to cover the container while preserving aspect ratio */
+        }
+
+        .category-text {
+            width: 40%; /* Set the width of the text container */
+        }
+        .category-title {
+            font-size: 16px;
+            font-weight: bold;
         }
 
     </style>
 </head>
 <body>
     <div class="left-container">
-        <li>
+        <div class="resource-container">
+            <div class="resource-img">
+                <img src="logo\EPFLf_logo transparent.png" alt="Image 1">
+            </div>
+            <div class="resource-text">
+                <p class="resource-title">EPFL Courses</p>
+                <p>EPFL offers over 150 sustainability-related classes at both Bachelor's and Master's level.</p>
+                <p><a href="https://www.epfl.ch/about/sustainability/fr/durabilite-dans-leducation/programmes-detudes-cours-et-moocs/">Course Link</a></p>
+            </div>
+            <hr>
+        </div>
+        <div class="resource-container">
             <div class="resource-img">
                 <img src="logo\EVA.png" alt="Image 1">
             </div>
             <div class="resource-text">
-                <span>Inform Yourself</span>
+                <p class="resource-title">CSAW (Climate & Sustainability Action Week)</p>
+                <p>CSAW is a non credited 1 week summer school cocreated by UNIL and EPFL students and staff. The school is open to Bachelor, Master and PhD students from UNIL and EPFL. It aims to empower students to become change agents by providing them with practices and tools for self-awareness, collaboration and system change.</p>
+                <p><a href="https://www.epfl.ch/about/sustainability/fr/durabilite-dans-leducation/programmes-detudes-cours-et-moocs/">Course Link</a></p>
             </div>
-        </li>
+        </div>
     </div>
     <div class="right-container">
-        <div class="bubble" id="bubble1">
-            <img src="logo\book.png" alt="Image 1">
-            <span>Inform Yourself</span>
+        <div class="category-container">
+            <div class="category-img">
+                <img src="logo\book.png" alt="Image 1">
+            </div>
+            <div class="category-text">
+                <p class="category-title">Inform Yourself</p>
+            </div>
+        </div>
+        <div class="category-container">
+            <div class="category-img">
+                <img src="logo\waiter.png" alt="Image 1">
+            </div>
+            <div class="category-text">
+                <p class="category-title">At your service</p>
+            </div>
+        </div>
+        <div class="category-container">
+            <div class="category-img">
+                <img src="logo\fist.png" alt="Image 1">
+            </div>
+            <div class="category-text">
+                <p class="category-title">Engage yourself</p>
+            </div>
+        </div>
+        <div class="category-container">
+            <div class="category-img">
+                <img src="logo\rocket.png" alt="Image 1">
+            </div>
+            <div class="category-text">
+                <p class="category-title">Launch your project</p>
+            </div>
+        </div>
+        <div class="category-container">
+            <div class="category-img">
+                <img src="logo\sleep.png" alt="Image 1">
+            </div>
+            <div class="category-text">
+                <p class="category-title">Take care of yourself</p>
+            </div>
         </div>
     </div>
 </body>
