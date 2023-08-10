@@ -39,6 +39,7 @@ body {
 
 .bubble span {
   /* Add any additional styling for the text inside the bubbles */
+  object-fit: contain;
 }
 
 .bubble:hover {
