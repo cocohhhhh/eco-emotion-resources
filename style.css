@@ -5,14 +5,15 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #fdfd96;
+  overflow: hidden;
 }
 
 .circle-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   padding-top: 100px;
   border-radius: 50%;
 }
@@ -27,21 +28,23 @@ body {
   flex-direction: column; /* Stack the image and text vertically */
   justify-content: center;
   align-items: center;
-  background-color: #77dd77;
+  --distance: 120px;
 }
 
 .bubble img {
   /* Adjust the image size as needed */
-  height: 100px;
+  max-width: 70%;
+  max-height: 60%;
   object-fit: contain;
 }
 
 .bubble span {
   /* Add any additional styling for the text inside the bubbles */
+  object-fit: contain;
 }
 
 .bubble:hover {
-  background-color: #39ff15 !important; /* Change to the highlight color of your choice */
+  background-color: #39ff15 !important;
   transition: background-color 0.2s ease;
   z-index: 2;
 }
@@ -72,14 +75,14 @@ body {
 
 .text-description {
   position: absolute;
-  top: 0;
+  top: -100%;
   left: 100%;
   padding: 7px;
   background-color: #000;
   color: #fff;
   border-radius: 5px;
   white-space: normal;
-  width: 400%; /* Adjust the maximum width to your preference */
+  width: 500%; /* Adjust the maximum width to your preference */
   visibility: hidden;
   opacity: 0; 
   z-index: 1; 
@@ -102,194 +105,343 @@ body {
   z-index: 2;
 }
 
-#bubble1 {
-  background-color: #b2fba5;
-  transform: translate(0, -200px) rotate(0deg);
-}
-
-#bubble2 {
-  background-color: #a6e999;
-  transform: translate(190.21px, -61.80px) rotate(0deg);
-}
-
-#bubble3 {
-  background-color: #99d88e;
-  transform: translate(-190.21px, -61.80px) rotate(0deg);
-}
-
-#bubble4 {
-  background-color: #8dc682;
-  transform: translate(-117.56px, 161.80px) rotate(0deg);
-}
-
-#bubble5 {
-  background-color: #80b577;
-  transform: translate(117.56px, 161.80px) rotate(0deg);
-}
-
 /*first category*/
 
-#epflcourses {
+#bubble1 {
   background-color: #b2fba5;
-  transform: translate(0px, -325px) rotate(0deg); 
+  /*0, -200px*/
+  transform: translate(-400px,-150px) rotate(0deg);
+  --nb_res: 5;
+}
+
+#epflcourses {
+  --i: 0;
+  background-color: #b2fba5;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Fresque {
+  --i: 1;
   background-color: #b2fba5;
-  transform: translate(62.5px, -308.25px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #CSAW {
+  --i: 2;
   background-color: #b2fba5;
-  transform: translate(108.25px, -262.5px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Semaine {
+  --i: 3;
   background-color: #b2fba5;
-  transform: translate(-62.5px, -308.25px) rotate(0deg);
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Canard {
+  --i: 4;
   background-color: #b2fba5;
-  transform: translate(-108.25px, -262.5px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 /*Second category*/
 
-#Debouches {
+#bubble2 {
   background-color: #a6e999;
-  transform: translate(315.21px, -61.8px) rotate(0deg); 
+  /*190.21px, -61.80px*/
+  transform: translate(-200px, 100px) rotate(0deg);
+  --nb_res: 11;
+}
+
+#Debouches {
+  --i: 0;
+  background-color: #a6e999;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
 }
 
 #Carriere {
+  --i: 1;
   background-color: #a6e999;
-  transform: translate(295.40px, -132.33px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
 }
 
 #Velo {
+  --i: 2;
   background-color: #a6e999;
-  transform: translate(242.05px, -178.55px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Fix {
+  --i: 3;
   background-color: #a6e999;
-  transform: translate(172.38px, -188.52px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Smart {
+  --i: 4;
   background-color: #a6e999;
-  transform: translate(108.37px, -159.28px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Biblio {
+  --i: 5;
   background-color: #a6e999;
-  transform: translate(70.30px, -100.09px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Meubleco {
+  --i: 6;
   background-color: #a6e999;
-  transform: translate(70.4px, -29.51px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Vorace {
+  --i: 7;
   background-color: #a6e999;
-  transform: translate(108.37px, 29.68px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Castor {
+  --i: 8;
   background-color: #a6e999;
-  transform: translate(172.38px, 58.92px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Marche {
+  --i: 9;
   background-color: #a6e999;
-  transform: translate(242.40px, 48.95px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Coaching {
-  background-color: #b2fba5;
-  transform: translate(295.40px, 2.73px) rotate(0deg);
+  --i: 10;
+  background-color: #a6e999;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 /*third category*/
 
-#Convergeance {
+#bubble3 {
   background-color: #99d88e;
-  transform: translate(-315.21px, -61.8px) rotate(0deg); 
+  /*-190.21px, -61.80px*/
+  transform: translate(0,-150px) rotate(0deg);
+  --nb_res: 11;
+}
+
+#Convergeance {
+  --i: 0;
+  background-color: #99d88e;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Zero {
+  --i: 1;
   background-color: #99d88e;
-  transform: translate(-295.40px, -132.33px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Ingenieur {
+  --i: 2;
   background-color: #99d88e;
-  transform: translate(-242.05px, -178.55px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Unipoly {
+  --i: 3;
   background-color: #99d88e;
-  transform: translate(-172.38px, -188.52px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Polyquity {
+  --i: 4;
   background-color: #99d88e;
-  transform: translate(-108.37px, -159.28px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Planqueer {
+  --i: 5;
   background-color: #99d88e;
-  transform: translate(-70.30px, -100.09px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Queermanence {
+  --i: 6;
   background-color: #99d88e;
-  transform: translate(-70.4px, -29.51px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Amnesty {
+  --i: 7;
   background-color: #99d88e;
-  transform: translate(-108.37px, 29.68px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #EVA {
+  --i: 8;
   background-color: #99d88e;
-  transform: translate(-172.38px, 58.92px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Bassenges {
+  --i: 9;
   background-color: #99d88e;
-  transform: translate(-242.40px, 48.95px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #UPFL {
+  --i: 10;
   background-color: #99d88e;
-  transform: translate(-295.40px, 2.73px) rotate(0deg); 
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 /**fourth category**/
 
+#bubble4 {
+  background-color: #8dc682;
+  /*-117.56px, 161.80px*/
+  transform: translate(200px,100px) rotate(0deg);
+  --nb_res: 5;
+}
+
+#Make {
+  --i: 0;
+  background-color: #8dc682;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+}
+
+#Durabilis {
+  --i: 1;
+  background-color: #8dc682;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
+}
+
+#Skil {
+  --i: 2;
+  background-color: #8dc682;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+}
+
+#Changemakers {
+  --i: 3;
+  background-color: #8dc682;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+}
+
+#Ucreate {
+  --i: 4;
+  background-color: #8dc682;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
+}
+
 /**fifth category**/
 
+#bubble5 {
+  background-color: #80b577;
+  /*117.56px, 161.80px*/
+  transform: translate(400px,-150px) rotate(0deg);
+  --nb_res: 5;
+}
 
 #Sports {
-  background-color: #99d88e;
-  transform: translate(230.85px, 108.97px) rotate(0deg); 
-}
-/**
-#Zero {
-  background-color: #99d88e;
-  transform: translate(250px, 160px) rotate(0deg); 
+  --i: 0;
+  background-color: #80b577;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
 }
 
-#Ingenieur {
-  background-color: #99d88e;
-  transform: translate(240px, 220px) rotate(0deg); 
+#Transition {
+  --i: 1;
+  background-color: #80b577;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
-#Polyquity {
-  background-color: #99d88e;
-  transform: translate(200px, 270px) rotate(0deg); 
+#TSN {
+  --i: 2;
+  background-color: #80b577;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
-**/
+
+#Meditation {
+  --i: 3;
+  background-color: #80b577;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
+}
+
+#Forest {
+  --i: 4;
+  background-color: #80b577;
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+}
