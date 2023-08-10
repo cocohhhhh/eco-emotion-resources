@@ -253,88 +253,88 @@ body {
 #Convergeance {
   --i: 0;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Zero {
   --i: 1;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Ingenieur {
   --i: 2;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Unipoly {
   --i: 3;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Polyquity {
   --i: 4;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Planqueer {
   --i: 5;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Queermanence {
   --i: 6;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Amnesty {
   --i: 7;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #EVA {
   --i: 8;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #Bassenges {
   --i: 9;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
 #UPFL {
   --i: 10;
   background-color: #99d88e;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res))*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res))*var(--distance));
+  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
+  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 180deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
 }
 
@@ -344,6 +344,41 @@ body {
   background-color: #8dc682;
   transform: translate(-117.56px, 161.80px) rotate(0deg);
   --nb_res: 5;
+}
+
+#Make {
+  background-color: #8dc682;
+  --xcoord: calc(cos(150deg)*var(--distance));
+  --ycoord: calc(-1*sin(150deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
+}
+
+#Durabilis {
+  background-color: #8dc682;
+  --xcoord: calc(cos(180deg)*var(--distance));
+  --ycoord: calc(-1*sin(180deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
+}
+
+#Skil {
+  background-color: #8dc682;
+  --xcoord: calc(cos(210deg)*var(--distance));
+  --ycoord: calc(-1*sin(210deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
+}
+
+#Changemakers {
+  background-color: #8dc682;
+  --xcoord: calc(cos(240deg)*var(--distance));
+  --ycoord: calc(-1*sin(240deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
+}
+
+#Ucreate {
+  background-color: #8dc682;
+  --xcoord: calc(cos(270deg)*var(--distance));
+  --ycoord: calc(-1*sin(270deg)*var(--distance));
+  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
 }
 
 /**fifth category**/
