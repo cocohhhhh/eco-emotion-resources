@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #fdfd96;
+  background-color: #10bcf6b7;
   overflow: hidden;
 }
 
@@ -108,7 +108,7 @@ body {
 /*first category*/
 
 #bubble1 {
-  background-color: #b2fba5;
+  background-color: #ffd180;
   /*0, -200px*/
   transform: translate(-400px,-150px) rotate(0deg);
   --nb_res: 5;
@@ -116,7 +116,7 @@ body {
 
 #epflcourses {
   --i: 0;
-  background-color: #b2fba5;
+  background-color: #ffd180;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -124,7 +124,7 @@ body {
 
 #Fresque {
   --i: 1;
-  background-color: #b2fba5;
+  background-color: #ffd180;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -132,7 +132,7 @@ body {
 
 #CSAW {
   --i: 2;
-  background-color: #b2fba5;
+  background-color: #ffd180;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -140,7 +140,7 @@ body {
 
 #Semaine {
   --i: 3;
-  background-color: #b2fba5;
+  background-color: #ffd180;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -148,7 +148,7 @@ body {
 
 #Canard {
   --i: 4;
-  background-color: #b2fba5;
+  background-color: #ffd180;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -157,7 +157,7 @@ body {
 /*Second category*/
 
 #bubble2 {
-  background-color: #a6e999;
+  background-color: #ff914d;
   /*190.21px, -61.80px*/
   transform: translate(-200px, 100px) rotate(0deg);
   --nb_res: 11;
@@ -165,7 +165,7 @@ body {
 
 #Debouches {
   --i: 0;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
@@ -173,7 +173,7 @@ body {
 
 #Carriere {
   --i: 1;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
@@ -181,7 +181,7 @@ body {
 
 #Velo {
   --i: 2;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -189,7 +189,7 @@ body {
 
 #Fix {
   --i: 3;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -197,7 +197,7 @@ body {
 
 #Smart {
   --i: 4;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -205,7 +205,7 @@ body {
 
 #Biblio {
   --i: 5;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -213,7 +213,7 @@ body {
 
 #Meubleco {
   --i: 6;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -221,7 +221,7 @@ body {
 
 #Vorace {
   --i: 7;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -229,7 +229,7 @@ body {
 
 #Castor {
   --i: 8;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -237,7 +237,7 @@ body {
 
 #Marche {
   --i: 9;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -245,7 +245,7 @@ body {
 
 #Coaching {
   --i: 10;
-  background-color: #a6e999;
+  background-color: #ff914d;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -254,7 +254,7 @@ body {
 /*third category*/
 
 #bubble3 {
-  background-color: #99d88e;
+  background-color: #c6d101;
   /*-190.21px, -61.80px*/
   transform: translate(0,-150px) rotate(0deg);
   --nb_res: 11;
@@ -262,7 +262,7 @@ body {
 
 #Convergeance {
   --i: 0;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -270,7 +270,7 @@ body {
 
 #Zero {
   --i: 1;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -278,7 +278,7 @@ body {
 
 #Ingenieur {
   --i: 2;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -286,7 +286,7 @@ body {
 
 #Unipoly {
   --i: 3;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -294,7 +294,7 @@ body {
 
 #Polyquity {
   --i: 4;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -302,7 +302,7 @@ body {
 
 #Planqueer {
   --i: 5;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -310,7 +310,7 @@ body {
 
 #Queermanence {
   --i: 6;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -318,7 +318,7 @@ body {
 
 #Amnesty {
   --i: 7;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -326,7 +326,7 @@ body {
 
 #EVA {
   --i: 8;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -334,7 +334,7 @@ body {
 
 #Bassenges {
   --i: 9;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -342,7 +342,7 @@ body {
 
 #UPFL {
   --i: 10;
-  background-color: #99d88e;
+  background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -351,7 +351,7 @@ body {
 /**fourth category**/
 
 #bubble4 {
-  background-color: #8dc682;
+  background-color: #fac8d0;
   /*-117.56px, 161.80px*/
   transform: translate(200px,100px) rotate(0deg);
   --nb_res: 5;
@@ -359,7 +359,7 @@ body {
 
 #Make {
   --i: 0;
-  background-color: #8dc682;
+  background-color: #fac8d0;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -367,7 +367,7 @@ body {
 
 #Durabilis {
   --i: 1;
-  background-color: #8dc682;
+  background-color: #fac8d0;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
@@ -375,7 +375,7 @@ body {
 
 #Skil {
   --i: 2;
-  background-color: #8dc682;
+  background-color: #fac8d0;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -383,7 +383,7 @@ body {
 
 #Changemakers {
   --i: 3;
-  background-color: #8dc682;
+  background-color: #fac8d0;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -391,7 +391,7 @@ body {
 
 #Ucreate {
   --i: 4;
-  background-color: #8dc682;
+  background-color: #fac8d0;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
@@ -400,7 +400,7 @@ body {
 /**fifth category**/
 
 #bubble5 {
-  background-color: #80b577;
+  background-color: #95f823;
   /*117.56px, 161.80px*/
   transform: translate(400px,-150px) rotate(0deg);
   --nb_res: 5;
@@ -408,7 +408,7 @@ body {
 
 #Sports {
   --i: 0;
-  background-color: #80b577;
+  background-color: #95f823;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
@@ -416,7 +416,7 @@ body {
 
 #Transition {
   --i: 1;
-  background-color: #80b577;
+  background-color: #95f823;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -424,7 +424,7 @@ body {
 
 #TSN {
   --i: 2;
-  background-color: #80b577;
+  background-color: #95f823;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
@@ -432,7 +432,7 @@ body {
 
 #Meditation {
   --i: 3;
-  background-color: #80b577;
+  background-color: #95f823;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg); 
@@ -440,7 +440,7 @@ body {
 
 #Forest {
   --i: 4;
-  background-color: #80b577;
+  background-color: #95f823;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
   transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
