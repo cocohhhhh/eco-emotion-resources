@@ -81,7 +81,7 @@ body {
   color: #fff;
   border-radius: 5px;
   white-space: normal;
-  width: 400%; /* Adjust the maximum width to your preference */
+  width: 500%; /* Adjust the maximum width to your preference */
   visibility: hidden;
   opacity: 0; 
   z-index: 1; 
