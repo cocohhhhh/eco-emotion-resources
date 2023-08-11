@@ -243,7 +243,7 @@ body {
   --nb_res: 11;
 }
 
-#Convergeance {
+#Convergence {
   --i: 0;
   background-color: #c6d101;
   --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
