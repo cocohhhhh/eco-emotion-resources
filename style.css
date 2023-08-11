@@ -95,8 +95,7 @@ body {
 
 #bubble1 {
   background-color: #ffd180;
-  /*0, -200px*/
-  transform: translate(-400px,-150px) rotate(0deg);
+  transform: translate(-400px,-100px) rotate(0deg);
   --nb_res: 5;
 }
 
@@ -144,8 +143,7 @@ body {
 
 #bubble2 {
   background-color: #ff914d;
-  /*190.21px, -61.80px*/
-  transform: translate(-200px, 100px) rotate(0deg);
+  transform: translate(-200px, 150px) rotate(0deg);
   --nb_res: 11;
 }
 
@@ -241,8 +239,7 @@ body {
 
 #bubble3 {
   background-color: #c6d101;
-  /*-190.21px, -61.80px*/
-  transform: translate(0,-150px) rotate(0deg);
+  transform: translate(0,-100px) rotate(0deg);
   --nb_res: 11;
 }
 
@@ -338,8 +335,7 @@ body {
 
 #bubble4 {
   background-color: #fac8d0;
-  /*-117.56px, 161.80px*/
-  transform: translate(200px,100px) rotate(0deg);
+  transform: translate(200px,150px) rotate(0deg);
   --nb_res: 5;
 }
 
@@ -387,8 +383,7 @@ body {
 
 #bubble5 {
   background-color: #95f823;
-  /*117.56px, 161.80px*/
-  transform: translate(400px,-150px) rotate(0deg);
+  transform: translate(400px,-100px) rotate(0deg);
   --nb_res: 5;
 }
 
