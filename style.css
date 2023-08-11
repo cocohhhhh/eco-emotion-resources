@@ -8,16 +8,6 @@ body {
   overflow: hidden;
 }
 
-.circle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding-top: 100px;
-  border-radius: 50%;
-}
-
 .bubble {
   position: absolute;
   width: 180px;
@@ -25,21 +15,19 @@ body {
   border-radius: 50%;
   cursor: pointer;
   display: flex;
-  flex-direction: column; /* Stack the image and text vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   --distance: 120px;
 }
 
 .bubble img {
-  /* Adjust the image size as needed */
   max-width: 70%;
   max-height: 60%;
   object-fit: contain;
 }
 
 .bubble span {
-  /* Add any additional styling for the text inside the bubbles */
   object-fit: contain;
 }
 
@@ -67,10 +55,9 @@ body {
 }
 
 .smaller img {
-  /* Adjust the image size as needed */
   max-width:70%;
   max-height: 70%;
-  object-fit: contain; /* Fit the image within the container while preserving aspect ratio */
+  object-fit: contain;
 }
 
 .text-description {
@@ -82,7 +69,7 @@ body {
   color: #fff;
   border-radius: 5px;
   white-space: normal;
-  width: 500%; /* Adjust the maximum width to your preference */
+  width: 500%;
   visibility: hidden;
   opacity: 0; 
   z-index: 1; 
@@ -94,11 +81,10 @@ body {
   margin: 0;
   font-size: 18px;
   color: #fff;
-  margin-bottom: 5px; /* Add a margin between the title and the text */
+  margin-bottom: 5px;
   text-align: center;
 }
 
-/* Show the text description on hover */
 .smaller:hover .text-description {
   visibility: visible;
   opacity: 1;
