@@ -1,6 +1,6 @@
-Category Number	Category Name	Image
-1	Inform Yourself	book.png
-2	At Your Service	Waiter.png
-3	Take Action	Fist.png
-4	Launch Your Project	Rocket.png
-5	Take Care	Sleep.png
+Category Number	Category Name	Image	Color	Number of Ressources
+1	Inform Yourself	book.png	#ffd180	5
+2	At Your Service	Waiter.png	#ff914d	11
+3	Take Action	Fist.png	#c6d101	11
+4	Launch Your Project	Rocket.png	#fac8d0	5
+5	Take Care	Sleep.png	#95f823	5
