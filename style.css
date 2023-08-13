@@ -62,8 +62,6 @@ body {
 
 .text-description {
   position: absolute;
-  top: -100%;
-  left: 100%;
   padding: 7px;
   background-color: #000;
   color: #fff;
@@ -97,6 +95,11 @@ body {
   background-color: #ffd180;
   transform: translate(-400px,-100px) rotate(0deg);
   --nb_res: 5;
+}
+
+#bubble1 .text-description {
+  top: 0%;
+  left: 100%;
 }
 
 #epflcourses {
@@ -145,6 +148,11 @@ body {
   background-color: #ff914d;
   transform: translate(-200px, 150px) rotate(0deg);
   --nb_res: 11;
+}
+
+#bubble2 .text-description {
+  bottom: 0%;
+  left: 100%;
 }
 
 #Debouches {
@@ -243,6 +251,11 @@ body {
   --nb_res: 11;
 }
 
+#bubble3 .text-description {
+  top: -100%;
+  left: 100%;
+}
+
 #Convergence {
   --i: 0;
   background-color: #c6d101;
@@ -339,6 +352,11 @@ body {
   --nb_res: 5;
 }
 
+#bubble4 .text-description {
+  bottom: 0%;
+  right: 100%;
+}
+
 #Make {
   --i: 0;
   background-color: #fac8d0;
@@ -385,6 +403,11 @@ body {
   background-color: #95f823;
   transform: translate(400px,-100px) rotate(0deg);
   --nb_res: 5;
+}
+
+#bubble5 .text-description {
+  top: 0%;
+  right: 100%;
 }
 
 #Sports {
