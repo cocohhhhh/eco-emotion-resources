@@ -1,10 +1,14 @@
 body {
+  background-image: url("logo/background_picture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #10bcf6b7;
   overflow: hidden;
 }
 
@@ -38,8 +42,8 @@ body {
 }
 
 .smaller {
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +97,7 @@ body {
 
 #bubble1 {
   background-color: #ffd180;
-  transform: translate(-400px,-100px) rotate(0deg);
+  transform: translate(-400px,-125px) rotate(0deg);
   --nb_res: 5;
 }
 
@@ -146,7 +150,7 @@ body {
 
 #bubble2 {
   background-color: #ff914d;
-  transform: translate(-200px, 150px) rotate(0deg);
+  transform: translate(-200px, 125px) rotate(0deg);
   --nb_res: 11;
 }
 
@@ -247,12 +251,12 @@ body {
 
 #bubble3 {
   background-color: #c6d101;
-  transform: translate(0,-100px) rotate(0deg);
+  transform: translate(0,-125px) rotate(0deg);
   --nb_res: 11;
 }
 
 #bubble3 .text-description {
-  top: -100%;
+  top: 0%;
   left: 100%;
 }
 
@@ -348,7 +352,7 @@ body {
 
 #bubble4 {
   background-color: #fac8d0;
-  transform: translate(200px,150px) rotate(0deg);
+  transform: translate(200px,125px) rotate(0deg);
   --nb_res: 5;
 }
 
@@ -401,7 +405,7 @@ body {
 
 #bubble5 {
   background-color: #95f823;
-  transform: translate(400px,-100px) rotate(0deg);
+  transform: translate(400px,-125px) rotate(0deg);
   --nb_res: 5;
 }
 
