@@ -1,10 +1,14 @@
 body {
+  background-image: url("logo/2.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #10bcf6b7;
   overflow: hidden;
 }
 
@@ -31,7 +35,7 @@ body {
 }
 
 .bubble:hover {
-  background-color: #39ff15 !important;
+  background-color: #fff !important;
   transition: background-color 0.2s ease;
   z-index: 2;
 }
@@ -91,7 +95,7 @@ body {
 /*category 1*/
 
 #bubble1 {
-  background-color: #ffd180;
+  background-color: #a3dfcd;
   transform: translate(-400px,-125px) rotate(0deg);
 }
 
@@ -101,34 +105,34 @@ body {
 }
 
 #EPFLCourses {
-  background-color: #ffd180;
+  background-color: #a3dfcd;
   transform: translate(0px, -120px ) rotate(0deg);
 }
 
 #CSAWClimateSustainabilityActionWeek {
-  background-color: #ffd180;
+  background-color: #a3dfcd;
   transform: translate(-114px, -37px ) rotate(0deg);
 }
 
 #Fresqueduclimat {
-  background-color: #ffd180;
+  background-color: #a3dfcd;
   transform: translate(-71px, 97px ) rotate(0deg);
 }
 
 #lecanardhuppé {
-  background-color: #ffd180;
+  background-color: #a3dfcd;
   transform: translate(71px, 97px ) rotate(0deg);
 }
 
 #Semainedeladurabilité {
-  background-color: #ffd180;
+  background-color: #a3dfcd;
   transform: translate(114px, -37px ) rotate(0deg);
 }
 
 /*category 2*/
 
 #bubble2 {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(-200px,125px) rotate(0deg);
 }
 
@@ -138,64 +142,64 @@ body {
 }
 
 #CoachingSustainability {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(0px, -120px ) rotate(0deg);
 }
 
 #associationdébouchésdurables {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(-65px, -101px ) rotate(0deg);
 }
 
 #Slowtacarrière {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(-109px, -50px ) rotate(0deg);
 }
 
 #Pointvélo {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(-119px, 17px ) rotate(0deg);
 }
 
 #Bibliothèqued’objets {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(-91px, 79px ) rotate(0deg);
 }
 
 #Fixn’ReplaceRepaircafé {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(-34px, 115px ) rotate(0deg);
 }
 
 #EpiceriecoopérativeleVorace {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(34px, 115px ) rotate(0deg);
 }
 
 #MarchéEPFL {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(91px, 79px ) rotate(0deg);
 }
 
 #PointSmartCellphones {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(119px, 17px ) rotate(0deg);
 }
 
 #Meubléco {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(109px, -50px ) rotate(0deg);
 }
 
 #CastorFreegan {
-  background-color: #ff914d;
+  background-color: #a3dfcd;
   transform: translate(65px, -101px ) rotate(0deg);
 }
 
 /*category 3*/
 
 #bubble3 {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(0px,-125px) rotate(0deg);
 }
 
@@ -205,64 +209,64 @@ body {
 }
 
 #LaConvergence {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(0px, -120px ) rotate(0deg);
 }
 
 #Unipoly {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(-65px, -101px ) rotate(0deg);
 }
 
 #ZeroEmissionGroup {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(-109px, -50px ) rotate(0deg);
 }
 
 #Ingénieur·esdumonde {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(-119px, 17px ) rotate(0deg);
 }
 
 #Polyquity {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(-91px, 79px ) rotate(0deg);
 }
 
 #PlanQueer {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(-34px, 115px ) rotate(0deg);
 }
 
 #Queermanence {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(34px, 115px ) rotate(0deg);
 }
 
 #AmnestydesHautesEcolesLausannoises {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(91px, 79px ) rotate(0deg);
 }
 
 #Associationdesétudiant·esvégan·esetanimalistes {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(119px, 17px ) rotate(0deg);
 }
 
 #FermedeBassenges {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(109px, -50px ) rotate(0deg);
 }
 
 #ThriftstoreUPFashionLab {
-  background-color: #c6d101;
+  background-color: #a3dfcd;
   transform: translate(65px, -101px ) rotate(0deg);
 }
 
 /*category 4*/
 
 #bubble4 {
-  background-color: #fac8d0;
+  background-color: #a3dfcd;
   transform: translate(200px,125px) rotate(0deg);
 }
 
@@ -272,34 +276,34 @@ body {
 }
 
 #Make {
-  background-color: #fac8d0;
+  background-color: #a3dfcd;
   transform: translate(0px, -120px ) rotate(0deg);
 }
 
 #Durabilis {
-  background-color: #fac8d0;
+  background-color: #a3dfcd;
   transform: translate(-114px, -37px ) rotate(0deg);
 }
 
 #Skil {
-  background-color: #fac8d0;
+  background-color: #a3dfcd;
   transform: translate(-71px, 97px ) rotate(0deg);
 }
 
 #EPFLChangemakers {
-  background-color: #fac8d0;
+  background-color: #a3dfcd;
   transform: translate(71px, 97px ) rotate(0deg);
 }
 
 #Ucreate {
-  background-color: #fac8d0;
+  background-color: #a3dfcd;
   transform: translate(114px, -37px ) rotate(0deg);
 }
 
 /*category 5*/
 
 #bubble5 {
-  background-color: #95f823;
+  background-color: #a3dfcd;
   transform: translate(400px,-125px) rotate(0deg);
 }
 
@@ -309,26 +313,26 @@ body {
 }
 
 #SportscenterEPFL-UNIL {
-  background-color: #95f823;
+  background-color: #a3dfcd;
   transform: translate(0px, -120px ) rotate(0deg);
 }
 
 #Espace-Transitions {
-  background-color: #95f823;
+  background-color: #a3dfcd;
   transform: translate(-114px, -37px ) rotate(0deg);
 }
 
 #TrustandSupportNetworkTSN {
-  background-color: #95f823;
+  background-color: #a3dfcd;
   transform: translate(-71px, 97px ) rotate(0deg);
 }
 
 #Guidedmeditation {
-  background-color: #95f823;
+  background-color: #a3dfcd;
   transform: translate(71px, 97px ) rotate(0deg);
 }
 
 #ForêtdeDorigny {
-  background-color: #95f823;
+  background-color: #a3dfcd;
   transform: translate(114px, -37px ) rotate(0deg);
 }
