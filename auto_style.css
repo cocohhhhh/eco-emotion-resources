@@ -1,5 +1,5 @@
 body {
-  background-image: url("logo/3.gif");
+  background-image: url("logo/1.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -74,7 +74,7 @@ body {
   visibility: hidden;
   opacity: 0; 
   z-index: 1; 
-  text-align: justify;
+  text-align: left;
   transition: opacity 0.2s ease;
 }
 
