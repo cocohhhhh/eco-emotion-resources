@@ -1,116 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Inform yourself</title>
+    <link rel="stylesheet" href="style_detail_page.css">
     <script src="https://kit.fontawesome.com/40cbf1602d.js" crossorigin="anonymous"></script>
-    <style>
-        html, body{ 
-            height: 100%; 
-            margin:0; 
-            padding:0; 
-        }
-        .push{
-            height: 20px; 
-            clear:both;             
-        } 
-        #footer {
-            height: 60px; 
-            clear:both; 
-            background-color:rgb(230, 230, 230);
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-        }
-        .header a{
-			text-decoration:none;color:rgb(230, 230,230);
-		}
-        .header a:hover{text-decoration:none;color: rgb(230, 230,230);}
-        .header{
-            position: fixed;
-            left: 0%; 
-            top: 0%;
-            width:100%;
-            height: 12%;
-            background-color: #079428;
-            z-index: 99999;
-            overflow: hidden;
-        }
-        .header-item{left: 7%;top:10%; position: relative;}
-        .header-item li{
-            height: 70%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-left: 55px;
-            position: relative;
-            display: inline-block;
-            font-size: 130%;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: bolder;
-            text-align: center;
-        }
-        .header-underline{
-			position:relative;
-		}
-		.header-underline::after{
-			content:'';
-			display:block;
-			width:100%;
-			height:2px;
-			position:inherit;
-			bottom:-10px;
-			background:white;
-			transition:all 0.3s ease-in-out;
-			transform: scale3d(0,1,1);
-			transform-origin:50% 0;
-		}
-		.header-underline:hover::after{
-			transform:scale3d(1,1,1);
-		}
-        .list-container {
-            left: 4%;
-            width: 100%;
-            position: relative;
-            margin-top: 100px;
-            background-color: #fff;
-            min-height: 100%; 
-            height: auto !important; 
-            height: 100%; 
-            margin: 0 auto -60px;/*margin-bottom的负值等于footer高度*/ 
-        }
-
-        .resource-container {
-            padding-top: 50px;
-            display: flex; /* Use flexbox to create a horizontal layout */
-            align-items: center; /* Align items vertically */
-        }
-
-        .resource-img {
-            width: 100px; /* Set the fixed width of the image container */
-            margin-left: 20px; /* Add some spacing between the box and the left border */
-            margin-right: 50px; /* Add some spacing between image and text */
-        }
-
-        /* Optional: Control how the image is resized within its container */
-        .resource-img img {
-            width: 100%; /* Ensure the image fills the container horizontally */
-            height: 100%; /* Ensure the image fills the container vertically */
-            object-fit: cover; /* Resize the image to cover the container while preserving aspect ratio */
-        }
-
-        .resource-text {
-            padding-left: 20px;
-            width: 70%; /* Set the width of the text container */
-            background-color: aliceblue;
-        }
-        .resource-title {
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-    </style>
 </head>
+
 <body>
     <div class="header">
-        <div class="header-item" >
+        <div class="header-item">
             <li><a class="header-underline" href="index.html"><i class="fa-solid fa-house"></i></a></li>
             <li><a class="header-underline" href="page1.html">Inform yourself</a></li>
             <li><a class="header-underline" href="page2.html">At your service</a></li>
@@ -128,7 +27,9 @@
                 <p class="resource-title">EPFL Courses</p>
                 <p>EPFL offers over 150 sustainability-related classes at both Bachelor's and Master's level.</p>
                 <p>Contact: jacopo.grazioli@epfl.ch</p>
-                <p><a href="https://www.epfl.ch/about/sustainability/fr/durabilite-dans-leducation/programmes-detudes-cours-et-moocs/">Course Link</a></p>
+                <p><a
+                        href="https://www.epfl.ch/about/sustainability/fr/durabilite-dans-leducation/programmes-detudes-cours-et-moocs/">Course
+                        Link</a></p>
             </div>
             <hr>
         </div>
@@ -138,7 +39,10 @@
             </div>
             <div class="resource-text">
                 <p class="resource-title">CSAW (Climate & Sustainability Action Week)</p>
-                <p>CSAW is a non credited 1 week summer school cocreated by UNIL and EPFL students and staff. The school is open to Bachelor, Master and PhD students from UNIL and EPFL. It aims to empower students to become change agents by providing them with practices and tools for self-awareness, collaboration and system change.</p>
+                <p>CSAW is a non credited 1 week summer school cocreated by UNIL and EPFL students and staff. The school
+                    is open to Bachelor, Master and PhD students from UNIL and EPFL. It aims to empower students to
+                    become change agents by providing them with practices and tools for self-awareness, collaboration
+                    and system change.</p>
                 <p>Contact: csaw@epfl.ch</p>
             </div>
         </div>
@@ -148,7 +52,9 @@
             </div>
             <div class="resource-text">
                 <p class="resource-title">Fresque du climat</p>
-                <p>The fresks are fun, collaborative and creative 3 hours workshops meant to raise awareness about environmental issues, and based on collective intelligence. the workshop available at the Climate Fresk, Biodiversity Fresks and Digital Collage.</p>
+                <p>The fresks are fun, collaborative and creative 3 hours workshops meant to raise awareness about
+                    environmental issues, and based on collective intelligence. the workshop available at the Climate
+                    Fresk, Biodiversity Fresks and Digital Collage.</p>
                 <p>Contact: alice.klein@epfl.ch, louis.cousturian@epfl.ch</p>
             </div>
         </div>
@@ -158,7 +64,10 @@
             </div>
             <div class="resource-text">
                 <p class="resource-title">Le canard huppé</p>
-                <p>Produced by amateur journalists, the newspaper allows anyone who wants to try their hand at writing articles, creating videos, recording podcasts and any other medium. The subjects of publication mainly concern environmental issues in the broadest sense (political, economic, technical, societal, psychological, spiritual, etc.)</p>
+                <p>Produced by amateur journalists, the newspaper allows anyone who wants to try their hand at writing
+                    articles, creating videos, recording podcasts and any other medium. The subjects of publication
+                    mainly concern environmental issues in the broadest sense (political, economic, technical, societal,
+                    psychological, spiritual, etc.)</p>
                 <p>Contact: journal@unipoly.ch</p>
             </div>
         </div>
@@ -168,14 +77,13 @@
             </div>
             <div class="resource-text">
                 <p class="resource-title">Semaine de la durabilité</p>
-                <p>Sustainability Week is the largest student sustainability project in Switzerland. It takes place every 4th week of the spring semester on the UNILEPFL campus. It aims to raise students' awareness of sustainability and ecological issues.</p>
+                <p>Sustainability Week is the largest student sustainability project in Switzerland. It takes place
+                    every 4th week of the spring semester on the UNILEPFL campus. It aims to raise students' awareness
+                    of sustainability and ecological issues.</p>
                 <p>Contact: sd@unipoly.ch</p>
             </div>
         </div>
-        <div class="push"><!-- not put anything here --></div> 
     </div>
-    <div id="footer">
-        <p style="padding-top: 20px;">@ ...</p>
-    </div> 
 </body>
+
 </html>

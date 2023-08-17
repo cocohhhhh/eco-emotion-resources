@@ -1,0 +1,122 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.push {
+    height: 20px;
+    clear: both;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+
+.header a:hover {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+
+.header {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 12%;
+    background-color: #077c94;
+    z-index: 99999;
+    overflow: hidden;
+}
+
+.header-item {
+    left: 7%;
+    top: 10%;
+    position: relative;
+}
+
+.header-item li {
+    height: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 55px;
+    position: relative;
+    display: inline-block;
+    font-size: 130%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.header-underline {
+    position: relative;
+}
+
+.header-underline::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: inherit;
+    bottom: -10px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 50% 0;
+}
+
+.header-underline:hover::after {
+    transform: scale3d(1, 1, 1);
+}
+
+.list-container {
+    left: 4%;
+    width: 100%;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    background-color: #fff;
+    height: auto !important;
+}
+
+.resource-container {
+    padding-top: 50px;
+    display: flex;
+    /* Use flexbox to create a horizontal layout */
+    align-items: center;
+    /* Align items vertically */
+}
+
+.resource-img {
+    width: 100px;
+    /* Set the fixed width of the image container */
+    margin-left: 20px;
+    /* Add some spacing between the box and the left border */
+    margin-right: 50px;
+    /* Add some spacing between image and text */
+}
+
+/* Optional: Control how the image is resized within its container */
+.resource-img img {
+    width: 100%;
+    /* Ensure the image fills the container horizontally */
+    height: 100%;
+    /* Ensure the image fills the container vertically */
+    object-fit: cover;
+    /* Resize the image to cover the container while preserving aspect ratio */
+}
+
+.resource-text {
+    padding-left: 20px;
+    width: 70%;
+    /* Set the width of the text container */
+    background-color: aliceblue;
+}
+
+.resource-title {
+    font-size: 16px;
+    font-weight: bold;
+}
