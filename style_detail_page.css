@@ -111,6 +111,7 @@ body {
 
 .resource-text {
     padding-left: 20px;
+    padding-right: 20px;
     width: 70%;
     /* Set the width of the text container */
     background-color: aliceblue;
