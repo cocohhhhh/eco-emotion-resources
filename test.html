@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>CSS Variable Example</title>
-    <style>
-        /* Define a CSS variable */
-        :root {
-            --box-color: red; /* Default color */
+    <meta charset="utf-8" />
+    <title>Homepage</title>
+    <style type="text/css">
+        html,
+        body,
+        section {
+            block-size: 100%;
         }
 
-        /* Apply CSS variable to each box */
-        .box {
-            width: 200px;
-            height: 200px;
-            background-color: var(--box-color);
-            margin-bottom: 10px;
+        html {
+            scroll-snap-type: y mandatory;
+        }
+
+        section {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section:nth-of-type(even) {
+            color: white;
+            background: black;
+        }
+
+        section:nth-of-type(odd) {
+            color: black;
+            background: white;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, sans-serif;
+            font-size: 4rem;
         }
     </style>
-    <script>
-        let i = 1; // Initialize the counter
-
-        function addBox() {
-            const boxesContainer = document.getElementById('boxes-container');
-            const newBox = document.createElement('div');
-            newBox.className = 'box';
-            boxesContainer.appendChild(newBox);
-
-            // Update CSS variable value
-            document.documentElement.style.setProperty('--box-color', getColor(i));
-
-            i++; // Increment the counter
-        }
-
-        function getColor(index) {
-            if (index === 1) return 'red';
-            if (index === 2) return 'green';
-            if (index === 3) return 'blue';
-            return 'black'; // Default color
-        }
-    </script>
 </head>
+
 <body>
-    <button onclick="addBox()">Add Box</button>
-    <div id="boxes-container"></div>
+    <section>
+        <h1>slide 1</h1>
+    </section>
+    <section>
+        <h1>slide 2</h1>
+    </section>
+    <section>
+        <h1>slide 3</h1>
+    </section>
+    <section>
+        <h1>slide 4</h1>
+    </section>
+    <section>
+        <h1>slide 5</h1>
+    </section>
 </body>
+
 </html>
