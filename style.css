@@ -23,7 +23,7 @@ body {
   border-bottom-right-radius: 30px;
   width: 100%;
   height: 50%;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 .bubbles-container {
@@ -33,7 +33,7 @@ body {
   align-items: center;
   width: 100%;
   height: 50%;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 .bubble {
