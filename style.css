@@ -28,11 +28,53 @@ html {
 }
 
 #intro {
-  background-color: #0eb521;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  width: 100%;
-  height: 50%;
+  background-color: #00A79F;
+}
+.banner {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  width: 90%;
+  height: 15%;
+  display: flex;
+  justify-content: left;
+  Justify-content: space-between;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Arial';
+  color: #fff;
+}
+.appetizer {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: large;
+  font-family: 'Arial';
+  color: #fff;
+}
+.appetizer .text {
+  width: 60%;
+  height: 100%;
+}
+.appetizer .text h {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Arial';
+}
+.appetizer .text p {
+  margin-top: 20%;
+  font-size: 22px;
+  font-family: 'Arial';
+}
+.appetizer img {
+  float: right;
+  width: 90%;
+  object-fit: contain;
 }
 
 #content {
