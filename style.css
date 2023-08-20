@@ -28,7 +28,6 @@ html {
 }
 
 #intro {
-  /*background-color: #00A79F;*/
   background-image: linear-gradient( #007480, #ffffc5);
 }
 .banner {
@@ -40,7 +39,7 @@ html {
   display: flex;
   justify-content: left;
   Justify-content: space-between;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   font-family: 'Arial';
   color: #fff;
@@ -79,7 +78,8 @@ html {
 }
 
 #content {
-  background-color: #ffffc5;
+  /*background-color: #ffffc5;*/
+  background: radial-gradient(#ffffc5, #f9f946);
   display: flex;
   justify-content: center;
   align-items: center;
