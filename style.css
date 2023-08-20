@@ -1,5 +1,5 @@
 body {
-  background-image: url("logo/3.gif");
+  background-image: url("https://img.freepik.com/premium-photo/colorful-background-banner-template-decorative-design-layout-your-ideas-with-space-text_7954-6875.jpg?w=360");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -12,91 +12,24 @@ body {
   overflow: hidden;
 }
 
-.header a {
-  text-decoration: none;
-  color: rgb(230, 230, 230);
-}
-
-.header a:hover {
-  text-decoration: none;
-  color: rgb(230, 230, 230);
-}
-
-.header {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  width: 100%;
-  height: 12%;
-  background-color: #079428;
-  z-index: 99999;
-  overflow: hidden;
-}
-
-.header-item {
-  left: 7%;
-  top: 10%;
-  width: 86%;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-item li {
-  height: 70%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-  position: relative;
-  display: inline-block;
-  font-size: 130%;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bolder;
-  color: #fff;
-  text-align: center;
-}
-
-.header-underline {
-  position: relative;
-}
-
-.header-underline::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  position: inherit;
-  bottom: -10px;
-  background: white;
-  transition: all 0.3s ease-in-out;
-  transform: scale3d(0, 1, 1);
-  transform-origin: 50% 0;
-}
-
-.header-underline:hover::after {
-  transform: scale3d(1, 1, 1);
-}
-
-.circle-container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   width: 100%;
-  height: 88%;
+  height: 100%;
 }
 
 .bubble {
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  --distance: 120px;
 }
 
 .bubble img {
@@ -110,14 +43,13 @@ body {
 }
 
 .bubble:hover {
-  background-color: #39ff15 !important;
   transition: background-color 0.2s ease;
   z-index: 2;
 }
 
 .smaller {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,15 +58,15 @@ body {
 
 .smaller a {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; 
+  justify-content: center; 
   width: 100%;
   height: 100%;
 }
 
 .smaller img {
-  max-width: 70%;
-  max-height: 70%;
+  max-width:100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -147,8 +79,8 @@ body {
   white-space: normal;
   width: 500%;
   visibility: hidden;
-  opacity: 0;
-  z-index: 1;
+  opacity: 0; 
+  z-index: 1; 
   text-align: left;
   transition: opacity 0.2s ease;
 }
@@ -167,363 +99,268 @@ body {
   z-index: 2;
 }
 
-/*first category*/
+/*category 1*/
 
 #bubble1 {
-  background-color: #ffd180;
-  transform: translate(-400px, -125px) rotate(0deg);
-  --nb_res: 5;
+  background-color: #FFD180;
+  transform: translate(-400px,-125px) rotate(0deg);
 }
 
 #bubble1 .text-description {
-  top: 0%;
   left: 100%;
+  top: 0%;
 }
 
-#epflcourses {
-  --i: 0;
-  background-color: #ffd180;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#bubble1:hover {
+  background-color: #fca206;
 }
 
-#Fresque {
-  --i: 1;
-  background-color: #ffd180;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#EPFLCourses {
+  background-color: transparent;
+  transform: translate( 0px, -126px ) rotate(0deg);
 }
 
-#CSAW {
-  --i: 2;
-  background-color: #ffd180;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#CSAWClimateSustainabilityActionWeek {
+  background-color: transparent;
+  transform: translate( -119px, -39px ) rotate(0deg);
 }
 
-#Semaine {
-  --i: 3;
-  background-color: #ffd180;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#lecanardhuppé {
+  background-color: transparent;
+  transform: translate( -74px, 102px ) rotate(0deg);
 }
 
-#Canard {
-  --i: 4;
-  background-color: #ffd180;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#Fresqueduclimat {
+  background-color: transparent;
+  transform: translate( 74px, 102px ) rotate(0deg);
 }
 
-/*Second category*/
+#Semainedeladurabilité {
+  background-color: transparent;
+  transform: translate( 119px, -39px ) rotate(0deg);
+}
+
+/*category 2*/
 
 #bubble2 {
-  background-color: #ff914d;
-  transform: translate(-200px, 125px) rotate(0deg);
-  --nb_res: 11;
+  background-color: #FF914D;
+  transform: translate(-200px,125px) rotate(0deg);
 }
 
 #bubble2 .text-description {
-  bottom: 0%;
   left: 100%;
+  bottom: 0%;
 }
 
-#Debouches {
-  --i: 0;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#bubble2:hover {
+  background-color: #ff6506;
 }
 
-#Carriere {
-  --i: 1;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#associationdébouchésdurables {
+  background-color: transparent;
+  transform: translate( -114px, -52px ) rotate(0deg);
 }
 
-#Velo {
-  --i: 2;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#CoachingSustainability {
+  background-color: transparent;
+  transform: translate( -68px, -106px ) rotate(0deg);
 }
 
-#Fix {
-  --i: 3;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#Slowtacarrière {
+  background-color: transparent;
+  transform: translate( 0px, -126px ) rotate(0deg);
 }
 
-#Smart {
-  --i: 4;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#Pointvélo {
+  background-color: transparent;
+  transform: translate( -124px, 18px ) rotate(0deg);
 }
 
-#Biblio {
-  --i: 5;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#Bibliothèqued’objets {
+  background-color: transparent;
+  transform: translate( -95px, 82px ) rotate(0deg);
 }
 
-#Meubleco {
-  --i: 6;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#Fixn’ReplaceRepaircafé {
+  background-color: transparent;
+  transform: translate( -35px, 120px ) rotate(0deg);
 }
 
-#Vorace {
-  --i: 7;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#EpiceriecoopérativeleVorace {
+  background-color: transparent;
+  transform: translate( 35px, 120px ) rotate(0deg);
 }
 
-#Castor {
-  --i: 8;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#MarchéEPFL {
+  background-color: transparent;
+  transform: translate( 95px, 82px ) rotate(0deg);
 }
 
-#Marche {
-  --i: 9;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#PointSmartCellphones {
+  background-color: transparent;
+  transform: translate( 124px, 18px ) rotate(0deg);
 }
 
-#Coaching {
-  --i: 10;
-  background-color: #ff914d;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#CastorFreegan {
+  background-color: transparent;
+  transform: translate( 114px, -52px ) rotate(0deg);
 }
 
-/*third category*/
+#Meubléco {
+  background-color: transparent;
+  transform: translate( 68px, -106px ) rotate(0deg);
+}
+
+/*category 3*/
 
 #bubble3 {
-  background-color: #c6d101;
-  transform: translate(0, -125px) rotate(0deg);
-  --nb_res: 11;
+  background-color: #95F823;
+  transform: translate(0px,-125px) rotate(0deg);
 }
 
 #bubble3 .text-description {
-  top: 0%;
   left: 100%;
+  top: 0%;
 }
 
-#Convergence {
-  --i: 0;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#bubble3:hover {
+  background-color: #40ff00;
 }
 
-#Zero {
-  --i: 1;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
-}
-
-#Ingenieur {
-  --i: 2;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#LaConvergence {
+  background-color: transparent;
+  transform: translate( 0px, -126px ) rotate(0deg);
 }
 
 #Unipoly {
-  --i: 3;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
-}
-
-#Polyquity {
-  --i: 4;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
-}
-
-#Planqueer {
-  --i: 5;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+  background-color: transparent;
+  transform: translate( -68px, -106px ) rotate(0deg);
 }
 
 #Queermanence {
-  --i: 6;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+  background-color: transparent;
+  transform: translate( -114px, -52px ) rotate(0deg);
 }
 
-#Amnesty {
-  --i: 7;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#Polyquity {
+  background-color: transparent;
+  transform: translate( -124px, 18px ) rotate(0deg);
 }
 
-#EVA {
-  --i: 8;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#PlanQueer {
+  background-color: transparent;
+  transform: translate( -95px, 82px ) rotate(0deg);
 }
 
-#Bassenges {
-  --i: 9;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#Ingénieur·esdumonde {
+  background-color: transparent;
+  transform: translate( -35px, 120px ) rotate(0deg);
 }
 
-#UPFL {
-  --i: 10;
-  background-color: #c6d101;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#AmnestydesHautesEcolesLausannoises {
+  background-color: transparent;
+  transform: translate( 35px, 120px ) rotate(0deg);
 }
 
-/**fourth category**/
+#ZeroEmissionGroup {
+  background-color: transparent;
+  transform: translate( 95px, 82px ) rotate(0deg);
+}
+
+#Associationdesétudiant·esvégan·esetanimalistes {
+  background-color: transparent;
+  transform: translate( 124px, 18px ) rotate(0deg);
+}
+
+#FermedeBassenges {
+  background-color: transparent;
+  transform: translate( 114px, -52px ) rotate(0deg);
+}
+
+#ThriftstoreUPFashionLab {
+  background-color: transparent;
+  transform: translate( 68px, -106px ) rotate(0deg);
+}
+
+/*category 4*/
 
 #bubble4 {
-  background-color: #fac8d0;
-  transform: translate(200px, 125px) rotate(0deg);
-  --nb_res: 5;
+  background-color: #FAC8D0;
+  transform: translate(200px,125px) rotate(0deg);
 }
 
 #bubble4 .text-description {
-  bottom: 0%;
   right: 100%;
+  bottom: 0%;
 }
 
+#bubble4:hover {
+  background-color: #fa60b5;
+}
+
+
 #Make {
-  --i: 0;
-  background-color: #fac8d0;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+  background-color: transparent;
+  transform: translate( 0px, -126px ) rotate(0deg);
 }
 
 #Durabilis {
-  --i: 1;
-  background-color: #fac8d0;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+  background-color: transparent;
+  transform: translate( -119px, -39px ) rotate(0deg);
 }
 
 #Skil {
-  --i: 2;
-  background-color: #fac8d0;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+  background-color: transparent;
+  transform: translate( -74px, 102px ) rotate(0deg);
 }
 
-#Changemakers {
-  --i: 3;
-  background-color: #fac8d0;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#EPFLChangemakers {
+  background-color: transparent;
+  transform: translate( 74px, 102px ) rotate(0deg);
 }
 
 #Ucreate {
-  --i: 4;
-  background-color: #fac8d0;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+  background-color: transparent;
+  transform: translate( 119px, -39px ) rotate(0deg);
 }
 
-/**fifth category**/
+/*category 5*/
 
 #bubble5 {
-  background-color: #95f823;
-  transform: translate(400px, -125px) rotate(0deg);
-  --nb_res: 5;
+  background-color: #4895ef;
+  transform: translate(400px,-125px) rotate(0deg);
 }
 
 #bubble5 .text-description {
-  top: 0%;
   right: 100%;
+  top: 0%;
 }
 
-#Sports {
-  --i: 0;
-  background-color: #95f823;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#bubble5:hover {
+  background-color: #0478fd;
 }
 
-#Transition {
-  --i: 1;
-  background-color: #95f823;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#SportscenterEPFL-UNIL {
+  background-color: transparent;
+  transform: translate( 0px, -126px ) rotate(0deg);
 }
 
-#TSN {
-  --i: 2;
-  background-color: #95f823;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#Espace-Transitions {
+  background-color: transparent;
+  transform: translate( -119px, -39px ) rotate(0deg);
 }
 
-#Meditation {
-  --i: 3;
-  background-color: #95f823;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#TrustandSupportNetworkTSN {
+  background-color: transparent;
+  transform: translate( -74px, 102px ) rotate(0deg);
 }
 
-#Forest {
-  --i: 4;
-  background-color: #95f823;
-  --xcoord: calc(cos(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  --ycoord: calc(-1*sin(var(--i) * 360deg / var(--nb_res) + 90deg)*var(--distance));
-  transform: translate(var(--xcoord), var(--ycoord)) rotate(0deg);
+#Guidedmeditation {
+  background-color: transparent;
+  transform: translate( 74px, 102px ) rotate(0deg);
+}
+
+#ForêtdeDorigny {
+  background-color: transparent;
+  transform: translate( 119px, -39px ) rotate(0deg);
 }
