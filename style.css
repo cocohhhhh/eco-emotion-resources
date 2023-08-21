@@ -28,8 +28,9 @@ html {
 }
 
 #intro {
-  background-image: linear-gradient( #007480, #ffffc5);
+  background: linear-gradient( #007480, #ffffc5);
 }
+
 .banner {
   position: absolute;
   top: 3%;
@@ -39,7 +40,7 @@ html {
   display: flex;
   justify-content: left;
   Justify-content: space-between;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   font-family: 'Arial';
   color: #fff;
@@ -61,7 +62,8 @@ html {
   width: 60%;
   height: 100%;
 }
-.appetizer .text h {
+
+.appetizer .text h1 {
   font-size: 32px;
   font-weight: bold;
   font-family: 'Arial';
@@ -78,8 +80,8 @@ html {
 }
 
 #content {
-  /*background-color: #ffffc5;*/
-  background: radial-gradient(#ffffc5, #f9f946);
+  background-color: #ffffc5;
+  /*background: radial-gradient(circle farthest-side, #ffffc5, #f9f946);*/
   display: flex;
   justify-content: center;
   align-items: center;
