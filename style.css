@@ -16,6 +16,13 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('font/SuisseIntl-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-snap-type: y mandatory;
 }
@@ -42,7 +49,7 @@ html {
   Justify-content: space-between;
   font-size: 28px;
   font-weight: bold;
-  font-family: 'Arial';
+  font-family: 'SuisseIntl';
   color: #fff;
 }
 .appetizer {
@@ -55,7 +62,7 @@ html {
   justify-content: space-between;
   flex-direction: row;
   font-size: large;
-  font-family: 'Arial';
+  font-family: 'SuisseIntl';
   color: #fff;
 }
 .appetizer .text {
@@ -66,12 +73,12 @@ html {
 .appetizer .text h1 {
   font-size: 32px;
   font-weight: bold;
-  font-family: 'Arial';
+  font-family: 'SuisseIntl';
 }
 .appetizer .text p {
   margin-top: 20%;
   font-size: 22px;
-  font-family: 'Arial';
+  font-family: 'SuisseIntl';
 }
 .appetizer img {
   float: right;
@@ -110,7 +117,7 @@ html {
 .bubble span {
   font-size: 20px;
   object-fit: contain;
-  font-family: 'Arial';
+  font-family: 'SuisseIntl';
   z-index: 2;
   font-weight:700;
 }
@@ -155,13 +162,13 @@ html {
   opacity: 0; 
   z-index: 1; 
   text-align: left;
-  font-family: 'Arial';
+  font-family: 'SuisseIntl';
   transition: opacity 0.2s ease;
 }
 
 .text-description h3 {
   margin: 0;
-  font-family: 'Arial';
+  font-family: 'SuisseIntl';
   font-size: 18px;
   color: #fff;
   margin-bottom: 5px;
