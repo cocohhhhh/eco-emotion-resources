@@ -189,17 +189,12 @@ html {
 /*category 1*/
 
 #bubble1 {
-  background-color: #FFD180;
   transform: translate(-400px,-125px) rotate(0deg);
 }
 
 #bubble1 .text-description {
   left: 100%;
   top: 0%;
-}
-
-#bubble1:hover {
-  background-color: #fca206;
 }
 
 #border1{
@@ -234,17 +229,12 @@ html {
 /*category 2*/
 
 #bubble2 {
-  background-color: #ff684d;
   transform: translate(-200px,125px) rotate(0deg);
 }
 
 #bubble2 .text-description {
   left: 100%;
   bottom: 0%;
-}
-
-#bubble2:hover {
-  background-color: #ff6506;
 }
 
 #border2{
@@ -309,17 +299,12 @@ html {
 /*category 3*/
 
 #bubble3 {
-  background-color: #95F823;
   transform: translate(0px,-125px) rotate(0deg);
 }
 
 #bubble3 .text-description {
   left: 100%;
   top: 0%;
-}
-
-#bubble3:hover {
-  background-color: #40ff00;
 }
 
 #border3{
@@ -384,17 +369,12 @@ html {
 /*category 4*/
 
 #bubble4 {
-  background-color: #FAC8D0;
   transform: translate(200px,125px) rotate(0deg);
 }
 
 #bubble4 .text-description {
   right: 100%;
   bottom: 0%;
-}
-
-#bubble4:hover {
-  background-color: #fe8196;
 }
 
 #border4{
@@ -429,17 +409,12 @@ html {
 /*category 5*/
 
 #bubble5 {
-  background-color: #4895ef;
   transform: translate(400px,-125px) rotate(0deg);
 }
 
 #bubble5 .text-description {
   right: 100%;
   top: 0%;
-}
-
-#bubble5:hover {
-  background-color: #0478fd;
 }
 
 #border5{
