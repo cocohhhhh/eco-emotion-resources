@@ -1,15 +1,90 @@
 body {
+  /*
   background-image: url("https://img.freepik.com/premium-photo/colorful-background-banner-template-decorative-design-layout-your-ideas-with-space-text_7954-6875.jpg?w=360");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
+  background-color: #ffffc5;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  /* overflow: hidden; */
+  height: 200vh;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.container {
+  width: 100%;
+  height: 50%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+#intro {
+  background: linear-gradient( #007480, #ffffc5);
+}
+
+.banner {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  width: 90%;
+  height: 15%;
+  display: flex;
+  justify-content: left;
+  Justify-content: space-between;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Arial';
+  color: #fff;
+}
+.appetizer {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: large;
+  font-family: 'Arial';
+  color: #fff;
+}
+.appetizer .text {
+  width: 60%;
+  height: 100%;
+}
+
+.appetizer .text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Arial';
+}
+.appetizer .text p {
+  margin-top: 20%;
+  font-size: 22px;
+  font-family: 'Arial';
+}
+.appetizer img {
+  float: right;
+  width: 90%;
+  object-fit: contain;
+}
+
+#content {
+  background-color: #ffffc5;
+  /*background: radial-gradient(circle farthest-side, #ffffc5, #f9f946);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bubble {
@@ -22,31 +97,36 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.bubble img {
-  max-width: 70%;
-  max-height: 60%;
-  object-fit: contain;
-}
-
-.bubble span {
-  object-fit: contain;
-}
-
-.bubble:hover {
-  background-color: #39ff15 !important;
-  transition: background-color 0.2s ease;
   z-index: 2;
 }
 
+.bubble img {
+  max-width: 60%;
+  max-height: 50%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.bubble span {
+  font-size: 16px;
+  object-fit: contain;
+  font-family: 'Arial';
+  z-index: 2;
+  font-weight:700;
+}
+
+.bubble:hover {
+  transition: background-color 0.2s ease;
+  z-index: 3;
+}
+
 .smaller {
-  width: 95px;
-  height: 95px;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 .smaller a {
@@ -58,8 +138,8 @@ body {
 }
 
 .smaller img {
-  max-width:70%;
-  max-height: 70%;
+  max-width:100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -75,11 +155,13 @@ body {
   opacity: 0; 
   z-index: 1; 
   text-align: left;
+  font-family: 'Arial';
   transition: opacity 0.2s ease;
 }
 
 .text-description h3 {
   margin: 0;
+  font-family: 'Arial';
   font-size: 18px;
   color: #fff;
   margin-bottom: 5px;
@@ -89,19 +171,40 @@ body {
 .smaller:hover .text-description {
   visibility: visible;
   opacity: 1;
-  z-index: 2;
+  z-index: 3;
+}
+
+.text-description:hover {
+  display: none;
+}
+
+.border {
+  position: absolute;
+  background-color: transparent;
+  width:318px;
+  height: 318px;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 /*category 1*/
 
 #bubble1 {
-  background-color: #BEFCFF;
+  background-color: #c5c6ff;
   transform: translate(-400px,-125px) rotate(0deg);
 }
 
 #bubble1 .text-description {
   left: 100%;
   top: 0%;
+}
+
+#bubble1:hover {
+  background-color: #fca206;
+}
+
+#border1{
+  border: 3px solid #c5c6ff;
 }
 
 #EPFLCourses {
@@ -114,12 +217,12 @@ body {
   transform: translate( -119px, -39px ) rotate(0deg);
 }
 
-#Fresqueduclimat {
+#lecanardhuppé {
   background-color: transparent;
   transform: translate( -74px, 102px ) rotate(0deg);
 }
 
-#lecanardhuppé {
+#Fresqueduclimat {
   background-color: transparent;
   transform: translate( 74px, 102px ) rotate(0deg);
 }
@@ -132,7 +235,7 @@ body {
 /*category 2*/
 
 #bubble2 {
-  background-color: #DEFFFA;
+  background-color: #ff4d4d;
   transform: translate(-200px,125px) rotate(0deg);
 }
 
@@ -141,12 +244,20 @@ body {
   bottom: 0%;
 }
 
-#CoachingSustainability {
+#bubble2:hover {
+  background-color: #ff6506;
+}
+
+#border2{
+  border: 3px solid #ff4d4d;
+}
+
+#associationdébouchésdurables {
   background-color: transparent;
   transform: translate( -114px, -52px ) rotate(0deg);
 }
 
-#associationdébouchésdurables {
+#CoachingSustainability {
   background-color: transparent;
   transform: translate( -68px, -106px ) rotate(0deg);
 }
@@ -199,13 +310,21 @@ body {
 /*category 3*/
 
 #bubble3 {
-  background-color: #FFDAF5;
+  background-color: #95F823;
   transform: translate(0px,-125px) rotate(0deg);
 }
 
 #bubble3 .text-description {
   left: 100%;
   top: 0%;
+}
+
+#bubble3:hover {
+  background-color: #40ff00;
+}
+
+#border3{
+  border: 3px solid #95F823;
 }
 
 #LaConvergence {
@@ -218,32 +337,32 @@ body {
   transform: translate( -68px, -106px ) rotate(0deg);
 }
 
-#ZeroEmissionGroup {
+#Queermanence {
   background-color: transparent;
   transform: translate( -114px, -52px ) rotate(0deg);
 }
 
-#Ingénieur·esdumonde {
+#Polyquity {
   background-color: transparent;
   transform: translate( -124px, 18px ) rotate(0deg);
 }
 
-#Polyquity {
+#PlanQueer {
   background-color: transparent;
   transform: translate( -95px, 82px ) rotate(0deg);
 }
 
-#PlanQueer {
+#Ingénieur·esdumonde {
   background-color: transparent;
   transform: translate( -35px, 120px ) rotate(0deg);
 }
 
-#Queermanence {
+#AmnestydesHautesEcolesLausannoises {
   background-color: transparent;
   transform: translate( 35px, 120px ) rotate(0deg);
 }
 
-#AmnestydesHautesEcolesLausannoises {
+#ZeroEmissionGroup {
   background-color: transparent;
   transform: translate( 95px, 82px ) rotate(0deg);
 }
@@ -266,13 +385,21 @@ body {
 /*category 4*/
 
 #bubble4 {
-  background-color: #B0E1FF;
+  background-color: #ff70a6;
   transform: translate(200px,125px) rotate(0deg);
 }
 
 #bubble4 .text-description {
   right: 100%;
   bottom: 0%;
+}
+
+#bubble4:hover {
+  background-color: #fe8196;
+}
+
+#border4{
+  border: 3px solid #ff70a6;
 }
 
 #Make {
@@ -303,13 +430,21 @@ body {
 /*category 5*/
 
 #bubble5 {
-  background-color: #E6C6FF;
+  background-color: #70d6ff;
   transform: translate(400px,-125px) rotate(0deg);
 }
 
 #bubble5 .text-description {
   right: 100%;
   top: 0%;
+}
+
+#bubble5:hover {
+  background-color: #0478fd;
+}
+
+#border5{
+  border: 3px solid #70d6ff;
 }
 
 #SportscenterEPFL-UNIL {
