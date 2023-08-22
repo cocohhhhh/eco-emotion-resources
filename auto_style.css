@@ -199,9 +199,6 @@ html {
   top: 0%;
 }
 
-#bubble1:hover {
-  background-color: #fca206;
-}
 
 #border1{
   border: 3px solid #c5c6ff;
@@ -242,10 +239,6 @@ html {
 #bubble2 .text-description {
   left: 100%;
   bottom: 0%;
-}
-
-#bubble2:hover {
-  background-color: #ff6506;
 }
 
 #border2{
@@ -319,10 +312,6 @@ html {
   top: 0%;
 }
 
-#bubble3:hover {
-  background-color: #40ff00;
-}
-
 #border3{
   border: 3px solid #95F823;
 }
@@ -394,10 +383,6 @@ html {
   bottom: 0%;
 }
 
-#bubble4:hover {
-  background-color: #fe8196;
-}
-
 #border4{
   border: 3px solid #ff70a6;
 }
@@ -437,10 +422,6 @@ html {
 #bubble5 .text-description {
   right: 100%;
   top: 0%;
-}
-
-#bubble5:hover {
-  background-color: #0478fd;
 }
 
 #border5{
