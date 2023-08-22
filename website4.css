@@ -200,7 +200,6 @@ html {
 
 .border {
     position: absolute;
-    background-color: inherit;
     width: 318px;
     height: 318px;
     border-radius: 50%;
@@ -210,7 +209,6 @@ html {
 /*category 1*/
 
 #bubble1 {
-    background-color: #c5c6ff;
     transform: translate(-400px, -125px) rotate(0deg);
 }
 
@@ -221,7 +219,7 @@ html {
 
 
 #border1 {
-    border: 3px solid #c5c6ff;
+    background: radial-gradient(circle farthest-side, #c5c6ff, #ffffc5);
 }
 
 #EPFLCourses {
@@ -257,7 +255,6 @@ html {
 /*category 2*/
 
 #bubble2 {
-    background-color: #ff4d4d;
     transform: translate(-200px, 125px) rotate(0deg);
 }
 
@@ -267,7 +264,7 @@ html {
 }
 
 #border2 {
-    border: 3px solid #ff4d4d;
+    background: radial-gradient(circle farthest-side, #ff4d4d, #ffffc5);
 }
 
 #Slowtacarrière {
@@ -339,7 +336,6 @@ html {
 /*category 3*/
 
 #bubble3 {
-    background-color: #95F823;
     transform: translate(0px, -125px) rotate(0deg);
 }
 
@@ -349,7 +345,7 @@ html {
 }
 
 #border3 {
-    border: 3px solid #95F823;
+    background: radial-gradient(circle farthest-side, #95F823, #ffffc5);
 }
 
 #LaConvergence {
@@ -421,7 +417,6 @@ html {
 /*category 4*/
 
 #bubble4 {
-    background-color: #ff70a6;
     transform: translate(200px, 125px) rotate(0deg);
 }
 
@@ -431,7 +426,7 @@ html {
 }
 
 #border4 {
-    border: 3px solid #ff70a6;
+    background: radial-gradient(circle farthest-side, #ff70a6, #ffffc5);
 }
 
 #Make {
@@ -467,7 +462,6 @@ html {
 /*category 5*/
 
 #bubble5 {
-    background-color: #70d6ff;
     transform: translate(400px, -125px) rotate(0deg);
 }
 
@@ -477,7 +471,7 @@ html {
 }
 
 #border5 {
-    border: 3px solid #70d6ff;
+    background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
 }
 
 #SportscenterEPFL-UNIL {
