@@ -476,3 +476,26 @@ html {
   background-color: transparent;
   transform: translate(119px, -39px) rotate(0deg);
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #bubble1 {
+    transform: translate(0px, -300px) rotate(0deg);
+  }
+
+  #bubble2 {
+    transform: translate(0px, -100px) rotate(0deg);
+  }
+
+  #bubble3 {
+    transform: translate(0px, 100px) rotate(0deg);
+  }
+
+  #bubble4 {
+    transform: translate(0px, 300px) rotate(0deg);
+  }
+
+  #bubble5 {
+    transform: translate(0px, 500px) rotate(0deg);
+  }
+}
