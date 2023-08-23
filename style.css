@@ -484,18 +484,18 @@ html {
   }
 
   #bubble2 {
-    transform: translate(-200px, -100px) rotate(0deg);
+    transform: translate(0px, -100px) rotate(0deg);
   }
 
   #bubble3 {
-    transform: translate(-200px, 100px) rotate(0deg);
+    transform: translate(0px, 100px) rotate(0deg);
   }
 
   #bubble4 {
-    transform: translate(-200px, 300px) rotate(0deg);
+    transform: translate(0px, 300px) rotate(0deg);
   }
 
   #bubble5 {
-    transform: translate(-200px, 500px) rotate(0deg);
+    transform: translate(0px, 500px) rotate(0deg);
   }
 }
