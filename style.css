@@ -250,8 +250,7 @@ body {
   .text-description {
     position: absolute;
     padding: 7px;
-    background-color: #000;
-    color: #fff;
+    color: #000;
     border-radius: 5px;
     white-space: normal;
     width: 500%;
@@ -267,7 +266,7 @@ body {
     margin: 0;
     font-family: 'SuisseIntl';
     font-size: 18px;
-    color: #fff;
+    color: #000;
     margin-bottom: 5px;
     text-align: center;
   }
@@ -291,6 +290,7 @@ body {
   #bubble1 .text-description {
     left: 100%;
     top: 0%;
+    background-color: #c5c6ff;
   }
 
   /*category 2*/
@@ -302,6 +302,7 @@ body {
   #bubble2 .text-description {
     left: 100%;
     bottom: 0%;
+    background-color: #ff4d4d;
   }
 
   /*category 3*/
@@ -313,6 +314,7 @@ body {
   #bubble3 .text-description {
     left: 100%;
     top: 0%;
+    background-color: #95F823;
   }
 
   /*category 4*/
@@ -324,6 +326,7 @@ body {
   #bubble4 .text-description {
     right: 100%;
     bottom: 0%;
+    background-color: #ff70a6;
   }
 
   /*category 5*/
@@ -335,6 +338,7 @@ body {
   #bubble5 .text-description {
     right: 100%;
     top: 0%;
+    background-color: #70d6ff;
   }
 
 }
