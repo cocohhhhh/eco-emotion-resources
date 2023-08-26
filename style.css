@@ -1,16 +1,9 @@
 body {
-  /*
-  background-image: url("https://img.freepik.com/premium-photo/colorful-background-banner-template-decorative-design-layout-your-ideas-with-space-text_7954-6875.jpg?w=360");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;*/
   background-color: #ffffc5;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200vh;
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -22,6 +15,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'SuisseIntlLight';
   src: url('font/SuisseIntl-Light.otf') format('opentype');
@@ -29,99 +23,36 @@ body {
   font-style: normal;
 }
 
-html {
-  scroll-snap-type: y mandatory;
-}
+/*for mobiles*/
 
 .container {
+  display: flex;
   width: 100%;
-  height: 50%;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  height: auto;
+  flex-direction: column;
 }
 
 #intro {
   background: linear-gradient(#007480, #ffffc5);
 }
 
-.banner {
-  position: absolute;
-  top: 3%;
-  left: 5%;
-  width: 90%;
-  height: 15%;
-  display: flex;
-  justify-content: left;
-  Justify-content: space-between;
-  font-weight: bold;
-  font-family: 'SuisseIntl';
-  color: #000;
-}
-.banner .title {
-  font-size: 32px;
-  font-weight: bold;
-  font-family: 'SuisseIntl';
-}
-.banner .lang{
-  font-size: 22px;
-  font-weight: bold;
-  font-family: 'SuisseIntl';
-}
-
-.appetizer {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  width: 90%;
-  height: 80%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  font-size: large;
-  color: #000;
-}
-
-.appetizer .text {
-  width: 35%;
-  height: 100%;
-}
-
-.appetizer .text h1 {
-  font-size: 32px;
-  font-weight: bold;
-  font-family: 'SuisseIntl';
-}
-
-.appetizer .text p {
-  margin-top: 15px;
-  font-size: 22px;
-  font-family: 'SuisseIntlLight';
-}
-.appetizer .image {
-  float: right;
-  width: 60%;
-}
 .appetizer .image img {
-  width: 100%;
-  object-fit: contain;
+  display: none;
 }
-.appetizer .image p {
-  font-size: 16px;
-  font-family: 'SuisseIntlLight';
-  color: #000;
-}
+
 #content {
   background-color: #ffffc5;
-  /*background: radial-gradient(circle farthest-side, #ffffc5, #f9f946);*/
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .bubble {
-  position: absolute;
+  position: relative;
   width: 150px;
   height: 150px;
+  margin: 100px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -132,6 +63,7 @@ html {
 }
 
 .bubble img {
+  position: relative;
   max-width: 60%;
   max-height: 50%;
   object-fit: contain;
@@ -139,6 +71,7 @@ html {
 }
 
 .bubble span {
+  position: relative;
   font-size: 20px;
   object-fit: contain;
   font-family: 'SuisseIntl';
@@ -146,14 +79,10 @@ html {
   font-weight: 700;
 }
 
-.bubble:hover {
-  transition: background-color 0.2s ease;
-  z-index: 3;
-}
-
 .smaller {
-  width: 70px;
-  height: 70px;
+  position: absolute;
+  width: 40%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,16 +128,6 @@ html {
   text-align: center;
 }
 
-.smaller:hover .text-description {
-  visibility: visible;
-  opacity: 1;
-  z-index: 3;
-}
-
-.text-description:hover {
-  display: none;
-}
-
 .border {
   position: absolute;
   width: 320px;
@@ -217,16 +136,214 @@ html {
   z-index: 1;
 }
 
-/*category 1*/
+@media only screen and (min-width: 1050px) {
 
-#bubble1 {
-  transform: translate(-400px, -125px) rotate(0deg);
+  /* For Desktops: */
+  body {
+    height: 200vh;
+  }
+
+  html {
+    scroll-snap-type: y mandatory;
+  }
+
+  .container {
+    width: 100%;
+    height: 50%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .banner {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: left;
+    Justify-content: space-between;
+    font-weight: bold;
+    font-family: 'SuisseIntl';
+    color: #000;
+  }
+
+  .banner .title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'SuisseIntl';
+  }
+
+  .banner .lang {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'SuisseIntl';
+  }
+
+  .appetizer {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: large;
+    color: #000;
+  }
+
+  .appetizer .text {
+    width: 35%;
+    height: 100%;
+  }
+
+  .appetizer .text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'SuisseIntl';
+  }
+
+  .appetizer .text p {
+    margin-top: 15px;
+    font-size: 22px;
+    font-family: 'SuisseIntlLight';
+  }
+
+  .appetizer .image {
+    float: right;
+    width: 60%;
+  }
+
+  .appetizer .image img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .appetizer .image p {
+    font-size: 16px;
+    font-family: 'SuisseIntlLight';
+    color: #000;
+  }
+
+  .bubble {
+    position: absolute;
+  }
+
+
+  .bubble span {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .bubble:hover {
+    transition: background-color 0.2s ease;
+    z-index: 3;
+  }
+
+  .smaller {
+    width: 70px;
+    height: 70px;
+  }
+
+  .text-description {
+    position: absolute;
+    padding: 7px;
+    color: #000;
+    border-radius: 5px;
+    white-space: normal;
+    width: 500%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    text-align: left;
+    font-family: 'SuisseIntl';
+    transition: opacity 0.2s ease;
+  }
+
+  .text-description h3 {
+    margin: 0;
+    font-family: 'SuisseIntl';
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .smaller:hover .text-description {
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .text-description:hover {
+    display: none;
+  }
+
+  /*category 1*/
+
+  #bubble1 {
+    transform: translate(-400px, -125px) rotate(0deg);
+  }
+
+  #bubble1 .text-description {
+    left: 100%;
+    top: 0%;
+    background-color: #c5c6ff;
+  }
+
+  /*category 2*/
+
+  #bubble2 {
+    transform: translate(-200px, 125px) rotate(0deg);
+  }
+
+  #bubble2 .text-description {
+    left: 100%;
+    bottom: 0%;
+    background-color: #ff4d4d;
+  }
+
+  /*category 3*/
+
+  #bubble3 {
+    transform: translate(0px, -125px) rotate(0deg);
+  }
+
+  #bubble3 .text-description {
+    left: 100%;
+    top: 0%;
+    background-color: #95F823;
+  }
+
+  /*category 4*/
+
+  #bubble4 {
+    transform: translate(200px, 125px) rotate(0deg);
+  }
+
+  #bubble4 .text-description {
+    right: 100%;
+    bottom: 0%;
+    background-color: #ff70a6;
+  }
+
+  /*category 5*/
+
+  #bubble5 {
+    transform: translate(400px, -125px) rotate(0deg);
+  }
+
+  #bubble5 .text-description {
+    right: 100%;
+    top: 0%;
+    background-color: #70d6ff;
+  }
+
 }
 
-#bubble1 .text-description {
-  left: 100%;
-  top: 0%;
-}
+/*Category 1*/
 
 #border1 {
   background: radial-gradient(circle farthest-side, #c5c6ff, #ffffc5);
@@ -257,16 +374,7 @@ html {
   transform: translate(119px, -39px) rotate(0deg);
 }
 
-/*category 2*/
-
-#bubble2 {
-  transform: translate(-200px, 125px) rotate(0deg);
-}
-
-#bubble2 .text-description {
-  left: 100%;
-  bottom: 0%;
-}
+/*Category 2*/
 
 #border2 {
   background: radial-gradient(circle farthest-side, #ff4d4d, #ffffc5);
@@ -327,16 +435,7 @@ html {
   transform: translate(68px, -106px) rotate(0deg);
 }
 
-/*category 3*/
-
-#bubble3 {
-  transform: translate(0px, -125px) rotate(0deg);
-}
-
-#bubble3 .text-description {
-  left: 100%;
-  top: 0%;
-}
+/*Category 3*/
 
 #border3 {
   background: radial-gradient(circle farthest-side, #95F823, #ffffc5);
@@ -397,16 +496,7 @@ html {
   transform: translate(68px, -106px) rotate(0deg);
 }
 
-/*category 4*/
-
-#bubble4 {
-  transform: translate(200px, 125px) rotate(0deg);
-}
-
-#bubble4 .text-description {
-  right: 100%;
-  bottom: 0%;
-}
+/*Category 4*/
 
 #border4 {
   background: radial-gradient(circle farthest-side, #ff70a6, #ffffc5);
@@ -437,20 +527,12 @@ html {
   transform: translate(119px, -39px) rotate(0deg);
 }
 
-/*category 5*/
-
-#bubble5 {
-  transform: translate(400px, -125px) rotate(0deg);
-}
-
-#bubble5 .text-description {
-  right: 100%;
-  top: 0%;
-}
+/*Category 5*/
 
 #border5 {
   background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
 }
+
 
 #SportscenterEPFL-UNIL {
   background-color: transparent;
@@ -475,27 +557,4 @@ html {
 #ForêtdeDorigny {
   background-color: transparent;
   transform: translate(119px, -39px) rotate(0deg);
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  #bubble1 {
-    transform: translate(0px, -300px) rotate(0deg);
-  }
-
-  #bubble2 {
-    transform: translate(0px, -100px) rotate(0deg);
-  }
-
-  #bubble3 {
-    transform: translate(0px, 100px) rotate(0deg);
-  }
-
-  #bubble4 {
-    transform: translate(0px, 300px) rotate(0deg);
-  }
-
-  #bubble5 {
-    transform: translate(0px, 500px) rotate(0deg);
-  }
 }
