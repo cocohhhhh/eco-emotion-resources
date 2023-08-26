@@ -135,6 +135,18 @@ body {
   border-radius: 50%;
   z-index: 1;
 }
+.smaller a{
+  text-decoration: none;
+  color: #000;
+}
+
+.smaller a span{
+  text-decoration: none;
+  color: #000;
+  font-family: "SuisseIntl";
+  font-size: 15px;
+  text-align: center;
+}
 
 @media only screen and (min-width: 1050px) {
 
@@ -385,7 +397,7 @@ body {
   transform: translate(-114px, -52px) rotate(0deg);
 }
 
-#CoachingSustainability {
+#Pointvélo {
   background-color: transparent;
   transform: translate(-68px, -106px) rotate(0deg);
 }
@@ -395,12 +407,12 @@ body {
   transform: translate(0px, -126px) rotate(0deg);
 }
 
-#Pointvélo {
+#Bibliothèqued’objets {
   background-color: transparent;
   transform: translate(-124px, 18px) rotate(0deg);
 }
 
-#Bibliothèqued’objets {
+#CoachingSustainability {
   background-color: transparent;
   transform: translate(-95px, 82px) rotate(0deg);
 }
