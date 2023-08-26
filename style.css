@@ -168,16 +168,17 @@ body {
 
   .banner {
     position: absolute;
-    top: 3%;
+    top: 0%;
     left: 5%;
     width: 90%;
-    height: 15%;
+    height: 9%;
     display: flex;
-    justify-content: left;
+    align-items: end;
     Justify-content: space-between;
     font-weight: bold;
     font-family: 'SuisseIntl';
     color: #000;
+    border-bottom: 1px solid #000;
   }
   .banner .title {
     font-size: 2em;
@@ -196,10 +197,10 @@ body {
   }
   .appetizer {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 5%;
     width: 90%;
-    height: 80%;
+    height: 90%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -224,6 +225,7 @@ body {
     font-family: 'SuisseIntlLight';
   }
   .appetizer .image {
+    margin-top: 2%;
     float: right;
     width: 60%;
   }
