@@ -115,8 +115,8 @@ body {
     color: #000;
   }
   #content {
-    background-color: #ffffc5;
-    /*background: radial-gradient(circle farthest-side, #ffffc5, #f9f946);*/
+    background-color: #CDDCDC;
+    /*background: radial-gradient(circle farthest-side, #CDDCDC, #f9f946);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,7 +233,7 @@ body {
   }
   
   #border1 {
-    background: radial-gradient(circle farthest-side, #c5c6ff, #ffffc5);
+    background: radial-gradient(circle farthest-side, #c5c6ff, #CDDCDC);
   }
   
   #EPFLCourses {
@@ -273,7 +273,7 @@ body {
   }
   
   #border2 {
-    background: radial-gradient(circle farthest-side, #ff4d4d, #ffffc5);
+    background: radial-gradient(circle farthest-side, #ff4d4d, #CDDCDC);
   }
   
   #associationdébouchésdurables {
@@ -343,7 +343,7 @@ body {
   }
   
   #border3 {
-    background: radial-gradient(circle farthest-side, #95F823, #ffffc5);
+    background: radial-gradient(circle farthest-side, #95F823, #CDDCDC);
   }
   
   #LaConvergence {
@@ -413,7 +413,7 @@ body {
   }
   
   #border4 {
-    background: radial-gradient(circle farthest-side, #ff70a6, #ffffc5);
+    background: radial-gradient(circle farthest-side, #ff70a6, #CDDCDC);
   }
   
   #Make {
@@ -453,7 +453,7 @@ body {
   }
   
   #border5 {
-    background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
+    background: radial-gradient(circle farthest-side, #70d6ff, #CDDCDC);
   }
   
   #SportscenterEPFL-UNIL {
