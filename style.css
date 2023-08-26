@@ -179,19 +179,21 @@ body {
     font-family: 'SuisseIntl';
     color: #000;
   }
-
   .banner .title {
-    font-size: 32px;
+    font-size: 2em;
     font-weight: bold;
     font-family: 'SuisseIntl';
   }
-
-  .banner .lang {
-    font-size: 22px;
+  .banner .lang{
+    display: flex;
+    justify-content: space-evenly;
+    width: 8%;
+  }
+  .banner .lang span{
+    font-size: 1.1em;
     font-weight: bold;
     font-family: 'SuisseIntl';
   }
-
   .appetizer {
     position: absolute;
     top: 20%;
@@ -204,37 +206,34 @@ body {
     font-size: large;
     color: #000;
   }
-
+  
   .appetizer .text {
     width: 35%;
     height: 100%;
   }
-
+  
   .appetizer .text h1 {
-    font-size: 32px;
+    font-size: 2em;
     font-weight: bold;
     font-family: 'SuisseIntl';
   }
-
+  
   .appetizer .text p {
-    margin-top: 15px;
-    font-size: 22px;
+    margin-top: 3%;
+    font-size: .6em;
     font-family: 'SuisseIntlLight';
   }
-
   .appetizer .image {
     float: right;
     width: 60%;
   }
-
   .appetizer .image img {
     display: block;
     width: 100%;
     object-fit: contain;
   }
-
   .appetizer .image p {
-    font-size: 16px;
+    font-size: .8em;
     font-family: 'SuisseIntlLight';
     color: #000;
   }
