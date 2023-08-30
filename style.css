@@ -303,7 +303,7 @@ body {
   #bubble1 .text-description {
     left: 100%;
     top: 0%;
-    background-color: #c5c6ff;
+    background-color: #a6a7ff;
   }
 
   /*category 2*/
@@ -359,7 +359,7 @@ body {
 /*Category 1*/
 
 #border1 {
-  background: radial-gradient(circle farthest-side, #c5c6ff, #ffffc5);
+  background: radial-gradient(circle farthest-side, #a6a7ff, #ffffc5);
 }
 
 #EPFLCourses {
