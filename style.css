@@ -315,7 +315,7 @@ body {
   #bubble2 .text-description {
     left: 100%;
     bottom: 0%;
-    background-color: #ff4d4d;
+    background-color: #ffac4e;
   }
 
   /*category 3*/
@@ -327,7 +327,7 @@ body {
   #bubble3 .text-description {
     left: 100%;
     top: 0%;
-    background-color: #95F823;
+    background-color: #9ffc36;
   }
 
   /*category 4*/
@@ -339,7 +339,7 @@ body {
   #bubble4 .text-description {
     right: 100%;
     bottom: 0%;
-    background-color: #ff70a6;
+    background-color: #fda4c6;
   }
 
   /*category 5*/
@@ -351,7 +351,7 @@ body {
   #bubble5 .text-description {
     right: 100%;
     top: 0%;
-    background-color: #70d6ff;
+    background-color: #54cbfa;
   }
 
 }
@@ -362,7 +362,7 @@ body {
   background: radial-gradient(circle farthest-side, #a6a7ff, #ffffc5);
 }
 
-#EPFLCourses {
+#Semainedeladurabilité {
   background-color: transparent;
   transform: translate(0px, -126px) rotate(0deg);
 }
@@ -377,12 +377,12 @@ body {
   transform: translate(-74px, 102px) rotate(0deg);
 }
 
-#Fresqueduclimat {
+#EPFLCourses {
   background-color: transparent;
   transform: translate(74px, 102px) rotate(0deg);
 }
 
-#Semainedeladurabilité {
+#Fresqueduclimat {
   background-color: transparent;
   transform: translate(119px, -39px) rotate(0deg);
 }
@@ -390,15 +390,15 @@ body {
 /*Category 2*/
 
 #border2 {
-  background: radial-gradient(circle farthest-side, #ff4d4d, #ffffc5);
+  background: radial-gradient(circle farthest-side, #fb8b0c, #ffffc5);
 }
 
-#associationdébouchésdurables {
+#Meubléco {
   background-color: transparent;
   transform: translate(-114px, -52px) rotate(0deg);
 }
 
-#Pointvélo {
+#associationdébouchésdurables {
   background-color: transparent;
   transform: translate(-68px, -106px) rotate(0deg);
 }
@@ -413,37 +413,37 @@ body {
   transform: translate(-124px, 18px) rotate(0deg);
 }
 
-#CoachingSustainability {
+#Fixn’ReplaceRepaircafé {
   background-color: transparent;
   transform: translate(-95px, 82px) rotate(0deg);
 }
 
-#Fixn’ReplaceRepaircafé {
+#Pointvélo {
   background-color: transparent;
   transform: translate(-35px, 120px) rotate(0deg);
 }
 
-#EpiceriecoopérativeleVorace {
+#PointSmartCellphones {
   background-color: transparent;
   transform: translate(35px, 120px) rotate(0deg);
 }
 
-#MarchéEPFL {
+#CoachingSustainability {
   background-color: transparent;
   transform: translate(95px, 82px) rotate(0deg);
 }
 
-#PointSmartCellphones {
+#MarchéEPFL {
   background-color: transparent;
   transform: translate(124px, 18px) rotate(0deg);
 }
 
-#CastorFreegan {
+#EpiceriecoopérativeleVorace {
   background-color: transparent;
   transform: translate(114px, -52px) rotate(0deg);
 }
 
-#Meubléco {
+#CastorFreegan {
   background-color: transparent;
   transform: translate(68px, -106px) rotate(0deg);
 }
