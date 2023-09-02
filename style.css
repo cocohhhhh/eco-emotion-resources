@@ -33,7 +33,7 @@ body {
 }
 
 #intro {
-  height: fit-content;
+  height: 700px;
   background: linear-gradient(#47d9e9, transparent 100%);
 }
 
