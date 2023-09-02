@@ -26,6 +26,7 @@ body {
 /*for mobiles*/
 
 .container {
+  background-color: transparent;
   display: flex;
   width: 100%;
   height: auto;
@@ -224,10 +225,6 @@ body {
     height: 50% !important;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-  }
-
-  #content{
-    background-color: transparent;
   }
 
   .appetizer .text {
