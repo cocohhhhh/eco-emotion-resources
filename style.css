@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffc5;
+  background:url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@ body {
 
 #intro {
   height: fit-content;
-  background: linear-gradient(#47d9e9, #ffffc5);
+  background: linear-gradient(#47d9e9, transparent 100%);
 }
 
 .banner {
@@ -227,7 +227,7 @@ body {
   }
 
   #content{
-    background:url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;
+    background-color: transparent;
   }
 
   .appetizer .text {
