@@ -33,8 +33,7 @@ body {
 }
 
 #intro {
-  position: relative;
-  height: 400px;
+  height: fit-content;
   background: linear-gradient(#47d9e9, #ffffc5);
 }
 
@@ -227,6 +226,10 @@ body {
     scroll-snap-stop: always;
   }
 
+  #content{
+    background:url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;
+  }
+
   .appetizer .text {
     width: 35%;
     height: 100%;
@@ -362,7 +365,7 @@ body {
 /*Category 1*/
 
 #border1 {
-  background: radial-gradient(circle farthest-side, #a6a7ff, #ffffc5);
+  background: radial-gradient(circle farthest-side, #a6a7ff, transparent 100%);
 }
 
 #Semainedeladurabilité {
@@ -393,7 +396,7 @@ body {
 /*Category 2*/
 
 #border2 {
-  background: radial-gradient(circle farthest-side, #fb8b0c, #ffffc5);
+  background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
 }
 
 #Meubléco {
@@ -454,7 +457,7 @@ body {
 /*Category 3*/
 
 #border3 {
-  background: radial-gradient(circle farthest-side, #95F823, #ffffc5);
+  background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
 }
 
 #LaConvergence {
@@ -515,7 +518,7 @@ body {
 /*Category 4*/
 
 #border4 {
-  background: radial-gradient(circle farthest-side, #ff70a6, #ffffc5);
+  background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
 }
 
 #Make {
@@ -546,7 +549,7 @@ body {
 /*Category 5*/
 
 #border5 {
-  background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
+  background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
 }
 
 

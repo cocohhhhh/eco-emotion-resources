@@ -92,7 +92,6 @@ html {
 
 #content {
     background-color: #ffffc5;
-    /*background: radial-gradient(circle farthest-side, #ffffc5, #f9f946);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +218,7 @@ html {
 
 
 #border1 {
-    background: radial-gradient(circle farthest-side, #c5c6ff, #ffffc5);
+    background: radial-gradient(circle farthest-side, #a6a7ff, #ffffc5);
 }
 
 #EPFLCourses {
@@ -264,7 +263,7 @@ html {
 }
 
 #border2 {
-    background: radial-gradient(circle farthest-side, #ff4d4d, #ffffc5);
+    background: radial-gradient(circle farthest-side, #fb8b0c, #ffffc5);
 }
 
 #Slowtacarrière {
