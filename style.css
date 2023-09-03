@@ -1,5 +1,5 @@
 body {
-  background:url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;
+  background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -51,22 +51,116 @@ body {
   font-family: 'SuisseIntl';
   color: #000;
   border-bottom: 1px solid #000;
+  z-index: 1;
 }
+
 .banner .title {
   font-size: 2em;
   font-weight: bold;
   font-family: 'SuisseIntl';
 }
-.banner .lang{
+
+.banner .lang {
   display: flex;
   justify-content: space-evenly;
-  width: 8%;
+  width: 11%;
 }
-.banner .lang span{
+
+.banner .lang span {
   font-size: 1.1em;
   font-weight: bold;
   font-family: 'SuisseIntl';
 }
+
+/* Custom dropdown */
+.dropdown {
+  width: 120px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: -5px;
+}
+
+.dropdown.toggle>input {
+  display: none;
+}
+
+.dropdown>a,
+.dropdown.toggle>label {
+  border-radius: 2px;
+}
+
+.dropdown>a::after,
+.dropdown.toggle>label::after {
+  content: "";
+  float: right;
+  margin: 15px 15px 0 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid black;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.dropdown a,
+.dropdown.toggle>label {
+  display: block;
+  padding: 0 0 0 10px;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+}
+
+.dropdown li {
+  height: 0;
+  overflow: hidden;
+  transition: all 500ms;
+
+}
+
+.dropdown.hover li {
+  transition-delay: 300ms;
+}
+
+.dropdown li:first-child a {
+  border-radius: 2px 2px 0 0;
+}
+
+.dropdown li:last-child a {
+  border-radius: 0 0 2px 2px;
+}
+
+.dropdown a:hover,
+.dropdown.toggle>label:hover,
+.dropdown.toggle>input:checked~label {
+  background-color: transparent;
+  color: #f5f5f5;
+}
+
+.dropdown.toggle>label:hover::after,
+.dropdown.toggle>input:checked~label::after {
+  border-top-color: #f5f5f5;
+}
+
+.dropdown.toggle>input:checked~ul li {
+  height: 35px;
+}
+
+/* Custom dropdown */
 .appetizer {
   position: absolute;
   top: 15%;
@@ -79,20 +173,24 @@ body {
   font-size: large;
   color: #000;
 }
+
 .appetizer .text {
   width: 100%;
   height: 100%;
 }
+
 .appetizer .text h1 {
   font-size: 2em;
   font-weight: bold;
   font-family: 'SuisseIntl';
 }
+
 .appetizer .text p {
   margin-top: 3%;
   font-size: .6em;
   font-family: 'SuisseIntlLight';
 }
+
 .appetizer .image img {
   display: none;
 }
@@ -117,6 +215,7 @@ body {
   align-items: center;
   z-index: 2;
 }
+
 .bubble img {
   position: relative;
   max-width: 60%;
@@ -124,6 +223,7 @@ body {
   object-fit: contain;
   z-index: 2;
 }
+
 .bubble span {
   position: relative;
   font-size: 20px;
@@ -142,6 +242,7 @@ body {
   justify-content: center;
   z-index: 2;
 }
+
 .smaller a {
   display: flex;
   align-items: center;
@@ -152,13 +253,15 @@ body {
   text-decoration: none;
   color: #000;
 }
-.smaller a span{
+
+.smaller a span {
   text-decoration: none;
   color: #000;
   font-family: "SuisseIntl";
   font-size: 15px;
   text-align: center;
 }
+
 .smaller img {
   max-width: 100%;
   max-height: 100%;
@@ -180,6 +283,7 @@ body {
   font-family: 'SuisseIntl';
   transition: opacity 0.2s ease;
 }
+
 .text-description h3 {
   margin: 0;
   font-family: 'SuisseIntl';
@@ -205,6 +309,7 @@ body {
   body {
     height: 200vh;
   }
+
   html {
     scroll-snap-type: y mandatory;
   }
@@ -220,11 +325,13 @@ body {
     width: 35%;
     height: 100%;
   }
+
   .appetizer .image {
     margin-top: 2%;
     float: right;
     width: 60%;
   }
+
   .appetizer .image img {
     display: block;
     width: 100%;
@@ -234,10 +341,12 @@ body {
   .bubble {
     position: absolute;
   }
+
   .bubble span {
     font-size: 20px;
     font-weight: 700;
   }
+
   .bubble:hover {
     transition: background-color 0.2s ease;
     z-index: 3;
@@ -262,6 +371,7 @@ body {
     font-family: 'SuisseIntl';
     transition: opacity 0.2s ease;
   }
+
   .text-description h3 {
     margin: 0;
     font-family: 'SuisseIntl';
@@ -270,11 +380,13 @@ body {
     margin-bottom: 5px;
     text-align: center;
   }
+
   .smaller:hover .text-description {
     visibility: visible;
     opacity: 1;
     z-index: 3;
   }
+
   .text-description:hover {
     display: none;
   }
@@ -284,6 +396,7 @@ body {
   #bubble1 {
     transform: translate(-400px, -125px) rotate(0deg);
   }
+
   #bubble1 .text-description {
     left: 100%;
     top: 0%;
@@ -295,6 +408,7 @@ body {
   #bubble2 {
     transform: translate(-200px, 125px) rotate(0deg);
   }
+
   #bubble2 .text-description {
     left: 100%;
     bottom: 0%;
@@ -306,6 +420,7 @@ body {
   #bubble3 {
     transform: translate(0px, -125px) rotate(0deg);
   }
+
   #bubble3 .text-description {
     left: 100%;
     top: 0%;
@@ -317,6 +432,7 @@ body {
   #bubble4 {
     transform: translate(200px, 125px) rotate(0deg);
   }
+
   #bubble4 .text-description {
     right: 100%;
     bottom: 0%;
@@ -328,6 +444,7 @@ body {
   #bubble5 {
     transform: translate(400px, -125px) rotate(0deg);
   }
+
   #bubble5 .text-description {
     right: 100%;
     top: 0%;
