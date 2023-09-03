@@ -55,7 +55,7 @@ body {
 }
 
 .banner .title {
-  font-size: 2em;
+  font-size: 28px;
   font-weight: bold;
   font-family: 'SuisseIntl';
 }
@@ -66,18 +66,13 @@ body {
   width: 11%;
 }
 
-.banner .lang span {
-  font-size: 1.1em;
-  font-weight: bold;
-  font-family: 'SuisseIntl';
-}
-
 /* Custom dropdown */
 .dropdown {
   width: 120px;
   display: inline-block;
   position: relative;
   margin-bottom: -5px;
+  font-size: 18px;
 }
 
 .dropdown.toggle>input {
@@ -180,14 +175,14 @@ body {
 }
 
 .appetizer .text h1 {
-  font-size: 2em;
+  font-size: 32px;
   font-weight: bold;
   font-family: 'SuisseIntl';
 }
 
 .appetizer .text p {
   margin-top: 3%;
-  font-size: .6em;
+  font-size: 20px;
   font-family: 'SuisseIntlLight';
 }
 
