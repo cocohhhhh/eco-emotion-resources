@@ -244,7 +244,7 @@ body {
   }
 
   .smaller {
-    width: 100px;
+    width: 95px;
     height: 70px;
   }
 
@@ -449,17 +449,17 @@ body {
   transform: translate(-68px, -106px) rotate(0deg);
 }
 
-#Queermanence {
+#PlanQueer {
   background-color: transparent;
   transform: translate(-114px, -52px) rotate(0deg);
 }
 
-#PlanQueer {
+#Queermanence {
   background-color: transparent;
   transform: translate(-124px, 18px) rotate(0deg);
 }
 
-#ThriftstoreUPFashionLab {
+#ZeroEmissionGroup {
   background-color: transparent;
   transform: translate(-95px, 82px) rotate(0deg);
 }
@@ -489,7 +489,7 @@ body {
   transform: translate(114px, -52px) rotate(0deg);
 }
 
-#ZeroEmissionGroup {
+#ThriftstoreUPFashionLab {
   background-color: transparent;
   transform: translate(68px, -106px) rotate(0deg);
 }
