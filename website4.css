@@ -218,7 +218,7 @@ html {
 
 
 #border1 {
-    background: radial-gradient(circle farthest-side, #a6a7ff, #ffffc5);
+    background: radial-gradient(circle farthest-side, #fff, #a6a7ff);
 }
 
 #EPFLCourses {
@@ -263,7 +263,7 @@ html {
 }
 
 #border2 {
-    background: radial-gradient(circle farthest-side, #fb8b0c, #ffffc5);
+    background: radial-gradient(circle farthest-side, #fff, #fb8b0c);
 }
 
 #Slowtacarrière {
@@ -344,7 +344,7 @@ html {
 }
 
 #border3 {
-    background: radial-gradient(circle farthest-side, #95F823, #ffffc5);
+    background: radial-gradient(circle farthest-side, #fff, #95F823);
 }
 
 #LaConvergence {
@@ -425,7 +425,7 @@ html {
 }
 
 #border4 {
-    background: radial-gradient(circle farthest-side, #ff70a6, #ffffc5);
+    background: radial-gradient(circle farthest-side, #fff , #ff70a6);
 }
 
 #Make {
@@ -470,7 +470,7 @@ html {
 }
 
 #border5 {
-    background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
+    background: radial-gradient(circle farthest-side, #fff, #70d6ff);
 }
 
 #SportscenterEPFL-UNIL {

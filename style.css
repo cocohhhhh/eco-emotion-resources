@@ -79,24 +79,20 @@ body {
   font-size: large;
   color: #000;
 }
-
 .appetizer .text {
   width: 100%;
   height: 100%;
 }
-
 .appetizer .text h1 {
   font-size: 2em;
   font-weight: bold;
   font-family: 'SuisseIntl';
 }
-
 .appetizer .text p {
   margin-top: 3%;
   font-size: .6em;
   font-family: 'SuisseIntlLight';
 }
-
 .appetizer .image img {
   display: none;
 }
@@ -121,7 +117,6 @@ body {
   align-items: center;
   z-index: 2;
 }
-
 .bubble img {
   position: relative;
   max-width: 60%;
@@ -129,7 +124,6 @@ body {
   object-fit: contain;
   z-index: 2;
 }
-
 .bubble span {
   position: relative;
   font-size: 20px;
@@ -141,14 +135,13 @@ body {
 
 .smaller {
   position: absolute;
-  width: 65%;
+  width: 60%;
   height: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
 }
-
 .smaller a {
   display: flex;
   align-items: center;
@@ -156,8 +149,16 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  text-decoration: none;
+  color: #000;
 }
-
+.smaller a span{
+  text-decoration: none;
+  color: #000;
+  font-family: "SuisseIntl";
+  font-size: 15px;
+  text-align: center;
+}
 .smaller img {
   max-width: 100%;
   max-height: 100%;
@@ -179,7 +180,6 @@ body {
   font-family: 'SuisseIntl';
   transition: opacity 0.2s ease;
 }
-
 .text-description h3 {
   margin: 0;
   font-family: 'SuisseIntl';
@@ -196,18 +196,8 @@ body {
   border-radius: 50%;
   z-index: 1;
 }
-.smaller a{
-  text-decoration: none;
-  color: #000;
-}
 
-.smaller a span{
-  text-decoration: none;
-  color: #000;
-  font-family: "SuisseIntl";
-  font-size: 15px;
-  text-align: center;
-}
+
 
 @media only screen and (min-width: 1050px) {
 
@@ -215,7 +205,6 @@ body {
   body {
     height: 200vh;
   }
-
   html {
     scroll-snap-type: y mandatory;
   }
@@ -231,7 +220,6 @@ body {
     width: 35%;
     height: 100%;
   }
-
   .appetizer .image {
     margin-top: 2%;
     float: right;
@@ -246,13 +234,10 @@ body {
   .bubble {
     position: absolute;
   }
-
-
   .bubble span {
     font-size: 20px;
     font-weight: 700;
   }
-
   .bubble:hover {
     transition: background-color 0.2s ease;
     z-index: 3;
@@ -277,7 +262,6 @@ body {
     font-family: 'SuisseIntl';
     transition: opacity 0.2s ease;
   }
-
   .text-description h3 {
     margin: 0;
     font-family: 'SuisseIntl';
@@ -286,13 +270,11 @@ body {
     margin-bottom: 5px;
     text-align: center;
   }
-
   .smaller:hover .text-description {
     visibility: visible;
     opacity: 1;
     z-index: 3;
   }
-
   .text-description:hover {
     display: none;
   }
@@ -302,7 +284,6 @@ body {
   #bubble1 {
     transform: translate(-400px, -125px) rotate(0deg);
   }
-
   #bubble1 .text-description {
     left: 100%;
     top: 0%;
@@ -314,7 +295,6 @@ body {
   #bubble2 {
     transform: translate(-200px, 125px) rotate(0deg);
   }
-
   #bubble2 .text-description {
     left: 100%;
     bottom: 0%;
@@ -326,7 +306,6 @@ body {
   #bubble3 {
     transform: translate(0px, -125px) rotate(0deg);
   }
-
   #bubble3 .text-description {
     left: 100%;
     top: 0%;
@@ -338,7 +317,6 @@ body {
   #bubble4 {
     transform: translate(200px, 125px) rotate(0deg);
   }
-
   #bubble4 .text-description {
     right: 100%;
     bottom: 0%;
@@ -350,7 +328,6 @@ body {
   #bubble5 {
     transform: translate(400px, -125px) rotate(0deg);
   }
-
   #bubble5 .text-description {
     right: 100%;
     top: 0%;
@@ -396,6 +373,11 @@ body {
   background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
 }
 
+#Slowtacarrière {
+  background-color: transparent;
+  transform: translate(0px, -126px) rotate(0deg);
+}
+
 #Meubléco {
   background-color: transparent;
   transform: translate(-114px, -52px) rotate(0deg);
@@ -406,9 +388,9 @@ body {
   transform: translate(-68px, -106px) rotate(0deg);
 }
 
-#Slowtacarrière {
+#Meubléco {
   background-color: transparent;
-  transform: translate(0px, -126px) rotate(0deg);
+  transform: translate(-114px, -52px) rotate(0deg);
 }
 
 #Bibliothèqued’objets {
@@ -467,32 +449,32 @@ body {
   transform: translate(-68px, -106px) rotate(0deg);
 }
 
-#Queermanence {
+#Polyquity {
   background-color: transparent;
   transform: translate(-114px, -52px) rotate(0deg);
 }
 
-#Polyquity {
+#PlanQueer {
   background-color: transparent;
   transform: translate(-124px, 18px) rotate(0deg);
 }
 
-#PlanQueer {
+#Queermanence {
   background-color: transparent;
   transform: translate(-95px, 82px) rotate(0deg);
 }
 
-#Ingénieur·esdumonde {
+#ThriftstoreUPFashionLab {
   background-color: transparent;
   transform: translate(-35px, 120px) rotate(0deg);
 }
 
-#AmnestydesHautesEcolesLausannoises {
+#ZeroEmissionGroup {
   background-color: transparent;
   transform: translate(35px, 120px) rotate(0deg);
 }
 
-#ZeroEmissionGroup {
+#FermedeBassenges {
   background-color: transparent;
   transform: translate(95px, 82px) rotate(0deg);
 }
@@ -502,12 +484,12 @@ body {
   transform: translate(124px, 18px) rotate(0deg);
 }
 
-#FermedeBassenges {
+#Ingénieur·esdumonde {
   background-color: transparent;
   transform: translate(114px, -52px) rotate(0deg);
 }
 
-#ThriftstoreUPFashionLab {
+#AmnestydesHautesEcolesLausannoises {
   background-color: transparent;
   transform: translate(68px, -106px) rotate(0deg);
 }
@@ -548,7 +530,6 @@ body {
 #border5 {
   background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
 }
-
 
 #SportscenterEPFL-UNIL {
   background-color: transparent;
