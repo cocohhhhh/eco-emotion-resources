@@ -254,7 +254,7 @@ html {
 /*category 2*/
 
 #bubble2 {
-    transform: translate(-200px, 125px) rotate(0deg);
+    transform: translate(-200px, 200px) rotate(0deg);
 }
 
 #bubble2 .text-description {
@@ -416,7 +416,7 @@ html {
 /*category 4*/
 
 #bubble4 {
-    transform: translate(200px, 125px) rotate(0deg);
+    transform: translate(200px, 200px) rotate(0deg);
 }
 
 #bubble4 .text-description {
