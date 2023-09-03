@@ -43,7 +43,7 @@ body {
   top: 0%;
   left: 5%;
   width: 90%;
-  height: 9%;
+  height:auto;
   display: flex;
   align-items: end;
   Justify-content: space-between;
@@ -162,8 +162,8 @@ body {
 
 /* Custom dropdown */
 .appetizer {
-  position: absolute;
-  top: 15%;
+  position: relative;
+  top: 10%;
   left: 5%;
   width: 90%;
   height: 90%;
@@ -321,6 +321,9 @@ body {
     scroll-snap-stop: always;
   }
 
+  .banner {
+    height: 9%;
+  }
   .appetizer .text {
     width: 35%;
     height: 100%;
