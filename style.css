@@ -45,7 +45,7 @@ body {
   width: 90%;
   height:auto;
   display: flex;
-  align-items: end;
+  align-items: center;
   Justify-content: space-between;
   font-weight: bold;
   font-family: 'SuisseIntl';
@@ -55,20 +55,20 @@ body {
 }
 
 .banner .title {
-  font-size: 28px;
+  font-size: 16px;
   font-weight: bold;
   font-family: 'SuisseIntl';
 }
 
 .banner .lang {
   display: flex;
-  justify-content: space-evenly;
-  width: 11%;
+  justify-content: flex-end;
+  width: 33%;
 }
 
 /* Custom dropdown */
 .dropdown {
-  width: 120px;
+  width: 100%;
   display: inline-block;
   position: relative;
   margin-bottom: -5px;
@@ -158,7 +158,7 @@ body {
 /* Custom dropdown */
 .appetizer {
   position: relative;
-  top: 10%;
+  top: 12%;
   left: 5%;
   width: 90%;
   height: 90%;
@@ -318,6 +318,18 @@ body {
 
   .banner {
     height: 9%;
+    align-items: end;
+  }
+  .banner .title {
+    font-size: 32px;
+  }
+  .banner .lang {
+    display: flex;
+    justify-content: flex-end;
+    width: 10%;
+  }
+  .appetizer {
+    top: 10%;
   }
   .appetizer .text {
     width: 35%;
