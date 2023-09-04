@@ -5,59 +5,87 @@
     <meta charset="utf-8" />
     <title>Homepage</title>
     <style type="text/css">
-        html,
-        body,
-        section {
-            block-size: 100%;
+        body {
+            margin: 0;
+            padding: 0;
         }
 
-        html {
-            scroll-snap-type: y mandatory;
-        }
-
-        section {
-            scroll-snap-align: start;
-            scroll-snap-stop: always;
-
+        .page {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        section:nth-of-type(even) {
+        .usage {
+            position: absolute;
+            top: 40px;
+            line-height: 50px;
+            z-index: 1000;
             color: white;
-            background: black;
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+            font-family: "Arial Black", Gadget, sans-serif;
+            pointer-events: none;
         }
 
-        section:nth-of-type(odd) {
-            color: black;
-            background: white;
-        }
-
-        body {
-            margin: 0;
-            font-family: system-ui, sans-serif;
-            font-size: 4rem;
+        h1 {
+            color: white;
+            font-family: arial;
+            font-weight: bold;
+            font-size: 3em;
         }
     </style>
 </head>
 
 <body>
-    <section>
-        <h1>slide 1</h1>
-    </section>
-    <section>
-        <h1>slide 2</h1>
-    </section>
-    <section>
-        <h1>slide 3</h1>
-    </section>
-    <section>
-        <h1>slide 4</h1>
-    </section>
-    <section>
-        <h1>slide 5</h1>
-    </section>
+    <div class="page" style="background-color:#38a8cc">
+        <h1>Page 1</h1>
+    </div>
+    <div class="page" style="background-color:#004444">
+        <h1>Page 2</h1>
+    </div>
+    <div class="page" style="background-color:#884444">
+        <h1>Page 3</h1>
+    </div>
+    <div class="page" style="background-color:#555588">
+        <h1>Page 4</h1>
+    </div>
+    <div class="page" style="background-color:#a84466">
+        <h1>Page 5</h1>
+    </div>
+
+    <!-- Include jQuery and Anime.js libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <script>
+        $('.page').each(function (i, e) {
+            $(this).click(function (event) {
+                var x = event.pageX;
+                var y = event.pageY;
+
+                var nextItem = i + 1;
+                if (nextItem >= $('.page').length) {
+                    nextItem = 0;
+                }
+
+                $('.page:eq(' + nextItem + ')').css('z-index', parseInt($(this).css('z-index')) + 1);
+                $('.page:eq(' + nextItem + ')').css('clip-path', 'circle(0% at ' + x + 'px ' + y + 'px)');
+
+                anime({
+                    targets: '.page:eq(' + nextItem + ')',
+                    update: function (anim) {
+                        $('.page:eq(' + nextItem + ')').css('clip-path', 'circle(' + (anim.progress * 2) + '% at ' + x + 'px ' + y + 'px)');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
