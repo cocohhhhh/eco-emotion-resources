@@ -66,14 +66,12 @@
                 </div>
             </div>
         </div>
-        <div class="arrow">
-            <a href="#content" onclick="scrollToContent()">
-                <svg id="more-arrows">
-                    <polygon class="arrow-top" points="18.8,13.95 0.9,0.65 1.65,0 18.8,12.65 35.95,0 36.85,0.65 " />
-                    <polygon class="arrow-middle" points="18.8,22.9	0.4,9.35 2.2,8.2 18.8,20.6 35.6,8.2 37.25,9.35" />
-                    <polygon class="arrow-bottom" points="18.8,32 0,18.05 2.55,16.4 18.8,28.4 35.2,16.4 37.75,18.05" />
-                </svg>
-            </a>
+        <div class="arrow" id="arrow">
+            <svg id="more-arrows">
+                <polygon class="arrow-top" points="18.8,13.95 0.9,0.65 1.65,0 18.8,12.65 35.95,0 36.85,0.65 " />
+                <polygon class="arrow-middle" points="18.8,22.9	0.4,9.35 2.2,8.2 18.8,20.6 35.6,8.2 37.25,9.35" />
+                <polygon class="arrow-bottom" points="18.8,32 0,18.05 2.55,16.4 18.8,28.4 35.2,16.4 37.75,18.05" />
+            </svg>
         </div>
     </div>
     <div class="container" id="content">
@@ -610,6 +608,17 @@
                 $('.toggle > input').prop('checked', false);
             }
         })
+    </script>
+    <script>
+        // Get a reference to the button and the target container
+        const scrollButton = document.getElementById('arrow');
+        const targetContainer = document.getElementById('content');
+
+        // Add a click event listener to the button
+        scrollButton.addEventListener('click', function () {
+            // Scroll to the target container smoothly
+            targetContainer.scrollIntoView({ behavior: 'smooth' });
+        });
     </script>
 </body>
 
