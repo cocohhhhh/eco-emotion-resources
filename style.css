@@ -1,6 +1,5 @@
 body {
-  /*background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;*/
-  background: #ffffc5;
+  background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -88,6 +87,7 @@ body {
 .dropdown>a::after,
 .dropdown.toggle>label::after {
   content: "";
+  float: right;
   margin: 15px 15px 0 0;
   width: 0;
   height: 0;
@@ -407,7 +407,7 @@ body {
   /*category 1*/
 
   #bubble1 {
-    transform: translate(-400px, -140px) ;
+    transform: translate(-400px, -125px) rotate(0deg);
   }
 
   #bubble1 .text-description {
@@ -419,7 +419,7 @@ body {
   /*category 2*/
 
   #bubble2 {
-    transform: translate(-200px, 140px) ;
+    transform: translate(-200px, 125px) rotate(0deg);
   }
 
   #bubble2 .text-description {
@@ -431,7 +431,7 @@ body {
   /*category 3*/
 
   #bubble3 {
-    transform: translate(0px, -140px) ;
+    transform: translate(0px, -125px) rotate(0deg);
   }
 
   #bubble3 .text-description {
@@ -443,7 +443,7 @@ body {
   /*category 4*/
 
   #bubble4 {
-    transform: translate(200px, 140px) ;
+    transform: translate(200px, 125px) rotate(0deg);
   }
 
   #bubble4 .text-description {
@@ -455,7 +455,7 @@ body {
   /*category 5*/
 
   #bubble5 {
-    transform: translate(400px, -140px) ;
+    transform: translate(400px, -125px) rotate(0deg);
   }
 
   #bubble5 .text-description {
@@ -474,32 +474,27 @@ body {
 
 #Semainedeladurabilité {
   background-color: transparent;
-  transform: translate(0px, -126px) ;
+  transform: translate(0px, -126px) rotate(0deg);
 }
 
 #CSAWClimateSustainabilityActionWeek {
   background-color: transparent;
-  transform: translate(-109px, -63px) ;
+  transform: translate(-119px, -39px) rotate(0deg);
 }
 
 #lecanardhuppé {
   background-color: transparent;
-  transform: translate(-109px, 63px) ;
-}
-
-#CoachingSustainability {
-  background-color: transparent;
-  transform: translate(-0px, 126px) ;
+  transform: translate(-74px, 102px) rotate(0deg);
 }
 
 #EPFLCourses {
   background-color: transparent;
-  transform: translate(109px, 63px) ;
+  transform: translate(74px, 102px) rotate(0deg);
 }
 
 #Fresqueduclimat {
   background-color: transparent;
-  transform: translate(109px, -63px) ;
+  transform: translate(119px, -39px) rotate(0deg);
 }
 
 /*Category 2*/
@@ -510,52 +505,62 @@ body {
 
 #Slowtacarrière {
   background-color: transparent;
-  transform: translate(0px, -126px) ;
-}
-
-#associationdébouchésdurables {
-  background-color: transparent;
-  transform: translate(-74px, -102px) ;
+  transform: translate(0px, -126px) rotate(0deg);
 }
 
 #Meubléco {
   background-color: transparent;
-  transform: translate(-120px, -39px) ;
+  transform: translate(-114px, -52px) rotate(0deg);
+}
+
+#associationdébouchésdurables {
+  background-color: transparent;
+  transform: translate(-68px, -106px) rotate(0deg);
+}
+
+#Meubléco {
+  background-color: transparent;
+  transform: translate(-114px, -52px) rotate(0deg);
 }
 
 #Bibliothèqued’objets {
   background-color: transparent;
-  transform: translate(-120px, 39px) ;
+  transform: translate(-124px, 18px) rotate(0deg);
 }
 
 #Fixn’ReplaceRepaircafé {
   background-color: transparent;
-  transform: translate(-74px, 102px) ;
+  transform: translate(-95px, 82px) rotate(0deg);
 }
 
 #Pointvélo {
   background-color: transparent;
-  transform: translate(-0px, 126px) ;
+  transform: translate(-35px, 120px) rotate(0deg);
 }
 
 #PointSmartCellphones {
   background-color: transparent;
-  transform: translate(74px, 102px) ;
+  transform: translate(35px, 120px) rotate(0deg);
+}
+
+#CoachingSustainability {
+  background-color: transparent;
+  transform: translate(95px, 82px) rotate(0deg);
 }
 
 #MarchéEPFL {
   background-color: transparent;
-  transform: translate(120px, 39px) ;
+  transform: translate(124px, 18px) rotate(0deg);
 }
 
 #EpiceriecoopérativeleVorace {
   background-color: transparent;
-  transform: translate(120px, -39px);
+  transform: translate(114px, -52px) rotate(0deg);
 }
 
 #CastorFreegan {
   background-color: transparent;
-  transform: translate(74px, -102px);
+  transform: translate(68px, -106px) rotate(0deg);
 }
 
 /*Category 3*/
@@ -566,57 +571,57 @@ body {
 
 #Unipoly {
   background-color: transparent;
-  transform: translate(0px, -126px) ;
+  transform: translate(0px, -126px) rotate(0deg);
 }
 
 #Polyquity {
   background-color: transparent;
-  transform: translate(-68px, -106px) ;
+  transform: translate(-68px, -106px) rotate(0deg);
 }
 
 #PlanQueer {
   background-color: transparent;
-  transform: translate(-114px, -52px) ;
+  transform: translate(-114px, -52px) rotate(0deg);
 }
 
 #Queermanence {
   background-color: transparent;
-  transform: translate(-124px, 18px) ;
+  transform: translate(-124px, 18px) rotate(0deg);
 }
 
 #ZeroEmissionGroup {
   background-color: transparent;
-  transform: translate(-95px, 82px) ;
+  transform: translate(-95px, 82px) rotate(0deg);
 }
 
 #LaConvergence {
   background-color: transparent;
-  transform: translate(-35px, 120px) ;
+  transform: translate(-35px, 120px) rotate(0deg);
 }
 
 #Ingénieur·esdumonde {
   background-color: transparent;
-  transform: translate(35px, 120px) ;
+  transform: translate(35px, 120px) rotate(0deg);
 }
 
 #FermedeBassenges {
   background-color: transparent;
-  transform: translate(95px, 82px) ;
+  transform: translate(95px, 82px) rotate(0deg);
 }
 
 #Associationdesétudiant·esvégan·esetanimalistes {
   background-color: transparent;
-  transform: translate(124px, 18px) ;
+  transform: translate(124px, 18px) rotate(0deg);
 }
 
 #AmnestydesHautesEcolesLausannoises {
   background-color: transparent;
-  transform: translate(114px, -52px) ;
+  transform: translate(114px, -52px) rotate(0deg);
 }
 
 #ThriftstoreUPFashionLab {
   background-color: transparent;
-  transform: translate(68px, -106px) ;
+  transform: translate(68px, -106px) rotate(0deg);
 }
 
 /*Category 4*/
@@ -627,27 +632,27 @@ body {
 
 #EPFLChangemakers {
   background-color: transparent;
-  transform: translate(0px, -126px) ;
+  transform: translate(0px, -126px) rotate(0deg);
 }
 
 #Ucreate {
   background-color: transparent;
-  transform: translate(-119px, -39px) ;
+  transform: translate(-119px, -39px) rotate(0deg);
 }
 
 #Make {
   background-color: transparent;
-  transform: translate(-74px, 102px) ;
+  transform: translate(-74px, 102px) rotate(0deg);
 }
 
 #Durabilis {
   background-color: transparent;
-  transform: translate(74px, 102px) ;
+  transform: translate(74px, 102px) rotate(0deg);
 }
 
 #Skil {
   background-color: transparent;
-  transform: translate(119px, -39px) ;
+  transform: translate(119px, -39px) rotate(0deg);
 }
 
 /*Category 5*/
@@ -658,25 +663,25 @@ body {
 
 #SportscenterEPFL-UNIL {
   background-color: transparent;
-  transform: translate(0px, -126px) ;
+  transform: translate(0px, -126px) rotate(0deg);
 }
 
 #Espace-Transitions {
   background-color: transparent;
-  transform: translate(-119px, -39px) ;
+  transform: translate(-119px, -39px) rotate(0deg);
 }
 
 #TrustandSupportNetworkTSN {
   background-color: transparent;
-  transform: translate(-74px, 102px) ;
+  transform: translate(-74px, 102px) rotate(0deg);
 }
 
 #Guidedmeditation {
   background-color: transparent;
-  transform: translate(74px, 102px) ;
+  transform: translate(74px, 102px) rotate(0deg);
 }
 
 #ForêtdeDorigny {
   background-color: transparent;
-  transform: translate(119px, -39px) ;
+  transform: translate(119px, -39px) rotate(0deg);
 }
