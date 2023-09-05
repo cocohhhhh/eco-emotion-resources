@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
+  --dist:120px;
 }
 
 @font-face {
@@ -425,7 +426,6 @@ body {
     height: 100%;
     width: auto;
     aspect-ratio: 1;
-    background-color: antiquewhite;
   }
 
   .border{
@@ -533,7 +533,7 @@ body {
 
 #Semainedeladurabilité {
   background-color: transparent;
-  transform: translate(0px, -126px);
+  transform: translate(calc(var(--dist)*0), calc(var(--dist)*(-1)));
 }
 
 #CSAWClimateSustainabilityActionWeek {
