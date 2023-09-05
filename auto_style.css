@@ -375,7 +375,7 @@ body {
 
   .midcontainer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     width: 100%;
@@ -383,7 +383,8 @@ body {
   }
 
   #lower-bubbles{
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 66%;
   }
 
   .sub-bubble{
