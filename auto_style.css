@@ -216,8 +216,8 @@ body {
 
 .bubble img {
   position: relative;
-  max-width: 60%;
-  max-height: 50%;
+  max-width: 40%;
+  max-height: 30%;
   object-fit: contain;
   z-index: 2;
 }
@@ -430,8 +430,7 @@ body {
 
   .border{
     height: 100%;
-    width: auto;
-    aspect-ratio: 1;
+    width: 100%;
   }
 
   .bubble span {
