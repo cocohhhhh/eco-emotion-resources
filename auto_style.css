@@ -382,8 +382,13 @@ body {
     height: 50%;
   }
 
+  #upper-bubbles{
+    align-items: start;
+  }
+
   #lower-bubbles{
     justify-content: space-around;
+    align-items: end;
     width: 66%;
   }
 
