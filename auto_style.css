@@ -93,6 +93,7 @@ body {
 .dropdown>a::after,
 .dropdown.toggle>label::after {
   content: "";
+  float: right;
   margin: 15px 15px 0 0;
   width: 0;
   height: 0;
@@ -160,7 +161,8 @@ body {
   height: 35px;
 }
 
-/* Custom dropdown */
+/* End for Custom dropdown */
+
 .appetizer {
   position: relative;
   top: 12%;
@@ -299,7 +301,50 @@ body {
   border-radius: 50%;
   z-index: 1;
 }
+/* Arrows */
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
 
+.arrow p {
+  margin: 0 0 20px;
+}
+
+/* Arrow & Hover Animation */
+#more-arrows {
+  width: 75px;
+  height: 65px;
+}
+
+#more-arrows:hover polygon {
+  fill: black;
+  transition: all .2s ease-out;
+}
+
+#more-arrows:hover polygon.arrow-bottom {
+  transform: translateY(-9px);
+}
+
+#more-arrows:hover polygon.arrow-top {
+  transform: translateY(9px);
+}
+
+polygon {
+  fill: black;
+  transition: all .2s ease-out;
+}
+
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+
+polygon.arrow-top {
+  opacity: 0.5;
+}
+/* End for arrows */
 
 
 @media only screen and (min-width: 1050px) {
