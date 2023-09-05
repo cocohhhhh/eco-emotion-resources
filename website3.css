@@ -385,6 +385,18 @@ polygon.arrow-top {
         height: 100%;
     }
 
+    .appetizer .image{
+        margin-top: 30px;
+        width: 60%;
+        float: right;
+    }
+
+    .appetizer .image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
     #subbubbles {
         display: block;
         width: 60%;
