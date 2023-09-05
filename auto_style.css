@@ -425,6 +425,7 @@ body {
     height: 100%;
     width: auto;
     aspect-ratio: 1;
+    background-color: antiquewhite;
   }
 
   .border{
