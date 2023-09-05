@@ -1,6 +1,5 @@
 body {
-  /*background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;*/
-  background: #ffffc5;
+  background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;
   margin: 0;
   display: flex;
   justify-content: center;

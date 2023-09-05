@@ -1,5 +1,6 @@
 body {
-  background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;
+  /*background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;*/
+  background-color: #ffffc5;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -186,7 +187,7 @@ body {
   font-family: 'SuisseIntlLight';
 }
 
-.appetizer .image img {
+#subbubbles {
   display: none;
 }
 
@@ -336,19 +337,68 @@ body {
     height: 100%;
   }
 
-  .appetizer .image {
-    margin-top: 2%;
-    float: right;
+  #subbubbles {
+    display: block;
     width: 60%;
     height: 80%;
+    margin-top: 1%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-bubble {
+    position: relative;
+    width: 33%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .sub-bubble img {
+    position: relative;
+    max-width: 40%;
+    max-height: 40%;
     object-fit: contain;
   }
 
-  .appetizer .image img {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+  .midcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+  }
+
+  .sub-bubble{
+    font-family: "SuisseIntl";
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  #subbubble1 {
+    background: radial-gradient(circle farthest-side, #a6a7ff, transparent 100%);
+  }
+
+  #subbubble2 {
+    background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
+  }
+
+  #subbubble3 {
+    background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
+  }
+
+  #subbubble4 {
+    background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
+  }
+
+  #subbubble5 {
+    background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
   }
 
   .bubble {
