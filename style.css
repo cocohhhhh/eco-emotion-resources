@@ -44,7 +44,7 @@ body {
   top: 0%;
   left: 5%;
   width: 90%;
-  height:auto;
+  height: auto;
   display: flex;
   align-items: center;
   Justify-content: space-between;
@@ -157,6 +157,7 @@ body {
 }
 
 /* Custom dropdown */
+
 .appetizer {
   position: relative;
   top: 12%;
@@ -297,7 +298,50 @@ body {
   z-index: 1;
 }
 
+/* Arrows */
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
 
+.arrow p {
+  margin: 0 0 20px;
+}
+
+/* Arrow & Hover Animation */
+#more-arrows {
+  width: 75px;
+  height: 65px;
+}
+
+#more-arrows:hover polygon {
+  fill: black;
+  transition: all .2s ease-out;
+}
+
+#more-arrows:hover polygon.arrow-bottom {
+  transform: translateY(-9px);
+}
+
+#more-arrows:hover polygon.arrow-top {
+  transform: translateY(9px);
+}
+
+polygon {
+  fill: black;
+  transition: all .2s ease-out;
+}
+
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+
+polygon.arrow-top {
+  opacity: 0.5;
+}
+/* End for arrows */
 
 @media only screen and (min-width: 1050px) {
 
@@ -321,17 +365,21 @@ body {
     height: 9%;
     align-items: end;
   }
+
   .banner .title {
     font-size: 32px;
   }
+
   .banner .lang {
     display: flex;
     justify-content: flex-end;
     width: 10%;
   }
+
   .appetizer {
     top: 10%;
   }
+
   .appetizer .text {
     width: 35%;
     height: 100%;
@@ -366,7 +414,7 @@ body {
     object-fit: contain;
   }
 
-  .midcontainer{
+  .midcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,7 +423,7 @@ body {
     height: 50%;
   }
 
-  .sub-bubble{
+  .sub-bubble {
     font-family: "SuisseIntl";
     font-size: 20px;
     font-weight: 700;
