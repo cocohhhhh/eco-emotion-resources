@@ -268,11 +268,10 @@ body {
 .text-description {
   position: absolute;
   padding: 7px;
-  background-color: #000;
-  color: #fff;
+  color: #000000;
   border-radius: 5px;
   white-space: normal;
-  width: 500%;
+  width: 400px;
   visibility: hidden;
   opacity: 0;
   z-index: 1;
@@ -285,7 +284,7 @@ body {
   margin: 0;
   font-family: 'SuisseIntl';
   font-size: 18px;
-  color: #fff;
+  color: #000000;
   margin-bottom: 5px;
   text-align: center;
 }
@@ -404,7 +403,6 @@ polygon.arrow-top {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
   }
 
   .sub-bubble img {
@@ -466,30 +464,6 @@ polygon.arrow-top {
   .smaller {
     width: 95px;
     height: 70px;
-  }
-
-  .text-description {
-    position: absolute;
-    padding: 7px;
-    color: #000;
-    border-radius: 5px;
-    white-space: normal;
-    width: 500%;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1;
-    text-align: left;
-    font-family: 'SuisseIntl';
-    transition: opacity 0.2s ease;
-  }
-
-  .text-description h3 {
-    margin: 0;
-    font-family: 'SuisseIntl';
-    font-size: 18px;
-    color: #000;
-    margin-bottom: 5px;
-    text-align: center;
   }
 
   .smaller:hover .text-description {

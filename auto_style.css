@@ -1,5 +1,6 @@
 body {
-  background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;
+  /*background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;*/
+  background-color: #ffffc5;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -374,11 +375,15 @@ body {
 
   .midcontainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     width: 100%;
     height: 50%;
+  }
+
+  #lower-bubbles{
+    justify-content: space-evenly;
   }
 
   .sub-bubble{
@@ -407,11 +412,8 @@ body {
     background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
   }
 
-  .bubble {
-    position: absolute;
-  }
-
   .bubble span {
+    font-family: "SuisseIntl";
     font-size: 20px;
     font-weight: 700;
   }
@@ -462,10 +464,6 @@ body {
 
   /*category 1*/
 
-  #bubble1 {
-    transform: translate(-400px, -140px);
-  }
-
   #bubble1 .text-description {
     left: 100%;
     top: 0%;
@@ -473,10 +471,6 @@ body {
   }
 
   /*category 2*/
-
-  #bubble2 {
-    transform: translate(-200px, 140px);
-  }
 
   #bubble2 .text-description {
     left: 100%;
@@ -486,10 +480,6 @@ body {
 
   /*category 3*/
 
-  #bubble3 {
-    transform: translate(0px, -140px);
-  }
-
   #bubble3 .text-description {
     left: 100%;
     top: 0%;
@@ -498,10 +488,6 @@ body {
 
   /*category 4*/
 
-  #bubble4 {
-    transform: translate(200px, 140px);
-  }
-
   #bubble4 .text-description {
     right: 100%;
     bottom: 0%;
@@ -509,10 +495,6 @@ body {
   }
 
   /*category 5*/
-
-  #bubble5 {
-    transform: translate(400px, -140px);
-  }
 
   #bubble5 .text-description {
     right: 100%;
