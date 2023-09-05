@@ -205,7 +205,6 @@ body {
   position: relative;
   width: 150px;
   height: 150px;
-  margin: 100px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -382,14 +381,18 @@ body {
     height: 50%;
   }
 
+  #lower_subbubbles{
+    justify-content: center;
+  }
+
   #upper-bubbles{
     align-items: start;
   }
 
   #lower-bubbles{
     justify-content: space-around;
-    align-items: end;
     width: 66%;
+    align-items: end;
   }
 
   .sub-bubble{
@@ -416,6 +419,10 @@ body {
 
   #subbubble5 {
     background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
+  }
+
+  .bubble{
+    height: 100%;
   }
 
   .bubble span {
