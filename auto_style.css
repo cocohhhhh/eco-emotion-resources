@@ -36,7 +36,7 @@ body {
 
 #intro {
   height: 700px;
-  background: linear-gradient(#47d9e9, transparent 100%);
+  /*background: linear-gradient(#47d9e9, transparent 100%);*/
 }
 
 #subbubbles {
@@ -347,15 +347,16 @@ body {
   #subbubbles {
     display: block;
     width: 60%;
-    height: 100%;
+    height: 80%;
+    margin-top: 1%;
     align-items: center;
     justify-content: center;
   }
 
   .sub-bubble {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 33%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -367,33 +368,43 @@ body {
 
   .sub-bubble img {
     position: relative;
-    max-width: 60%;
-    max-height: 50%;
+    max-width: 40%;
+    max-height: 40%;
     object-fit: contain;
   }
 
+  .midcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+  }
+
+  .sub-bubble{
+    font-family: "SuisseIntl";
+    font-size: 20px;
+    font-weight: 700;
+  }
+
   #subbubble1 {
-    transform: translateY(-50%);
     background: radial-gradient(circle farthest-side, #a6a7ff, transparent 100%);
   }
 
   #subbubble2 {
-    transform: translateY(50%);
     background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
   }
 
   #subbubble3 {
-    transform: translateY(-50%);
     background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
   }
 
   #subbubble4 {
-    transform: translateY(50%);
     background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
   }
 
   #subbubble5 {
-    transform: translateY(-50%);
     background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
   }
 
