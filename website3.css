@@ -1,16 +1,10 @@
 body {
-    /*
-    background-image: url("https://img.freepik.com/premium-photo/colorful-background-banner-template-decorative-design-layout-your-ideas-with-space-text_7954-6875.jpg?w=360");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;*/
+    /*background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;*/
     background-color: #ffffc5;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200vh;
     flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -23,52 +17,162 @@ body {
     font-style: normal;
 }
 
-html {
-    scroll-snap-type: y mandatory;
+@font-face {
+    font-family: 'SuisseIntlLight';
+    src: url('font/SuisseIntl-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+/*for mobiles*/
+
 .container {
+    background-color: transparent;
+    display: flex;
     width: 100%;
-    height: 50%;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    height: auto;
+    flex-direction: column;
 }
 
 #intro {
-    background: linear-gradient(#007480, #ffffc5);
+    height: 700px;
+    background: linear-gradient(#47d9e9, transparent 100%);
 }
 
 .banner {
     position: absolute;
-    top: 3%;
+    top: 0%;
     left: 5%;
     width: 90%;
-    height: 15%;
+    height: auto;
     display: flex;
-    justify-content: left;
+    align-items: center;
     Justify-content: space-between;
-    font-size: 28px;
     font-weight: bold;
     font-family: 'SuisseIntl';
-    color: #fff;
+    color: #000;
+    border-bottom: 1px solid #000;
+    z-index: 1;
 }
 
-.appetizer {
+.banner .title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'SuisseIntl';
+}
+
+.banner .lang {
+    display: flex;
+    justify-content: flex-end;
+    width: 33%;
+}
+
+/* Custom dropdown */
+.dropdown {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: -5px;
+    font-size: 18px;
+}
+
+.dropdown.toggle>input {
+    display: none;
+}
+
+.dropdown>a,
+.dropdown.toggle>label {
+    border-radius: 2px;
+}
+
+.dropdown>a::after,
+.dropdown.toggle>label::after {
+    content: "";
+    float: right;
+    margin: 15px 15px 0 0;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid black;
+}
+
+.dropdown ul {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 20%;
+    width: 100%;
+    box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.dropdown a,
+.dropdown.toggle>label {
+    display: block;
+    padding: 0 0 0 10px;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    background-color: transparent;
+}
+
+.dropdown li {
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+
+}
+
+.dropdown.hover li {
+    transition-delay: 300ms;
+}
+
+.dropdown li:first-child a {
+    border-radius: 2px 2px 0 0;
+}
+
+.dropdown li:last-child a {
+    border-radius: 0 0 2px 2px;
+}
+
+.dropdown a:hover,
+.dropdown.toggle>label:hover,
+.dropdown.toggle>input:checked~label {
+    background-color: transparent;
+    color: #f5f5f5;
+}
+
+.dropdown.toggle>label:hover::after,
+.dropdown.toggle>input:checked~label::after {
+    border-top-color: #f5f5f5;
+}
+
+.dropdown.toggle>input:checked~ul li {
+    height: 35px;
+}
+
+/* End for Custom dropdown */
+
+.appetizer {
+    position: relative;
+    top: 12%;
     left: 5%;
     width: 90%;
-    height: 80%;
+    height: 90%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     font-size: large;
-    font-family: 'SuisseIntl';
-    color: #fff;
+    color: #000;
 }
 
 .appetizer .text {
-    width: 60%;
+    width: 100%;
     height: 100%;
 }
 
@@ -79,29 +183,27 @@ html {
 }
 
 .appetizer .text p {
-    margin-top: 20%;
-    font-size: 22px;
-    font-family: 'SuisseIntl';
+    margin-top: 3%;
+    font-size: 20px;
+    font-family: 'SuisseIntlLight';
 }
 
-.appetizer img {
-    float: right;
-    width: 90%;
-    object-fit: contain;
+#subbubbles {
+    display: none;
 }
 
 #content {
-    background-color: #ffffc5;
-    /*background: radial-gradient(circle farthest-side, #ffffc5, #f9f946);*/
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .bubble {
-    position: absolute;
+    position: relative;
     width: 150px;
     height: 150px;
+    margin: 100px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -112,6 +214,7 @@ html {
 }
 
 .bubble img {
+    position: relative;
     max-width: 60%;
     max-height: 50%;
     object-fit: contain;
@@ -119,42 +222,41 @@ html {
 }
 
 .bubble span {
-    font-size: 16px;
+    position: relative;
+    font-size: 20px;
     object-fit: contain;
     font-family: 'SuisseIntl';
     z-index: 2;
     font-weight: 700;
 }
 
-.bubble:hover {
-    z-index: 3;
-}
-
-.bubble:hover .smaller {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-
-.bubble:not(:hover) .smaller {
-    transition: opacity 0.3s ease !important;
-}
-
 .smaller {
-    width: 70px;
-    height: 70px;
+    position: absolute;
+    width: 60%;
+    height: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
-    opacity: 0;
 }
 
 .smaller a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+
+.smaller a span {
+    text-decoration: none;
+    color: #000;
+    font-family: "SuisseIntl";
+    font-size: 15px;
+    text-align: center;
 }
 
 .smaller img {
@@ -166,11 +268,10 @@ html {
 .text-description {
     position: absolute;
     padding: 7px;
-    background-color: #000;
-    color: #fff;
+    color: #000000;
     border-radius: 5px;
     white-space: normal;
-    width: 500%;
+    width: 400px;
     visibility: hidden;
     opacity: 0;
     z-index: 1;
@@ -183,329 +284,477 @@ html {
     margin: 0;
     font-family: 'SuisseIntl';
     font-size: 18px;
-    color: #fff;
+    color: #000000;
     margin-bottom: 5px;
     text-align: center;
 }
 
-.smaller:hover .text-description {
-    visibility: visible;
-    opacity: 1;
-    z-index: 3;
-}
-
-.text-description:hover {
-    display: none;
-}
-
 .border {
     position: absolute;
-    background-color: inherit;
-    width: 318px;
-    height: 318px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     z-index: 1;
 }
 
-/*category 1*/
-
-#bubble1 {
-    background-color: #c5c6ff;
-    transform: translate(-400px, -125px) rotate(0deg);
+/* Arrows */
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
 }
 
-#bubble1 .text-description {
-    left: 100%;
-    top: 0%;
+.arrow p {
+    margin: 0 0 20px;
 }
 
+/* Arrow & Hover Animation */
+#more-arrows {
+    width: 75px;
+    height: 65px;
+}
+
+#more-arrows:hover polygon {
+    fill: black;
+    transition: all .2s ease-out;
+}
+
+#more-arrows:hover polygon.arrow-bottom {
+    transform: translateY(-9px);
+}
+
+#more-arrows:hover polygon.arrow-top {
+    transform: translateY(9px);
+}
+
+polygon {
+    fill: black;
+    transition: all .2s ease-out;
+}
+
+polygon.arrow-middle {
+    opacity: 0.75;
+}
+
+polygon.arrow-top {
+    opacity: 0.5;
+}
+
+/* End for arrows */
+
+@media only screen and (min-width: 1050px) {
+
+    /* For Desktops: */
+    body {
+        height: 200vh;
+    }
+
+    html {
+        scroll-snap-type: y mandatory;
+    }
+
+    .container {
+        width: 100%;
+        height: 50% !important;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+
+    .banner {
+        height: 9%;
+        align-items: end;
+    }
+
+    .banner .title {
+        font-size: 32px;
+    }
+
+    .banner .lang {
+        display: flex;
+        justify-content: flex-end;
+        width: 10%;
+    }
+
+    .appetizer {
+        top: 10%;
+    }
+
+    .appetizer .text {
+        width: 35%;
+        height: 100%;
+    }
+
+    #subbubbles {
+        display: block;
+        width: 60%;
+        height: 80%;
+        margin-top: 1%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sub-bubble {
+        position: relative;
+        width: 33%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-bubble img {
+        position: relative;
+        max-width: 40%;
+        max-height: 40%;
+        object-fit: contain;
+    }
+
+    .midcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
+    }
+
+    .sub-bubble {
+        font-family: "SuisseIntl";
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #subbubble1 {
+        background: radial-gradient(circle farthest-side, #a6a7ff, transparent 100%);
+    }
+
+    #subbubble2 {
+        background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
+    }
+
+    #subbubble3 {
+        background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
+    }
+
+    #subbubble4 {
+        background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
+    }
+
+    #subbubble5 {
+        background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
+    }
+
+    .bubble {
+        position: absolute;
+    }
+
+    .bubble span {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .bubble:hover {
+        transition: background-color 0.2s ease;
+        z-index: 3;
+    }
+
+    .smaller {
+        width: 95px;
+        height: 70px;
+    }
+
+    .smaller:hover .text-description {
+        visibility: visible;
+        opacity: 1;
+        z-index: 3;
+    }
+
+    .text-description:hover {
+        display: none;
+    }
+
+    /*category 1*/
+
+    #bubble1 {
+        transform: translate(-400px, -125px) rotate(0deg);
+    }
+
+    #bubble1 .text-description {
+        left: 100%;
+        top: 0%;
+        background-color: #a6a7ff;
+    }
+
+    /*category 2*/
+
+    #bubble2 {
+        transform: translate(-200px, 125px) rotate(0deg);
+    }
+
+    #bubble2 .text-description {
+        left: 100%;
+        bottom: 0%;
+        background-color: #ffac4e;
+    }
+
+    /*category 3*/
+
+    #bubble3 {
+        transform: translate(0px, -125px) rotate(0deg);
+    }
+
+    #bubble3 .text-description {
+        left: 100%;
+        top: 0%;
+        background-color: #9ffc36;
+    }
+
+    /*category 4*/
+
+    #bubble4 {
+        transform: translate(200px, 125px) rotate(0deg);
+    }
+
+    #bubble4 .text-description {
+        right: 100%;
+        bottom: 0%;
+        background-color: #fda4c6;
+    }
+
+    /*category 5*/
+
+    #bubble5 {
+        transform: translate(400px, -125px) rotate(0deg);
+    }
+
+    #bubble5 .text-description {
+        right: 100%;
+        top: 0%;
+        background-color: #54cbfa;
+    }
+
+}
+
+/*Category 1*/
 
 #border1 {
-    border: 3px solid #c5c6ff;
+    background: radial-gradient(circle farthest-side, #a6a7ff, transparent 100%);
 }
 
-#EPFLCourses {
+#Semainedeladurabilité {
     background-color: transparent;
     transform: translate(0px, -126px) rotate(0deg);
-    transition-delay: 0s;
 }
 
 #CSAWClimateSustainabilityActionWeek {
     background-color: transparent;
     transform: translate(-119px, -39px) rotate(0deg);
-    transition-delay: 0.3s;
 }
 
 #lecanardhuppé {
     background-color: transparent;
     transform: translate(-74px, 102px) rotate(0deg);
-    transition-delay: 0.6s;
+}
+
+#EPFLCourses {
+    background-color: transparent;
+    transform: translate(74px, 102px) rotate(0deg);
 }
 
 #Fresqueduclimat {
     background-color: transparent;
-    transform: translate(74px, 102px) rotate(0deg);
-    transition-delay: 0.9s;
-}
-
-#Semainedeladurabilité {
-    background-color: transparent;
     transform: translate(119px, -39px) rotate(0deg);
-    transition-delay: 1.2s;
 }
 
-/*category 2*/
-
-#bubble2 {
-    background-color: #ff4d4d;
-    transform: translate(-200px, 125px) rotate(0deg);
-}
-
-#bubble2 .text-description {
-    left: 100%;
-    bottom: 0%;
-}
+/*Category 2*/
 
 #border2 {
-    border: 3px solid #ff4d4d;
+    background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
 }
 
 #Slowtacarrière {
     background-color: transparent;
     transform: translate(0px, -126px) rotate(0deg);
-    transition-delay: 0s;
-}
-
-#CoachingSustainability {
-    background-color: transparent;
-    transform: translate(-68px, -106px) rotate(0deg);
-    transition-delay: 0.3s;
-}
-
-#associationdébouchésdurables {
-    background-color: transparent;
-    transform: translate(-114px, -52px) rotate(0deg);
-    transition-delay: 0.6s;
-}
-
-#Pointvélo {
-    background-color: transparent;
-    transform: translate(-124px, 18px) rotate(0deg);
-    transition-delay: 0.9s;
-}
-
-#Bibliothèqued’objets {
-    background-color: transparent;
-    transform: translate(-95px, 82px) rotate(0deg);
-    transition-delay: 1.2s;
-}
-
-#Fixn’ReplaceRepaircafé {
-    background-color: transparent;
-    transform: translate(-35px, 120px) rotate(0deg);
-    transition-delay: 1.5s;
-}
-
-#EpiceriecoopérativeleVorace {
-    background-color: transparent;
-    transform: translate(35px, 120px) rotate(0deg);
-    transition-delay: 1.8s;
-}
-
-#MarchéEPFL {
-    background-color: transparent;
-    transform: translate(95px, 82px) rotate(0deg);
-    transition-delay: 2.1s;
-}
-
-#PointSmartCellphones {
-    background-color: transparent;
-    transform: translate(124px, 18px) rotate(0deg);
-    transition-delay: 2.4s;
-}
-
-#CastorFreegan {
-    background-color: transparent;
-    transform: translate(114px, -52px) rotate(0deg);
-    transition-delay: 2.7s;
 }
 
 #Meubléco {
     background-color: transparent;
+    transform: translate(-114px, -52px) rotate(0deg);
+}
+
+#associationdébouchésdurables {
+    background-color: transparent;
+    transform: translate(-68px, -106px) rotate(0deg);
+}
+
+#Meubléco {
+    background-color: transparent;
+    transform: translate(-114px, -52px) rotate(0deg);
+}
+
+#Bibliothèqued’objets {
+    background-color: transparent;
+    transform: translate(-124px, 18px) rotate(0deg);
+}
+
+#Fixn’ReplaceRepaircafé {
+    background-color: transparent;
+    transform: translate(-95px, 82px) rotate(0deg);
+}
+
+#Pointvélo {
+    background-color: transparent;
+    transform: translate(-35px, 120px) rotate(0deg);
+}
+
+#PointSmartCellphones {
+    background-color: transparent;
+    transform: translate(35px, 120px) rotate(0deg);
+}
+
+#CoachingSustainability {
+    background-color: transparent;
+    transform: translate(95px, 82px) rotate(0deg);
+}
+
+#MarchéEPFL {
+    background-color: transparent;
+    transform: translate(124px, 18px) rotate(0deg);
+}
+
+#EpiceriecoopérativeleVorace {
+    background-color: transparent;
+    transform: translate(114px, -52px) rotate(0deg);
+}
+
+#CastorFreegan {
+    background-color: transparent;
     transform: translate(68px, -106px) rotate(0deg);
-    transition-delay: 3s;
 }
 
-/*category 3*/
-
-#bubble3 {
-    background-color: #95F823;
-    transform: translate(0px, -125px) rotate(0deg);
-}
-
-#bubble3 .text-description {
-    left: 100%;
-    top: 0%;
-}
+/*Category 3*/
 
 #border3 {
-    border: 3px solid #95F823;
-}
-
-#LaConvergence {
-    background-color: transparent;
-    transform: translate(0px, -126px) rotate(0deg);
-    transition-delay: 0s;
+    background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
 }
 
 #Unipoly {
     background-color: transparent;
-    transform: translate(-68px, -106px) rotate(0deg);
-    transition-delay: 0.3s;
-}
-
-#Queermanence {
-    background-color: transparent;
-    transform: translate(-114px, -52px) rotate(0deg);
-    transition-delay: 0.6s;
+    transform: translate(0px, -126px) rotate(0deg);
 }
 
 #Polyquity {
     background-color: transparent;
-    transform: translate(-124px, 18px) rotate(0deg);
-    transition-delay: 0.9s;
+    transform: translate(-68px, -106px) rotate(0deg);
 }
 
 #PlanQueer {
     background-color: transparent;
-    transform: translate(-95px, 82px) rotate(0deg);
-    transition-delay: 1.2s;
+    transform: translate(-114px, -52px) rotate(0deg);
 }
 
-#Ingénieur·esdumonde {
+#Queermanence {
     background-color: transparent;
-    transform: translate(-35px, 120px) rotate(0deg);
-    transition-delay: 1.5s;
-}
-
-#AmnestydesHautesEcolesLausannoises {
-    background-color: transparent;
-    transform: translate(35px, 120px) rotate(0deg);
-    transition-delay: 1.8s;
+    transform: translate(-124px, 18px) rotate(0deg);
 }
 
 #ZeroEmissionGroup {
     background-color: transparent;
+    transform: translate(-95px, 82px) rotate(0deg);
+}
+
+#LaConvergence {
+    background-color: transparent;
+    transform: translate(-35px, 120px) rotate(0deg);
+}
+
+#Ingénieur·esdumonde {
+    background-color: transparent;
+    transform: translate(35px, 120px) rotate(0deg);
+}
+
+#FermedeBassenges {
+    background-color: transparent;
     transform: translate(95px, 82px) rotate(0deg);
-    transition-delay: 2.1s;
 }
 
 #Associationdesétudiant·esvégan·esetanimalistes {
     background-color: transparent;
     transform: translate(124px, 18px) rotate(0deg);
-    transition-delay: 2.4s;
 }
 
-#FermedeBassenges {
+#AmnestydesHautesEcolesLausannoises {
     background-color: transparent;
     transform: translate(114px, -52px) rotate(0deg);
-    transition-delay: 2.7s;
 }
 
 #ThriftstoreUPFashionLab {
     background-color: transparent;
     transform: translate(68px, -106px) rotate(0deg);
-    transition-delay: 3s;
 }
 
-/*category 4*/
-
-#bubble4 {
-    background-color: #ff70a6;
-    transform: translate(200px, 125px) rotate(0deg);
-}
-
-#bubble4 .text-description {
-    right: 100%;
-    bottom: 0%;
-}
+/*Category 4*/
 
 #border4 {
-    border: 3px solid #ff70a6;
-}
-
-#Make {
-    background-color: transparent;
-    transform: translate(0px, -126px) rotate(0deg);
-    transition-delay: 0s;
-}
-
-#Durabilis {
-    background-color: transparent;
-    transform: translate(-119px, -39px) rotate(0deg);
-    transition-delay: 0.3s;
-}
-
-#Skil {
-    background-color: transparent;
-    transform: translate(-74px, 102px) rotate(0deg);
-    transition-delay: 0.6s;
+    background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
 }
 
 #EPFLChangemakers {
     background-color: transparent;
-    transform: translate(74px, 102px) rotate(0deg);
-    transition-delay: 0.9s;
+    transform: translate(0px, -126px) rotate(0deg);
 }
 
 #Ucreate {
     background-color: transparent;
+    transform: translate(-119px, -39px) rotate(0deg);
+}
+
+#Make {
+    background-color: transparent;
+    transform: translate(-74px, 102px) rotate(0deg);
+}
+
+#Durabilis {
+    background-color: transparent;
+    transform: translate(74px, 102px) rotate(0deg);
+}
+
+#Skil {
+    background-color: transparent;
     transform: translate(119px, -39px) rotate(0deg);
-    transition-delay: 1.2s;
 }
 
-/*category 5*/
-
-#bubble5 {
-    background-color: #70d6ff;
-    transform: translate(400px, -125px) rotate(0deg);
-}
-
-#bubble5 .text-description {
-    right: 100%;
-    top: 0%;
-}
+/*Category 5*/
 
 #border5 {
-    border: 3px solid #70d6ff;
+    background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
 }
 
 #SportscenterEPFL-UNIL {
     background-color: transparent;
     transform: translate(0px, -126px) rotate(0deg);
-    transition-delay: 0s;
 }
 
 #Espace-Transitions {
     background-color: transparent;
     transform: translate(-119px, -39px) rotate(0deg);
-    transition-delay: 0.3s;
 }
 
 #TrustandSupportNetworkTSN {
     background-color: transparent;
     transform: translate(-74px, 102px) rotate(0deg);
-    transition-delay: 0.6s;
 }
 
 #Guidedmeditation {
     background-color: transparent;
     transform: translate(74px, 102px) rotate(0deg);
-    transition-delay: 0.9s;
 }
 
 #ForêtdeDorigny {
     background-color: transparent;
     transform: translate(119px, -39px) rotate(0deg);
-    transition-delay: 1.2s;
 }

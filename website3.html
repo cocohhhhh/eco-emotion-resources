@@ -3,6 +3,7 @@
 
 <head>
     <title>EPFL/UNIL Sustainability Resources</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="website3.css">
 </head>
 
@@ -13,21 +14,63 @@
                 EPFL Sustainability Resources
             </div>
             <div class="lang">
-                EN / FR
+                <div class="dropdown toggle">
+                    <input id="t1" type="checkbox" unchecked>
+                    <label for="t1">Language</label>
+                    <ul>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Francais</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="appetizer">
             <div class="text">
-                <h1>Discover sustainability on your campus!<h1>
-                        <p>EPFL is committed to improve sustainability for students and has many resources and staff
-                            available for you. This website aims to provide a comprehensive list of these resources, and
-                            to make
-                            them
-                            easily accessible to all.</p>
+                <h1>Discover sustainability on your campus!</h>
+                    <p>There are many resources & staff available for students on EPFL campus regarding sustainability.
+                        This website, built by students <i>(Mehdi El Bouari & Ke Li, 2023)</i>, aims to provide a
+                        comprehensive
+                        list of these resources, and to make them easily accessible to all.
+                    </p>
+                    <p>To get in touch with the sustainability education team about this site or for other reasons,
+                        don’t
+                        hesitate to contact <a href="mailto:sustainability@epfl.ch">sustainability@epfl.ch</a> for
+                        more information!
+                    </p>
             </div>
-            <div class="image">
-                <img src="logo/poster.png" alt="Image">
+            <div class="subbubble-container" id="subbubbles">
+                <div class="midcontainer" id="upper_subbubbles">
+                    <div class="sub-bubble" id="subbubble1">
+                        <img src="logo\Apprendre.png" alt="Image">
+                        <span>Inform Yourself</span>
+                    </div>
+                    <div class="sub-bubble" id="subbubble3">
+                        <img src="logo\Community.png" alt="Image">
+                        <span>Take Action</span>
+                    </div>
+                    <div class="sub-bubble" id="subbubble5">
+                        <img src="logo\Sain.png" alt="Image">
+                        <span>Take Care</span>
+                    </div>
+                </div>
+                <div class="midcontainer" id="lower_subbubbles">
+                    <div class="sub-bubble" id="subbubble2">
+                        <img src="logo\Services.png" alt="Image">
+                        <span>Enjoy Services</span>
+                    </div>
+                    <div class="sub-bubble" id="subbubble4">
+                        <img src="logo\Startup.png" alt="Image">
+                        <span>Launch Your Project</span>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="arrow" id="arrow">
+            <svg id="more-arrows">
+                <polygon class="arrow-top" points="18.8,13.95 0.9,0.65 1.65,0 18.8,12.65 35.95,0 36.85,0.65 " />
+                <polygon class="arrow-middle" points="18.8,22.9	0.4,9.35 2.2,8.2 18.8,20.6 35.6,8.2 37.25,9.35" />
+                <polygon class="arrow-bottom" points="18.8,32 0,18.05 2.55,16.4 18.8,28.4 35.2,16.4 37.75,18.05" />
+            </svg>
         </div>
     </div>
     <div class="container" id="content">
@@ -40,7 +83,9 @@
             <div class="bubble smaller" id="EPFLCourses">
                 <a
                     href="https://www.epfl.ch/about/sustainability/fr/durabilite-dans-leducation/programmes-detudes-cours-et-moocs/">
-                    <img src="logo\EPFL courses.png" alt="Image">
+                    <!-- <img src="logo\EPFL courses.png" alt="Image"> -->
+                    <span>EPFL</span>
+                    <span>Courses</span>
                 </a>
                 <div class="text-description">
                     <h3>EPFL Courses</h3>
@@ -99,18 +144,19 @@
                 </div>
             </div>
         </div>
-        <!-- Category 2 : At Your Service-->
+        <!-- Category 2 : Enjoy Services-->
         <div class="bubble" id="bubble2">
             <img src="logo\Services.png" alt="Image">
-            <span>At Your Service</span>
+            <span>Enjoy Services</span>
             <div class="border" id="border2"></div>
-            <!-- Coaching Sustainability -->
+            <!-- Coaching in sustainability -->
             <div class="bubble smaller" id="CoachingSustainability">
                 <a href="https://people.epfl.ch/michka.melo">
-                    <img src="logo\Coaching sustainability.png" alt="Image">
+                    <!-- <img src="logo\Coaching sustainability.png" alt="Image"> -->
+                    <span>Coaching in Sustainability</span>
                 </a>
                 <div class="text-description">
-                    <h3>Coaching Sustainability</h3>
+                    <h3>Coaching in sustainability</h3>
                     A team of coaches to support students in acquiring the skills and networks they need to work for
                     sustainability during their studies or once they graduate.
                 </div>
@@ -142,13 +188,15 @@
                     choice, in the same way as the professional interests or the personality of the participants.
                 </div>
             </div>
-            <!-- Point vélo -->
+            <!-- Point Vélo -->
             <div class="bubble smaller" id="Pointvélo">
                 <a href="https://www.epfl.ch/campus/mobility/mobility-and-travel/commuting/point-velo/">
-                    <img src="logo\point velo title.png" alt="Image">
+                    <!-- <img src="logo\point velo title.png" alt="Image"> -->
+                    <span>Point</span>
+                    <span>Vélo</span>
                 </a>
                 <div class="text-description">
-                    <h3>Point vélo</h3>
+                    <h3>Point Vélo</h3>
                     Point Vélo is the cornerstone of our efforts to encourage cycling. Located on our Lausanne campus,
                     it serves as a point of sale for new and used bikes and for cycling gear at reduced prices; it also
                     offers at-cost repairs and free bike mechanics classes. These products and services are available
@@ -210,7 +258,9 @@
             <!-- Point Smart (Cellphones) -->
             <div class="bubble smaller" id="PointSmartCellphones">
                 <a href="https://www.epfl.ch/about/sustainability/sustainable-it/point-smart/">
-                    <img src="logo\point smart title.png" alt="Image">
+                    <!-- <img src="logo\point smart title.png" alt="Image"> -->
+                    <span>Point</span>
+                    <span>Smart</span>
                 </a>
                 <div class="text-description">
                     <h3>Point Smart (Cellphones)</h3>
@@ -411,7 +461,8 @@
             <div class="bubble smaller" id="Make">
                 <a
                     href="https://www.epfl.ch/education/educational-initiatives/discovery-learning-program-2/interdisciplinary-projects/">
-                    <img src="logo\EPFL Make.png" alt="Image">
+                    <!-- <img src="logo\EPFL Make.png" alt="Image"> -->
+                    <span>MAKE</span>
                 </a>
                 <div class="text-description">
                     <h3>Make</h3>
@@ -508,7 +559,8 @@
             <!-- Trust and Support Network (TSN) -->
             <div class="bubble smaller" id="TrustandSupportNetworkTSN">
                 <a href="https://www.epfl.ch/campus/community/trust-and-support-network/">
-                    <img src="logo\Trust-support-network-epfl-.png" alt="Image">
+                    <!-- <img src="logo\Trust-support-network-epfl-.png" alt="Image"> -->
+                    <span>TSN</span>
                 </a>
                 <div class="text-description">
                     <h3>Trust and Support Network (TSN)</h3>
@@ -521,7 +573,9 @@
             <!-- Guided meditation -->
             <div class="bubble smaller" id="Guidedmeditation">
                 <a href="https://www.epfl.ch/campus/spiritual-care/activites/meditation/">
-                    <img src="logo\meditation.png" alt="Image">
+                    <!-- <img src="logo\meditation.png" alt="Image"> -->
+                    <span>Guided</span>
+                    <span>meditation</span>
                 </a>
                 <div class="text-description">
                     <h3>Guided meditation</h3>
@@ -535,6 +589,7 @@
                 <a
                     href="https://www.google.com/maps/place/For%C3%AAt+de+Dorigny/@46.5233077,6.578139,15z/data=!4m2!3m1!1s0x0:0x72d0e6ee0ae1dd4c?sa=X&ved=2ahUKEwiqx5nplcL-AhVPhf0HHTw7AHwQ_BJ6BAhVEAg">
                     <img src="logo\forest.png" alt="Image">
+                    <!-- <span>Dorigny Forest</span> -->
                 </a>
                 <div class="text-description">
                     <h3>Forêt de Dorigny</h3>
@@ -543,5 +598,27 @@
             </div>
         </div>
     </div>
+    <script>
+        $(document).click(function (event) {
+            if (
+                $('.toggle > input').is(':checked') &&
+                !$(event.target).parents('.toggle').is('.toggle')
+            ) {
+                $('.toggle > input').prop('checked', false);
+            }
+        })
+    </script>
+    <script>
+        // Get a reference to the button and the target container
+        const scrollButton = document.getElementById('arrow');
+        const targetContainer = document.getElementById('content');
+
+        // Add a click event listener to the button
+        scrollButton.addEventListener('click', function () {
+            // Scroll to the target container smoothly
+            targetContainer.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
+
 </html>

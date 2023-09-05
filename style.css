@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
+  --dist:120px;
 }
 
 @font-face {
@@ -36,7 +37,11 @@ body {
 
 #intro {
   height: 700px;
-  background: linear-gradient(#47d9e9, transparent 100%);
+  /*background: linear-gradient(#47d9e9, transparent 100%);*/
+}
+
+#subbubbles {
+  display: none;
 }
 
 .banner {
@@ -188,7 +193,7 @@ body {
   font-family: 'SuisseIntlLight';
 }
 
-#subbubbles {
+.appetizer .image img {
   display: none;
 }
 
@@ -203,7 +208,6 @@ body {
   position: relative;
   width: 150px;
   height: 150px;
-  margin: 100px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -215,8 +219,8 @@ body {
 
 .bubble img {
   position: relative;
-  max-width: 60%;
-  max-height: 50%;
+  max-width: 40%;
+  max-height: 30%;
   object-fit: contain;
   z-index: 2;
 }
@@ -268,10 +272,11 @@ body {
 .text-description {
   position: absolute;
   padding: 7px;
-  color: #000000;
+  background-color: #000;
+  color: #fff;
   border-radius: 5px;
   white-space: normal;
-  width: 400px;
+  width: 500%;
   visibility: hidden;
   opacity: 0;
   z-index: 1;
@@ -284,7 +289,7 @@ body {
   margin: 0;
   font-family: 'SuisseIntl';
   font-size: 18px;
-  color: #000000;
+  color: #fff;
   margin-bottom: 5px;
   text-align: center;
 }
@@ -296,7 +301,6 @@ body {
   border-radius: 50%;
   z-index: 1;
 }
-
 /* Arrows */
 .arrow {
   position: absolute;
@@ -341,6 +345,7 @@ polygon.arrow-top {
   opacity: 0.5;
 }
 /* End for arrows */
+
 
 @media only screen and (min-width: 1050px) {
 
@@ -403,6 +408,7 @@ polygon.arrow-top {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
   }
 
   .sub-bubble img {
@@ -412,16 +418,30 @@ polygon.arrow-top {
     object-fit: contain;
   }
 
-  .midcontainer {
+  .midcontainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     width: 100%;
     height: 50%;
   }
 
-  .sub-bubble {
+  #lower_subbubbles{
+    justify-content: center;
+  }
+
+  #upper-bubbles{
+    align-items: start;
+  }
+
+  #lower-bubbles{
+    justify-content: space-around;
+    width: 66%;
+    align-items: end;
+  }
+
+  .sub-bubble{
     font-family: "SuisseIntl";
     font-size: 20px;
     font-weight: 700;
@@ -447,11 +467,19 @@ polygon.arrow-top {
     background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
   }
 
-  .bubble {
-    position: absolute;
+  .bubble{
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1;
+  }
+
+  .border{
+    height: 100%;
+    width: 100%;
   }
 
   .bubble span {
+    font-family: "SuisseIntl";
     font-size: 20px;
     font-weight: 700;
   }
@@ -466,6 +494,30 @@ polygon.arrow-top {
     height: 70px;
   }
 
+  .text-description {
+    position: absolute;
+    padding: 7px;
+    color: #000;
+    border-radius: 5px;
+    white-space: normal;
+    width: 500%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    text-align: left;
+    font-family: 'SuisseIntl';
+    transition: opacity 0.2s ease;
+  }
+
+  .text-description h3 {
+    margin: 0;
+    font-family: 'SuisseIntl';
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
   .smaller:hover .text-description {
     visibility: visible;
     opacity: 1;
@@ -478,10 +530,6 @@ polygon.arrow-top {
 
   /*category 1*/
 
-  #bubble1 {
-    transform: translate(-400px, -125px) rotate(0deg);
-  }
-
   #bubble1 .text-description {
     left: 100%;
     top: 0%;
@@ -489,10 +537,6 @@ polygon.arrow-top {
   }
 
   /*category 2*/
-
-  #bubble2 {
-    transform: translate(-200px, 125px) rotate(0deg);
-  }
 
   #bubble2 .text-description {
     left: 100%;
@@ -502,10 +546,6 @@ polygon.arrow-top {
 
   /*category 3*/
 
-  #bubble3 {
-    transform: translate(0px, -125px) rotate(0deg);
-  }
-
   #bubble3 .text-description {
     left: 100%;
     top: 0%;
@@ -514,10 +554,6 @@ polygon.arrow-top {
 
   /*category 4*/
 
-  #bubble4 {
-    transform: translate(200px, 125px) rotate(0deg);
-  }
-
   #bubble4 .text-description {
     right: 100%;
     bottom: 0%;
@@ -525,10 +561,6 @@ polygon.arrow-top {
   }
 
   /*category 5*/
-
-  #bubble5 {
-    transform: translate(400px, -125px) rotate(0deg);
-  }
 
   #bubble5 .text-description {
     right: 100%;
@@ -546,27 +578,32 @@ polygon.arrow-top {
 
 #Semainedeladurabilité {
   background-color: transparent;
-  transform: translate(0px, -126px) rotate(0deg);
+  transform: translate(calc(var(--dist)*0), calc(var(--dist)*(-1)));
 }
 
 #CSAWClimateSustainabilityActionWeek {
   background-color: transparent;
-  transform: translate(-119px, -39px) rotate(0deg);
+  transform: translate(-109px, -63px);
 }
 
 #lecanardhuppé {
   background-color: transparent;
-  transform: translate(-74px, 102px) rotate(0deg);
+  transform: translate(-109px, 63px);
+}
+
+#CoachingSustainability {
+  background-color: transparent;
+  transform: translate(-0px, 126px);
 }
 
 #EPFLCourses {
   background-color: transparent;
-  transform: translate(74px, 102px) rotate(0deg);
+  transform: translate(109px, 63px);
 }
 
 #Fresqueduclimat {
   background-color: transparent;
-  transform: translate(119px, -39px) rotate(0deg);
+  transform: translate(109px, -63px);
 }
 
 /*Category 2*/
@@ -577,62 +614,52 @@ polygon.arrow-top {
 
 #Slowtacarrière {
   background-color: transparent;
-  transform: translate(0px, -126px) rotate(0deg);
-}
-
-#Meubléco {
-  background-color: transparent;
-  transform: translate(-114px, -52px) rotate(0deg);
+  transform: translate(0px, -126px);
 }
 
 #associationdébouchésdurables {
   background-color: transparent;
-  transform: translate(-68px, -106px) rotate(0deg);
+  transform: translate(-74px, -102px);
 }
 
 #Meubléco {
   background-color: transparent;
-  transform: translate(-114px, -52px) rotate(0deg);
+  transform: translate(-120px, -39px);
 }
 
 #Bibliothèqued’objets {
   background-color: transparent;
-  transform: translate(-124px, 18px) rotate(0deg);
+  transform: translate(-120px, 39px);
 }
 
 #Fixn’ReplaceRepaircafé {
   background-color: transparent;
-  transform: translate(-95px, 82px) rotate(0deg);
+  transform: translate(-74px, 102px);
 }
 
 #Pointvélo {
   background-color: transparent;
-  transform: translate(-35px, 120px) rotate(0deg);
+  transform: translate(-0px, 126px);
 }
 
 #PointSmartCellphones {
   background-color: transparent;
-  transform: translate(35px, 120px) rotate(0deg);
-}
-
-#CoachingSustainability {
-  background-color: transparent;
-  transform: translate(95px, 82px) rotate(0deg);
+  transform: translate(74px, 102px);
 }
 
 #MarchéEPFL {
   background-color: transparent;
-  transform: translate(124px, 18px) rotate(0deg);
+  transform: translate(120px, 39px);
 }
 
 #EpiceriecoopérativeleVorace {
   background-color: transparent;
-  transform: translate(114px, -52px) rotate(0deg);
+  transform: translate(120px, -39px);
 }
 
 #CastorFreegan {
   background-color: transparent;
-  transform: translate(68px, -106px) rotate(0deg);
+  transform: translate(74px, -102px);
 }
 
 /*Category 3*/
@@ -643,57 +670,57 @@ polygon.arrow-top {
 
 #Unipoly {
   background-color: transparent;
-  transform: translate(0px, -126px) rotate(0deg);
+  transform: translate(0px, -126px);
 }
 
 #Polyquity {
   background-color: transparent;
-  transform: translate(-68px, -106px) rotate(0deg);
+  transform: translate(-68px, -106px);
 }
 
 #PlanQueer {
   background-color: transparent;
-  transform: translate(-114px, -52px) rotate(0deg);
+  transform: translate(-114px, -52px);
 }
 
 #Queermanence {
   background-color: transparent;
-  transform: translate(-124px, 18px) rotate(0deg);
+  transform: translate(-124px, 18px);
 }
 
 #ZeroEmissionGroup {
   background-color: transparent;
-  transform: translate(-95px, 82px) rotate(0deg);
+  transform: translate(-95px, 82px);
 }
 
 #LaConvergence {
   background-color: transparent;
-  transform: translate(-35px, 120px) rotate(0deg);
+  transform: translate(-35px, 120px);
 }
 
 #Ingénieur·esdumonde {
   background-color: transparent;
-  transform: translate(35px, 120px) rotate(0deg);
+  transform: translate(35px, 120px);
 }
 
 #FermedeBassenges {
   background-color: transparent;
-  transform: translate(95px, 82px) rotate(0deg);
+  transform: translate(95px, 82px);
 }
 
 #Associationdesétudiant·esvégan·esetanimalistes {
   background-color: transparent;
-  transform: translate(124px, 18px) rotate(0deg);
+  transform: translate(124px, 18px);
 }
 
 #AmnestydesHautesEcolesLausannoises {
   background-color: transparent;
-  transform: translate(114px, -52px) rotate(0deg);
+  transform: translate(114px, -52px);
 }
 
 #ThriftstoreUPFashionLab {
   background-color: transparent;
-  transform: translate(68px, -106px) rotate(0deg);
+  transform: translate(68px, -106px);
 }
 
 /*Category 4*/
@@ -704,27 +731,27 @@ polygon.arrow-top {
 
 #EPFLChangemakers {
   background-color: transparent;
-  transform: translate(0px, -126px) rotate(0deg);
+  transform: translate(0px, -126px);
 }
 
 #Ucreate {
   background-color: transparent;
-  transform: translate(-119px, -39px) rotate(0deg);
+  transform: translate(-119px, -39px);
 }
 
 #Make {
   background-color: transparent;
-  transform: translate(-74px, 102px) rotate(0deg);
+  transform: translate(-74px, 102px);
 }
 
 #Durabilis {
   background-color: transparent;
-  transform: translate(74px, 102px) rotate(0deg);
+  transform: translate(74px, 102px);
 }
 
 #Skil {
   background-color: transparent;
-  transform: translate(119px, -39px) rotate(0deg);
+  transform: translate(119px, -39px);
 }
 
 /*Category 5*/
@@ -735,25 +762,25 @@ polygon.arrow-top {
 
 #SportscenterEPFL-UNIL {
   background-color: transparent;
-  transform: translate(0px, -126px) rotate(0deg);
+  transform: translate(0px, -126px);
 }
 
 #Espace-Transitions {
   background-color: transparent;
-  transform: translate(-119px, -39px) rotate(0deg);
+  transform: translate(-119px, -39px);
 }
 
 #TrustandSupportNetworkTSN {
   background-color: transparent;
-  transform: translate(-74px, 102px) rotate(0deg);
+  transform: translate(-74px, 102px);
 }
 
 #Guidedmeditation {
   background-color: transparent;
-  transform: translate(74px, 102px) rotate(0deg);
+  transform: translate(74px, 102px);
 }
 
 #ForêtdeDorigny {
   background-color: transparent;
-  transform: translate(119px, -39px) rotate(0deg);
+  transform: translate(119px, -39px);
 }
