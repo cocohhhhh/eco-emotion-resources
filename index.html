@@ -5,6 +5,7 @@
     <title>EPFL/UNIL Sustainability Resources</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -683,6 +684,17 @@
         scrollButton.addEventListener('click', function () {
             // Scroll to the target container smoothly
             targetContainer.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Wait for the page to fully load
+    
+            // Get the height of container1
+            var container1Height = $('#container1').height();
+    
+            // Set the height of container2 to match container1
+            $('#container2').height(container1Height);
         });
     </script>
 </body>

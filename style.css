@@ -37,7 +37,7 @@ body {
 
 #intro {
   height: 700px;
-  /*background: linear-gradient(#47d9e9, transparent 100%);*/
+  background: linear-gradient(#47d9e9, transparent 100%);
 }
 
 #subbubbles {
@@ -202,6 +202,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.midcontainer{
+  justify-content: center;
+  align-items: center space-between;
+  width: 100%;
+  height: auto;
 }
 
 .bubble {
@@ -448,27 +455,27 @@ polygon.arrow-top {
   }
 
   #subbubble1 {
-    background: radial-gradient(circle farthest-side, #a6a7ff, transparent 100%);
+    background: radial-gradient(circle farthest-side, #a6a7ff, #ffffc5);
   }
 
   #subbubble2 {
-    background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
+    background: radial-gradient(circle farthest-side, #fb8b0c, #ffffc5);
   }
 
   #subbubble3 {
-    background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
+    background: radial-gradient(circle farthest-side, #95F823, #ffffc5);
   }
 
   #subbubble4 {
-    background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
+    background: radial-gradient(circle farthest-side, #ff70a6, #ffffc5);
   }
 
   #subbubble5 {
-    background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
+    background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
   }
 
   .bubble{
-    height: 100%;
+    height: 110%;
     width: auto;
     aspect-ratio: 1;
   }
