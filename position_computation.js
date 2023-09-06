@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var margin = $('.bubble.smaller').height()/2;
     // Iterate over each 'bubble' class
     $('.bubble').each(function () {
         var bubble = $(this);
@@ -6,7 +7,7 @@ $(document).ready(function () {
         // Find all elements with both classes 'bubble' and 'smaller' inside the current 'bubble'
         var smallerList = bubble.find('.bubble.smaller');
         var N = smallerList.length;
-        var R = (bubble.height() / 2 )*0.8; // Adjust this based on your desired positioning logic
+        var R = (bubble.height() / 2 ) -margin; // Adjust this based on your desired positioning logic
 
         // Iterate over 'smaller bubble' elements within the current 'bubble'
         smallerList.each(function (index) {
