@@ -240,7 +240,7 @@ body {
 
 .bubble span {
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   object-fit: contain;
   font-family: 'SuisseIntl';
   z-index: 2;
@@ -494,20 +494,27 @@ body {
     aspect-ratio: 1;
   }
 
-  .bubble span {
-    font-family: "SuisseIntl";
-    font-size: 20px;
-    font-weight: 700;
-  }
-
   .bubble:hover {
     transition: background-color 0.2s ease;
     z-index: 3;
   }
 
+
   .smaller {
     width: 30%;
     height: 20%;
+  }
+
+  .smaller img {
+    transform: scale(0.8);
+    filter: opacity(0.5);
+  }
+
+  .smaller img:hover {
+    transform: scale(1.5);
+    filter: opacity(1);
+    transition: all 0.2s ease;
+    z-index: 3;
   }
 
   .text-description {
@@ -544,43 +551,33 @@ body {
     display: none;
   }
 
-  /*category 1*/
-
   #bubble1 .text-description {
     left: 100%;
     top: 0%;
     background-color: #a6a7ff;
   }
 
-  /*category 2*/
-
   #bubble2 .text-description {
     left: 100%;
-    bottom: 0%;
+    top: 0%;
     background-color: #9ffc36;
   }
 
-  /*category 3*/
-
   #bubble3 .text-description {
-    left: 100%;
+    right: 100%;
     top: 0%;
     background-color: #ffac4e;
   }
 
-  /*category 4*/
-
   #bubble4 .text-description {
-    right: 100%;
+    left: 100%;
     bottom: 0%;
     background-color: #fda4c6;
   }
 
-  /*category 5*/
-
   #bubble5 .text-description {
     right: 100%;
-    top: 0%;
+    bottom: 0%;
     background-color: #54cbfa;
   }
 
