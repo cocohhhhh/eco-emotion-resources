@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var margin = $('.bubble.smaller').height()/2;
+    var margin = $('.bubble.smaller').height()/1.8;
     // Iterate over each 'bubble' class
     $('.bubble').each(function () {
         var bubble = $(this);
