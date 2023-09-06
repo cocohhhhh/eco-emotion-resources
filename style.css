@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
-  --dist:120px;
+  --dist: 120px;
 }
 
 @font-face {
@@ -36,11 +36,16 @@ body {
 }
 
 #intro {
-  height: 700px;
+  flex-direction: column;
+  height: 100vh;
   background: linear-gradient(#47d9e9, transparent 100%);
 }
 
 #subbubbles {
+  display: none;
+}
+
+.arrow{
   display: none;
 }
 
@@ -72,7 +77,7 @@ body {
   width: 33%;
 }
 
-/* Custom dropdown */
+/* #region Custom dropdown */
 .dropdown {
   width: 100%;
   display: inline-block;
@@ -161,7 +166,7 @@ body {
   height: 35px;
 }
 
-/* End for Custom dropdown */
+/* #endregion End for Custom dropdown */
 
 .appetizer {
   position: relative;
@@ -204,7 +209,7 @@ body {
   flex-direction: column;
 }
 
-.midcontainer{
+.midcontainer {
   justify-content: center;
   align-items: center space-between;
   width: 100%;
@@ -213,8 +218,9 @@ body {
 
 .bubble {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -226,7 +232,7 @@ body {
 
 .bubble img {
   position: relative;
-  max-width: 40%;
+  max-width: 30%;
   max-height: 30%;
   object-fit: contain;
   z-index: 2;
@@ -243,8 +249,8 @@ body {
 
 .smaller {
   position: absolute;
-  width: 60%;
-  height: 45%;
+  width: 25%;
+  height: 18%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,50 +314,7 @@ body {
   border-radius: 50%;
   z-index: 1;
 }
-/* Arrows */
-.arrow {
-  position: absolute;
-  left: 50%;
-  top: 90%;
-  transform: translate(-50%, -50%);
-}
 
-.arrow p {
-  margin: 0 0 20px;
-}
-
-/* Arrow & Hover Animation */
-#more-arrows {
-  width: 75px;
-  height: 65px;
-}
-
-#more-arrows:hover polygon {
-  fill: black;
-  transition: all .2s ease-out;
-}
-
-#more-arrows:hover polygon.arrow-bottom {
-  transform: translateY(-9px);
-}
-
-#more-arrows:hover polygon.arrow-top {
-  transform: translateY(9px);
-}
-
-polygon {
-  fill: black;
-  transition: all .2s ease-out;
-}
-
-polygon.arrow-middle {
-  opacity: 0.75;
-}
-
-polygon.arrow-top {
-  opacity: 0.5;
-}
-/* End for arrows */
 
 
 @media only screen and (min-width: 1050px) {
@@ -364,6 +327,53 @@ polygon.arrow-top {
   html {
     scroll-snap-type: y mandatory;
   }
+
+  /* #region Arrow & Hover Animation */
+  .arrow {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+  }
+
+  .arrow p {
+    margin: 0 0 20px;
+  }
+
+  #more-arrows {
+    width: 75px;
+    height: 65px;
+  }
+
+  #more-arrows:hover polygon {
+    fill: black;
+    transition: all .2s ease-out;
+  }
+
+  #more-arrows:hover polygon.arrow-bottom {
+    transform: translateY(-9px);
+  }
+
+  #more-arrows:hover polygon.arrow-top {
+    transform: translateY(9px);
+  }
+
+  polygon {
+    fill: black;
+    transition: all .2s ease-out;
+  }
+
+  polygon.arrow-middle {
+    opacity: 0.75;
+  }
+
+  polygon.arrow-top {
+    opacity: 0.5;
+  }
+
+  /* #endregion End for arrows */
+
 
   .container {
     width: 100%;
@@ -425,7 +435,7 @@ polygon.arrow-top {
     object-fit: contain;
   }
 
-  .midcontainer{
+  .midcontainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -434,21 +444,21 @@ polygon.arrow-top {
     height: 50%;
   }
 
-  #lower_subbubbles{
+  #lower_subbubbles {
     justify-content: center;
   }
 
-  #upper-bubbles{
+  #upper-bubbles {
     align-items: start;
   }
 
-  #lower-bubbles{
+  #lower-bubbles {
     justify-content: space-around;
     width: 66%;
     align-items: end;
   }
 
-  .sub-bubble{
+  .sub-bubble {
     font-family: "SuisseIntl";
     font-size: 20px;
     font-weight: 700;
@@ -474,13 +484,13 @@ polygon.arrow-top {
     background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
   }
 
-  .bubble{
+  .bubble {
     height: 110%;
     width: auto;
     aspect-ratio: 1;
   }
 
-  .border{
+  .border {
     height: 100%;
     width: 100%;
   }
@@ -497,8 +507,8 @@ polygon.arrow-top {
   }
 
   .smaller {
-    width: 95px;
-    height: 70px;
+    width: 30%;
+    height: 20%;
   }
 
   .text-description {
@@ -583,90 +593,10 @@ polygon.arrow-top {
   background: radial-gradient(circle farthest-side, #a6a7ff, transparent 100%);
 }
 
-#Semainedeladurabilité {
-  background-color: transparent;
-  transform: translate(calc(var(--dist)*0), calc(var(--dist)*(-1)));
-}
-
-#CSAWClimateSustainabilityActionWeek {
-  background-color: transparent;
-  transform: translate(-109px, -63px);
-}
-
-#lecanardhuppé {
-  background-color: transparent;
-  transform: translate(-109px, 63px);
-}
-
-#CoachingSustainability {
-  background-color: transparent;
-  transform: translate(-0px, 126px);
-}
-
-#EPFLCourses {
-  background-color: transparent;
-  transform: translate(109px, 63px);
-}
-
-#Fresqueduclimat {
-  background-color: transparent;
-  transform: translate(109px, -63px);
-}
-
 /*Category 2*/
 
 #border2 {
   background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
-}
-
-#Slowtacarrière {
-  background-color: transparent;
-  transform: translate(0px, -126px);
-}
-
-#associationdébouchésdurables {
-  background-color: transparent;
-  transform: translate(-74px, -102px);
-}
-
-#Meubléco {
-  background-color: transparent;
-  transform: translate(-120px, -39px);
-}
-
-#Bibliothèqued’objets {
-  background-color: transparent;
-  transform: translate(-120px, 39px);
-}
-
-#Fixn’ReplaceRepaircafé {
-  background-color: transparent;
-  transform: translate(-74px, 102px);
-}
-
-#Pointvélo {
-  background-color: transparent;
-  transform: translate(-0px, 126px);
-}
-
-#PointSmartCellphones {
-  background-color: transparent;
-  transform: translate(74px, 102px);
-}
-
-#MarchéEPFL {
-  background-color: transparent;
-  transform: translate(120px, 39px);
-}
-
-#EpiceriecoopérativeleVorace {
-  background-color: transparent;
-  transform: translate(120px, -39px);
-}
-
-#CastorFreegan {
-  background-color: transparent;
-  transform: translate(74px, -102px);
 }
 
 /*Category 3*/
@@ -675,90 +605,10 @@ polygon.arrow-top {
   background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
 }
 
-#Unipoly {
-  background-color: transparent;
-  transform: translate(0px, -126px);
-}
-
-#Polyquity {
-  background-color: transparent;
-  transform: translate(-68px, -106px);
-}
-
-#PlanQueer {
-  background-color: transparent;
-  transform: translate(-114px, -52px);
-}
-
-#Queermanence {
-  background-color: transparent;
-  transform: translate(-124px, 18px);
-}
-
-#ZeroEmissionGroup {
-  background-color: transparent;
-  transform: translate(-95px, 82px);
-}
-
-#LaConvergence {
-  background-color: transparent;
-  transform: translate(-35px, 120px);
-}
-
-#Ingénieur·esdumonde {
-  background-color: transparent;
-  transform: translate(35px, 120px);
-}
-
-#FermedeBassenges {
-  background-color: transparent;
-  transform: translate(95px, 82px);
-}
-
-#Associationdesétudiant·esvégan·esetanimalistes {
-  background-color: transparent;
-  transform: translate(124px, 18px);
-}
-
-#AmnestydesHautesEcolesLausannoises {
-  background-color: transparent;
-  transform: translate(114px, -52px);
-}
-
-#ThriftstoreUPFashionLab {
-  background-color: transparent;
-  transform: translate(68px, -106px);
-}
-
 /*Category 4*/
 
 #border4 {
   background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
-}
-
-#EPFLChangemakers {
-  background-color: transparent;
-  transform: translate(0px, -126px);
-}
-
-#Ucreate {
-  background-color: transparent;
-  transform: translate(-119px, -39px);
-}
-
-#Make {
-  background-color: transparent;
-  transform: translate(-74px, 102px);
-}
-
-#Durabilis {
-  background-color: transparent;
-  transform: translate(74px, 102px);
-}
-
-#Skil {
-  background-color: transparent;
-  transform: translate(119px, -39px);
 }
 
 /*Category 5*/
@@ -767,27 +617,3 @@ polygon.arrow-top {
   background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
 }
 
-#SportscenterEPFL-UNIL {
-  background-color: transparent;
-  transform: translate(0px, -126px);
-}
-
-#Espace-Transitions {
-  background-color: transparent;
-  transform: translate(-119px, -39px);
-}
-
-#TrustandSupportNetworkTSN {
-  background-color: transparent;
-  transform: translate(-74px, 102px);
-}
-
-#Guidedmeditation {
-  background-color: transparent;
-  transform: translate(74px, 102px);
-}
-
-#ForêtdeDorigny {
-  background-color: transparent;
-  transform: translate(119px, -39px);
-}
