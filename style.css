@@ -449,13 +449,17 @@ body {
   }
 
   #upper-bubbles {
-    align-items: start;
+    position: absolute;
+    top: 105%;
+    align-items: end;
   }
 
   #lower-bubbles {
+    position: absolute;
+    top: 145%;
     justify-content: space-around;
     width: 66%;
-    align-items: end;
+    align-items: start;
   }
 
   .sub-bubble {
@@ -485,7 +489,7 @@ body {
   }
 
   .bubble {
-    height: 110%;
+    height: 100%;
     width: auto;
     aspect-ratio: 1;
   }
