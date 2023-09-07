@@ -1,5 +1,4 @@
 body {
-  /*background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;*/
   background-color: #ffffc5;
   margin: 0;
   display: flex;
@@ -523,7 +522,7 @@ body {
     color: #000;
     border-radius: 5px;
     white-space: normal;
-    width: 500%;
+    width: 400px;
     visibility: hidden;
     opacity: 0;
     z-index: 1;
@@ -552,31 +551,31 @@ body {
   }
 
   #bubble1 .text-description {
-    left: 100%;
+    left: 125%;
     top: 0%;
     background-color: #a6a7ff;
   }
 
   #bubble2 .text-description {
-    left: 100%;
+    left: 125%;
     top: 0%;
     background-color: #9ffc36;
   }
 
   #bubble3 .text-description {
-    right: 100%;
+    right: 125%;
     top: 0%;
     background-color: #ffac4e;
   }
 
   #bubble4 .text-description {
-    left: 100%;
+    left: 125%;
     bottom: 0%;
     background-color: #fda4c6;
   }
 
   #bubble5 .text-description {
-    right: 100%;
+    right: 125%;
     bottom: 0%;
     background-color: #54cbfa;
   }
@@ -586,7 +585,7 @@ body {
 /*Category 1*/
 
 #border1 {
-  background: radial-gradient(circle farthest-side, #a6a7ff, transparent 100%);
+  background: radial-gradient(circle farthest-side, #8284ff, transparent 100%);
 }
 
 /*Category 2*/
