@@ -522,7 +522,7 @@ body {
     color: #000;
     border-radius: 5px;
     white-space: normal;
-    width: 500%;
+    width: 400px;
     visibility: hidden;
     opacity: 0;
     z-index: 1;
@@ -551,31 +551,31 @@ body {
   }
 
   #bubble1 .text-description {
-    left: 100%;
+    left: 125%;
     top: 0%;
     background-color: #a6a7ff;
   }
 
   #bubble2 .text-description {
-    left: 100%;
+    left: 125%;
     top: 0%;
     background-color: #9ffc36;
   }
 
   #bubble3 .text-description {
-    right: 100%;
+    right: 125%;
     top: 0%;
     background-color: #ffac4e;
   }
 
   #bubble4 .text-description {
-    left: 100%;
+    left: 125%;
     bottom: 0%;
     background-color: #fda4c6;
   }
 
   #bubble5 .text-description {
-    right: 100%;
+    right: 125%;
     bottom: 0%;
     background-color: #54cbfa;
   }
