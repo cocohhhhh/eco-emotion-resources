@@ -681,10 +681,16 @@
     <script>
         // Get a reference to the button and the target container
         const scrollButton = document.getElementById('arrow');
+        const scrollButton2 = document.getElementById('subbubbles');
         const targetContainer = document.getElementById('content');
 
         // Add a click event listener to the button
         scrollButton.addEventListener('click', function () {
+            // Scroll to the target container smoothly
+            targetContainer.scrollIntoView({ behavior: 'smooth' });
+        });
+        // Add a click event listener to the button
+        scrollButton2.addEventListener('click', function () {
             // Scroll to the target container smoothly
             targetContainer.scrollIntoView({ behavior: 'smooth' });
         });

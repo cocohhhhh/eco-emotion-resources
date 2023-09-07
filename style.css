@@ -1,5 +1,4 @@
 body {
-  /*background: url(https://www.transparenttextures.com/patterns/arches.png) repeat #ffffc5;*/
   background-color: #ffffc5;
   margin: 0;
   display: flex;
@@ -586,7 +585,7 @@ body {
 /*Category 1*/
 
 #border1 {
-  background: radial-gradient(circle farthest-side, #a6a7ff, transparent 100%);
+  background: radial-gradient(circle farthest-side, #8284ff, transparent 100%);
 }
 
 /*Category 2*/
