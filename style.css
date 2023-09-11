@@ -10,6 +10,7 @@ body {
   --dist: 120px;
 }
 
+/* #region font definition*/
 @font-face {
   font-family: 'SuisseIntl';
   src: url('font/SuisseIntl-Medium.otf') format('opentype');
@@ -24,7 +25,9 @@ body {
   font-style: normal;
 }
 
-/*for mobiles*/
+/* #endregion */
+
+/* #region Introductory page */
 
 .container {
   background-color: transparent;
@@ -44,7 +47,7 @@ body {
   display: none;
 }
 
-.arrow{
+.arrow {
   display: none;
 }
 
@@ -76,7 +79,43 @@ body {
   width: 33%;
 }
 
-/* #region Custom dropdown */
+.appetizer {
+  position: relative;
+  top: 12%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: large;
+  color: #000;
+}
+
+.appetizer .text {
+  width: 100%;
+  height: 100%;
+}
+
+.appetizer .text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'SuisseIntl';
+}
+
+.appetizer .text p {
+  margin-top: 3%;
+  font-size: 20px;
+  font-family: 'SuisseIntlLight';
+}
+
+.appetizer .image img {
+  display: none;
+}
+
+/* #endregion*/
+
+/* #region language dropdown */
 .dropdown {
   width: 100%;
   display: inline-block;
@@ -167,39 +206,7 @@ body {
 
 /* #endregion End for Custom dropdown */
 
-.appetizer {
-  position: relative;
-  top: 12%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  font-size: large;
-  color: #000;
-}
-
-.appetizer .text {
-  width: 100%;
-  height: 100%;
-}
-
-.appetizer .text h1 {
-  font-size: 32px;
-  font-weight: bold;
-  font-family: 'SuisseIntl';
-}
-
-.appetizer .text p {
-  margin-top: 3%;
-  font-size: 20px;
-  font-family: 'SuisseIntlLight';
-}
-
-.appetizer .image img {
-  display: none;
-}
+/* #region Bubbles*/
 
 #content {
   display: flex;
@@ -244,6 +251,14 @@ body {
   font-family: 'SuisseIntl';
   z-index: 2;
   font-weight: 700;
+}
+
+.border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .smaller {
@@ -306,15 +321,37 @@ body {
   text-align: center;
 }
 
-.border {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  z-index: 1;
+/*Category 1*/
+
+#border1 {
+  background: radial-gradient(circle farthest-side, #8284ff, transparent 100%);
 }
 
+/*Category 2*/
 
+#border2 {
+  background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
+}
+
+/*Category 3*/
+
+#border3 {
+  background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
+}
+
+/*Category 4*/
+
+#border4 {
+  background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
+}
+
+/*Category 5*/
+
+#border5 {
+  background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
+}
+
+/* #endregion */
 
 @media only screen and (min-width: 1050px) {
 
@@ -581,34 +618,3 @@ body {
   }
 
 }
-
-/*Category 1*/
-
-#border1 {
-  background: radial-gradient(circle farthest-side, #8284ff, transparent 100%);
-}
-
-/*Category 2*/
-
-#border2 {
-  background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
-}
-
-/*Category 3*/
-
-#border3 {
-  background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
-}
-
-/*Category 4*/
-
-#border4 {
-  background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
-}
-
-/*Category 5*/
-
-#border5 {
-  background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
-}
-
