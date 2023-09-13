@@ -223,10 +223,10 @@ body {
 }
 
 .bubble {
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
   position: relative;
-  width: 94%;
+  width: 92%;
   height: auto;
   aspect-ratio: 1/1;
   border-radius: 50%;
