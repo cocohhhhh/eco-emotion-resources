@@ -455,7 +455,7 @@ body {
 
   .sub-bubble {
     position: relative;
-    width: 33%;
+    height: 90%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     cursor: pointer;
@@ -464,6 +464,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    font-family: "SuisseIntl";
+    font-size: 20px;
+    font-weight: 700;
   }
 
   .sub-bubble img {
@@ -482,8 +485,17 @@ body {
     height: 50%;
   }
 
+  #upper_subbubbles {
+    align-items: end;
+  }
+
+  .sub-bubble + .sub-bubble {
+    margin-left: 5%;
+  }
+
   #lower_subbubbles {
     justify-content: center;
+    align-items: start;
   }
 
   #upper-bubbles {
@@ -495,15 +507,8 @@ body {
   #lower-bubbles {
     position: absolute;
     top: 145%;
-    justify-content: space-around;
     width: 66%;
     align-items: start;
-  }
-
-  .sub-bubble {
-    font-family: "SuisseIntl";
-    font-size: 20px;
-    font-weight: 700;
   }
 
   #subbubble1 {
