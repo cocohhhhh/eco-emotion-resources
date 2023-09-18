@@ -76,7 +76,7 @@ body {
 .banner .lang {
   display: flex;
   justify-content: flex-end;
-  width: 33%;
+  width: 120px;
 }
 
 .appetizer {
@@ -434,7 +434,6 @@ body {
   .banner .lang {
     display: flex;
     justify-content: flex-end;
-    width: 10%;
   }
 
   .appetizer {
