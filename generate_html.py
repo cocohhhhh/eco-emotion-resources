@@ -22,9 +22,9 @@ if __name__ == "__main__":
         #add resources
         while resources["Category"][j] == i+1:
             # add comment
-            html += f"""<!-- Resource {j+1}: {resources["Name"][j]} -->"""
+            html += f"""\t\t\t\t<!-- Resource {j+1}: {resources["Name"][j]} -->\n"""
             # add resource img
-            html += f"""\t\t\t\t<div class="bubble smaller" id="resource{j+1}">\n\t\t\t\t\t<a href="{resources["Link"][j]}"><img src="logo\{resources["Image eng"][j]}" alt="{resources["Name"][j]}"></a>\n\t\t\t\t\n"""
+            html += f"""\t\t\t\t<div class="bubble smaller" id="resource{j+1}">\n\t\t\t\t\t<a href="{resources["Link"][j]}">\n\t\t\t\t\t\t<img src="logo\{resources["Image eng"][j]}" alt="{resources["Name"][j]}">\n\t\t\t\t\t</a>\n\t\t\t\t"""
             # add resource description
             html += f"""\t\t\t\t\t<div class="text-description">\n\t\t\t\t\t\t<h3>{resources["Name"][j]}</h3>\n\t\t\t\t\t\t{resources["English content"][j]}\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n"""
             j += 1
@@ -46,9 +46,9 @@ if __name__ == "__main__":
         #add resources
         while resources["Category"][j] == i+1:
             # add comment
-            html += f"""<!-- Resource {j+1}: {resources["Name"][j]} -->"""
+            html += f"""\t\t\t\t<!-- Resource {j+1}: {resources["Name"][j]} -->\n"""
             # add resource img
-            html += f"""\t\t\t\t<div class="bubble smaller" id="resource{j+1}">\n\t\t\t\t\t<a href="{resources["Link"][j]}"><img src="logo\{resources["Image eng"][j]}" alt="{resources["Name"][j]}"></a>\n\t\t\t\t\n"""
+            html += f"""\t\t\t\t<div class="bubble smaller" id="resource{j+1}">\n\t\t\t\t\t<a href="{resources["Link"][j]}">\n\t\t\t\t\t\t<img src="logo\{resources["Image eng"][j]}" alt="{resources["Name"][j]}">\n\t\t\t\t\t</a>\n\t\t\t\t"""
             # add resource description
             html += f"""\t\t\t\t\t<div class="text-description">\n\t\t\t\t\t\t<h3>{resources["Name"][j]}</h3>\n\t\t\t\t\t\t{resources["English content"][j]}\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n"""
             j += 1
