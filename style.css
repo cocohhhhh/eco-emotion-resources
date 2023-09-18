@@ -38,6 +38,15 @@ body {
   justify-content: space-between;
 }
 
+.upper_part {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #intro {
   flex-direction: column;
   height: fit-content;
@@ -116,6 +125,7 @@ body {
 /* #region Arrow & Hover Animation */
 .arrow {
   position: relative;
+  margin-bottom: 50px;
 }
 
 .arrow-top {
@@ -429,6 +439,7 @@ polygon.arrow-top {
   .arrow {
     display: block;
     position: absolute;
+    margin-bottom: 0px;
     left: 50%;
     top: 90%;
     transform: translate(-50%, -50%);
