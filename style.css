@@ -247,6 +247,8 @@ body {
 }
 
 .bubble span {
+  width: 50%;
+  text-align: center;
   position: relative;
   font-size: 18px;
   object-fit: contain;
@@ -474,6 +476,16 @@ body {
     max-width: 40%;
     max-height: 40%;
     object-fit: contain;
+  }
+
+  .sub-bubble span {
+    width: 70%;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    object-fit: contain;
+    font-family: 'SuisseIntl';
+    font-weight: 700;
   }
 
   .midcontainer {
