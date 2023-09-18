@@ -73,12 +73,13 @@ html,body{
   font-size: 16px;
   font-weight: bold;
   font-family: 'SuisseIntl';
+  width: 60%;
 }
 
 .banner .lang {
   display: flex;
   justify-content: flex-end;
-  width: 120px;
+  width: 115px;
 }
 
 .appetizer {
