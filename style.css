@@ -125,7 +125,7 @@ body {
 /* #region Arrow & Hover Animation */
 .arrow {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 15%;
 }
 
 .arrow-top {
