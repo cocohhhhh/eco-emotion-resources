@@ -16,9 +16,9 @@ if __name__ == "__main__":
     html += f"""\t\t<div class="midcontainer" id="upper-bubbles">\n"""
     for i in range(3):
         #add comment
-        html += f"""<!-- Category {i+1}: {categories["Category Name"][i]} -->"""
+        html += f"""<!-- Category {i+1}: {categories["Category Name en"][i]} -->"""
         #add bubble
-        html += f"""\t\t\t<div class="bubble" id="bubble{i+1}">\n\t\t\t\t<img src="logo\{categories["Image"][i]}" alt="Image">\n\t\t\t\t<span>{categories["Category Name"][i]}</span>\n\t\t\t\t<div class="border" id="border{i+1}"></div>\n"""
+        html += f"""\t\t\t<div class="bubble" id="bubble{i+1}">\n\t\t\t\t<img src="logo\{categories["Image"][i]}" alt="Image">\n\t\t\t\t<span>{categories["Category Name en"][i]}</span>\n\t\t\t\t<div class="border" id="border{i+1}"></div>\n"""
         #add resources
         while resources["Category"][j] == i+1:
             # add comment
@@ -40,9 +40,9 @@ if __name__ == "__main__":
     html += f"""\t\t<div class="midcontainer" id="lower-bubbles">\n"""
     for i in range(3,5):
         #add comment
-        html += f"""<!-- Category {i+1}: {categories["Category Name"][i]} -->"""
+        html += f"""<!-- Category {i+1}: {categories["Category Name en"][i]} -->"""
         #add bubble
-        html += f"""\t\t\t<div class="bubble" id="bubble{i+1}">\n\t\t\t\t<img src="logo\{categories["Image"][i]}" alt="Image">\n\t\t\t\t<span>{categories["Category Name"][i]}</span>\n\t\t\t\t<div class="border" id="border{i+1}"></div>\n"""
+        html += f"""\t\t\t<div class="bubble" id="bubble{i+1}">\n\t\t\t\t<img src="logo\{categories["Image"][i]}" alt="Image">\n\t\t\t\t<span>{categories["Category Name en"][i]}</span>\n\t\t\t\t<div class="border" id="border{i+1}"></div>\n"""
         #add resources
         while resources["Category"][j] == i+1:
             # add comment
