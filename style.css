@@ -35,26 +35,25 @@ body {
   height: auto;
   flex-direction: column;
   overflow: hidden;
+  justify-content: space-between;
 }
 
 #intro {
   flex-direction: column;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   background: linear-gradient(#47d9e9, transparent 100%);
+  justify-content: top;
+  align-items: center;
 }
 
 #subbubbles {
   display: none;
 }
 
-.arrow {
-  display: none;
-}
-
 .banner {
-  position: absolute;
+  position: relative;
   top: 0%;
-  left: 5%;
   width: 90%;
   height: auto;
   display: flex;
@@ -82,8 +81,6 @@ body {
 
 .appetizer {
   position: relative;
-  top: 12%;
-  left: 5%;
   width: 90%;
   height: 90%;
   display: flex;
@@ -115,6 +112,56 @@ body {
 }
 
 /* #endregion*/
+
+/* #region Arrow & Hover Animation */
+.arrow {
+  position: relative;
+}
+
+.arrow-top {
+  display: none;
+}
+
+.arrow-middle {
+  display: none;
+}
+
+.arrow p {
+  margin: 0 0 20px;
+}
+
+#more-arrows {
+  width: 37.5px;
+  height: 32.5px;
+}
+
+#more-arrows:hover polygon {
+  fill: black;
+  transition: all .2s ease-out;
+}
+
+#more-arrows:hover polygon.arrow-bottom {
+  transform: translateY(-9px);
+}
+
+#more-arrows:hover polygon.arrow-top {
+  transform: translateY(9px);
+}
+
+polygon {
+  fill: black;
+  transition: all .2s ease-out;
+}
+
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+
+polygon.arrow-top {
+  opacity: 0.5;
+}
+
+/* #endregion End for arrows */
 
 /* #region language dropdown */
 .dropdown {
@@ -267,6 +314,14 @@ body {
   z-index: 1;
 }
 
+.bubble + .bubble {
+  margin-top: 30px;
+}
+
+.midcontainer + .midcontainer {
+  margin-top: 30px;
+}
+
 .smaller {
   position: absolute;
   width: 24%;
@@ -359,7 +414,7 @@ body {
 
 /* #endregion */
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1000px) {
 
   /* For Desktops: */
   body {
@@ -379,43 +434,15 @@ body {
     transform: translate(-50%, -50%);
   }
 
-  .arrow p {
-    margin: 0 0 20px;
+  .arrow-top {
+    display: block;
   }
 
-  #more-arrows {
-    width: 75px;
-    height: 65px;
-  }
-
-  #more-arrows:hover polygon {
-    fill: black;
-    transition: all .2s ease-out;
-  }
-
-  #more-arrows:hover polygon.arrow-bottom {
-    transform: translateY(-9px);
-  }
-
-  #more-arrows:hover polygon.arrow-top {
-    transform: translateY(9px);
-  }
-
-  polygon {
-    fill: black;
-    transition: all .2s ease-out;
-  }
-
-  polygon.arrow-middle {
-    opacity: 0.75;
-  }
-
-  polygon.arrow-top {
-    opacity: 0.5;
+  .arrow-middle {
+    display: block;
   }
 
   /* #endregion End for arrows */
-
 
   .container {
     width: 100%;
@@ -439,7 +466,7 @@ body {
   }
 
   .appetizer {
-    top: 10%;
+    top: 1%;
   }
 
   .appetizer .text {
@@ -550,6 +577,14 @@ body {
     height: 100%;
     width: auto;
     aspect-ratio: 1;
+  }
+
+  .bubble + .bubble {
+    margin-top: 0px;
+  }
+
+  .midcontainer + .midcontainer {
+    margin-top: 0px;
   }
 
   .bubble:hover {
