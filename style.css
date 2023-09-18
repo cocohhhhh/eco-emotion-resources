@@ -6,9 +6,6 @@ body {
   align-items: center;
   flex-direction: column;
   overflow-y: scroll;
-}
-
-html,body{
   overflow-x: hidden;
 }
 
@@ -37,6 +34,7 @@ html,body{
   width: 100%;
   height: auto;
   flex-direction: column;
+  overflow: hidden;
 }
 
 #intro {
@@ -215,6 +213,7 @@ html,body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: fit-content;
 }
 
 .midcontainer {
