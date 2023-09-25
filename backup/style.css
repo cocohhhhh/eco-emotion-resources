@@ -1,0 +1,688 @@
+body {
+  background-color: #ffffc5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* #region font definition*/
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('font/SuisseIntl-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntlLight';
+  src: url('font/SuisseIntl-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* #endregion */
+
+/* #region Introductory page */
+
+.container {
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.upper_part {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro {
+  flex-direction: column;
+  height: fit-content;
+  min-height: 100vh;
+  background: linear-gradient(#47d9e9, transparent 100%);
+  justify-content: top;
+  align-items: center;
+}
+
+#subbubbles {
+  display: none;
+}
+
+.banner {
+  position: relative;
+  top: 0%;
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  Justify-content: space-between;
+  font-weight: bold;
+  font-family: 'SuisseIntl';
+  color: #000;
+  border-bottom: 1px solid #000;
+  z-index: 1;
+}
+
+.banner .title {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'SuisseIntl';
+  width: 60%;
+}
+
+.banner .lang {
+  display: flex;
+  justify-content: flex-end;
+  width: 115px;
+}
+
+.appetizer {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: large;
+  color: #000;
+}
+
+.appetizer .text {
+  width: 100%;
+  height: 100%;
+}
+
+.appetizer .text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'SuisseIntl';
+}
+
+.appetizer .text p {
+  margin-top: 3%;
+  font-size: 20px;
+  font-family: 'SuisseIntlLight';
+}
+
+.appetizer .image img {
+  display: none;
+}
+
+/* #endregion*/
+
+/* #region Arrow & Hover Animation */
+.arrow {
+  position: relative;
+  margin-bottom: 15%;
+}
+
+.arrow-top {
+  display: none;
+}
+
+.arrow-middle {
+  display: none;
+}
+
+.arrow p {
+  margin: 0 0 20px;
+}
+
+#more-arrows {
+  width: 37.5px;
+  height: 32.5px;
+}
+
+#more-arrows:hover polygon {
+  fill: black;
+  transition: all .2s ease-out;
+}
+
+#more-arrows:hover polygon.arrow-bottom {
+  transform: translateY(-9px);
+}
+
+#more-arrows:hover polygon.arrow-top {
+  transform: translateY(9px);
+}
+
+polygon {
+  fill: black;
+  transition: all .2s ease-out;
+}
+
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+
+polygon.arrow-top {
+  opacity: 0.5;
+}
+
+/* #endregion End for arrows */
+
+/* #region language dropdown */
+.dropdown {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: -5px;
+  font-size: 18px;
+}
+
+.dropdown.toggle>input {
+  display: none;
+}
+
+.dropdown>a,
+.dropdown.toggle>label {
+  border-radius: 2px;
+}
+
+.dropdown>a::after,
+.dropdown.toggle>label::after {
+  content: "";
+  float: right;
+  margin: 15px 15px 0 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid black;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.dropdown a,
+.dropdown.toggle>label {
+  display: block;
+  padding: 0 0 0 10px;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+}
+
+.dropdown li {
+  height: 0;
+  overflow: hidden;
+  transition: all 500ms;
+
+}
+
+.dropdown.hover li {
+  transition-delay: 300ms;
+}
+
+.dropdown li:first-child a {
+  border-radius: 2px 2px 0 0;
+}
+
+.dropdown li:last-child a {
+  border-radius: 0 0 2px 2px;
+}
+
+.dropdown a:hover,
+.dropdown.toggle>label:hover,
+.dropdown.toggle>input:checked~label {
+  background-color: transparent;
+  color: #f5f5f5;
+}
+
+.dropdown.toggle>label:hover::after,
+.dropdown.toggle>input:checked~label::after {
+  border-top-color: #f5f5f5;
+}
+
+.dropdown.toggle>input:checked~ul li {
+  height: 35px;
+}
+
+/* #endregion End for Custom dropdown */
+
+/* #region Bubbles*/
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.midcontainer {
+  justify-content: center;
+  align-items: center space-between;
+  width: 100%;
+  height: auto;
+}
+
+.bubble {
+  margin-left: 4%;
+  margin-right: 4%;
+  position: relative;
+  width: 92%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.bubble img {
+  position: relative;
+  max-width: 30%;
+  max-height: 30%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.bubble span {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  object-fit: contain;
+  font-family: 'SuisseIntl';
+  z-index: 2;
+  font-weight: 700;
+}
+
+.border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.bubble + .bubble {
+  margin-top: 30px;
+}
+
+.midcontainer + .midcontainer {
+  margin-top: 30px;
+}
+
+.smaller {
+  position: absolute;
+  width: 24%;
+  height: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.smaller a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+}
+
+.smaller a span {
+  text-decoration: none;
+  color: #000;
+  font-family: "SuisseIntl";
+  font-size: 15px;
+  text-align: center;
+}
+
+.smaller img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.text-description {
+  position: absolute;
+  padding: 7px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  white-space: normal;
+  width: 500%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  text-align: left;
+  font-family: 'SuisseIntl';
+  transition: opacity 0.2s ease;
+}
+
+.text-description h3 {
+  margin: 0;
+  font-family: 'SuisseIntl';
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/*Category 1*/
+
+#border1 {
+  background: radial-gradient(circle farthest-side, #8284ff, transparent 100%);
+}
+
+/*Category 2*/
+
+#border2 {
+  background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
+}
+
+/*Category 3*/
+
+#border3 {
+  background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
+}
+
+/*Category 4*/
+
+#border4 {
+  background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
+}
+
+/*Category 5*/
+
+#border5 {
+  background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
+}
+
+/* #endregion */
+
+@media only screen and (min-width: 1150px) {
+
+  /* For Desktops: */
+  body {
+    height: 200vh;
+  }
+
+  html {
+    scroll-snap-type: y mandatory;
+  }
+
+  /* #region Arrow & Hover Animation */
+  .arrow {
+    display: block;
+    position: absolute;
+    margin-bottom: 0px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+  }
+
+  .arrow-top {
+    display: block;
+  }
+
+  .arrow-middle {
+    display: block;
+  }
+
+  /* #endregion End for arrows */
+
+  .container {
+    width: 100%;
+    height: 50% !important;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .banner {
+    height: 9%;
+    align-items: end;
+  }
+
+  .banner .title {
+    font-size: 32px;
+  }
+
+  .banner .lang {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .appetizer {
+    top: 1%;
+  }
+
+  .appetizer .text {
+    width: 35%;
+    height: 100%;
+  }
+
+  #subbubbles {
+    display: block;
+    width: 60%;
+    height: 80%;
+    margin-top: 1%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-bubble {
+    position: relative;
+    height: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: "SuisseIntl";
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .sub-bubble img {
+    position: relative;
+    max-width: 40%;
+    max-height: 40%;
+    object-fit: contain;
+  }
+
+  .sub-bubble span {
+    width: 70%;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    object-fit: contain;
+    font-family: 'SuisseIntl';
+    font-weight: 700;
+  }
+
+  .midcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+  }
+
+  #upper_subbubbles {
+    align-items: end;
+  }
+
+  .sub-bubble + .sub-bubble {
+    margin-left: 5%;
+  }
+
+  #lower_subbubbles {
+    justify-content: center;
+    align-items: start;
+  }
+
+  #upper-bubbles {
+    position: absolute;
+    top: 105%;
+    align-items: end;
+  }
+
+  #lower-bubbles {
+    position: absolute;
+    top: 145%;
+    width: 66%;
+    align-items: start;
+  }
+
+  #subbubble1 {
+    background: radial-gradient(circle farthest-side, #a6a7ff, #ffffc5);
+  }
+
+  #subbubble2 {
+    background: radial-gradient(circle farthest-side, #95F823, #ffffc5);
+  }
+
+  #subbubble3 {
+    background: radial-gradient(circle farthest-side, #fb8b0c, #ffffc5);
+  }
+
+  #subbubble4 {
+    background: radial-gradient(circle farthest-side, #ff70a6, #ffffc5);
+  }
+
+  #subbubble5 {
+    background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
+  }
+
+  .bubble {
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1;
+  }
+
+  .bubble + .bubble {
+    margin-top: 0px;
+  }
+
+  .midcontainer + .midcontainer {
+    margin-top: 0px;
+  }
+
+  .bubble:hover {
+    transition: background-color 0.2s ease;
+    z-index: 3;
+  }
+
+
+  .smaller {
+    width: 30%;
+    height: 20%;
+  }
+
+  .smaller img {
+    transform: scale(0.8);
+    filter: opacity(0.5);
+  }
+
+  .smaller img:hover {
+    transform: scale(1.5);
+    filter: opacity(1);
+    transition: all 0.2s ease;
+    z-index: 3;
+  }
+
+  .text-description {
+    position: absolute;
+    padding: 7px;
+    color: #000;
+    border-radius: 5px;
+    white-space: normal;
+    width: 400px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    text-align: left;
+    font-family: 'SuisseIntl';
+    transition: opacity 0.2s ease;
+  }
+
+  .text-description h3 {
+    margin: 0;
+    font-family: 'SuisseIntl';
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .smaller:hover .text-description {
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .text-description:hover {
+    display: none;
+  }
+
+  #bubble1 .text-description {
+    left: 125%;
+    top: 0%;
+    background-color: #a6a7ff;
+  }
+
+  #bubble2 .text-description {
+    left: 125%;
+    top: 0%;
+    background-color: #9ffc36;
+  }
+
+  #bubble3 .text-description {
+    right: 125%;
+    top: 0%;
+    background-color: #ffac4e;
+  }
+
+  #bubble4 .text-description {
+    left: 125%;
+    bottom: 0%;
+    background-color: #fda4c6;
+  }
+
+  #bubble5 .text-description {
+    right: 125%;
+    bottom: 0%;
+    background-color: #54cbfa;
+  }
+
+}
