@@ -104,6 +104,7 @@ def generate_end():
     return end
 
 if __name__ == "__main__":
+    print("Generating html...")
     # read the tsv file
     categories = pd.read_csv("Descriptions - Categories.tsv", sep="\t")
     resources = pd.read_csv("Descriptions - ressources.tsv", sep="\t")
@@ -133,3 +134,5 @@ if __name__ == "__main__":
     # write the html file
     with open("index_fr.html", "w", encoding="utf-8") as f:
         f.write(html_fr)
+    
+    print("Html generated!")
