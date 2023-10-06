@@ -1,20 +1,10 @@
-from cx_Freeze import setup, Executable
+from distutils.core import setup
+import py2exe, sys, os
 
-base = None    
-
-executables = [Executable("generate_html.py", base=base)]
-
-packages = ["idna"]
-options = {
-    'build_exe': {    
-        'packages':packages,
-    },    
-}
+sys.argv.append('py2exe')
 
 setup(
-    name = "ECO HTML GENERATOR",
-    options = options,
-    version = "1.1",
-    description = 'Exe to generate html file',
-    executables = executables
+    options = {'py2exe': {'bundle_files': 1, 'compressed': True}},
+    windows = [{'script': "generate_html.py"}],
+    zipfile = None,
 )
