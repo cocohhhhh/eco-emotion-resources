@@ -1,7 +1,7 @@
-Category Number	Category Name en	Category Name fr	Image
-1	Inform Yourself	Informe toi	Apprendre.png
-2	Take Care	Prends soin de toi	Sain.png
-3	Feed Yourself	Nourris toi	
-4	Launch Your Project	Lance ton projet	Startup.png
-5	Enjoy services	Profite des services	Services.png
-6	Take Action	Engage toi	Community.png
+Category Number	Category Name en	Category Name fr	Image	Bubble Color	Description Color
+1	Inform Yourself	Informe toi	Apprendre.png	#8284ff	#a6a7ff
+2	Take Care	Prends soin de toi	Sain.png	#70d6ff	#54cbfa
+3	Impact your plate	Influence ton assiete	Offre_Vegetarienne.png	#95F823	#9ffc36
+4	Launch Your Project	Lance ton projet	Startup.png	#ff70a6	#fda4c6
+5	Enjoy services	Profite des services	Services.png	#9BC1BC	#9BC1BC
+6	Take Action	Engage toi	Community.png	#fb8b0c	#ffac4e
