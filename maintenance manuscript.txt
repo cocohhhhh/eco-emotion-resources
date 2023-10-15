@@ -1,0 +1,9 @@
+#Update Guide
+    #Update using the executable file (generate_html.exe)
+        1) Update spreadsheet accordingly
+            a) upload any new photos in the logo folder
+        2) download the spreadsheet to the parent folder
+        3) run (double click) the generate_html.exe file
+
+    #Update Manually
+    
