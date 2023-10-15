@@ -398,290 +398,311 @@ polygon.arrow-top {
 
   /* For Desktops: */
   body {
-    height: 200vh;
+	height: 200vh;
   }
 
   html {
-    scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
   }
 
   /* #region Arrow & Hover Animation */
   .arrow {
-    display: block;
-    position: absolute;
-    margin-bottom: 0px;
-    left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
+	display: block;
+	position: absolute;
+	margin-bottom: 0px;
+	left: 50%;
+	top: 90%;
+	transform: translate(-50%, -50%);
   }
 
   .arrow-top {
-    display: block;
+	display: block;
   }
 
   .arrow-middle {
-    display: block;
+	display: block;
   }
 
   /* #endregion End for arrows */
 
   .container {
-    width: 100%;
-    height: 50% !important;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+	width: 100%;
+	height: 50% !important;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
   }
 
   .banner {
-    height: 9%;
-    align-items: end;
+	height: 9%;
+	align-items: end;
   }
 
   .banner .title {
-    font-size: 32px;
+	font-size: 32px;
   }
 
   .banner .lang {
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
   }
 
   .appetizer {
-    top: 1%;
+	top: 1%;
   }
 
   .appetizer .text {
-    width: 35%;
-    height: 100%;
+	width: 35%;
+	height: 100%;
   }
 
   #subbubbles {
-    display: block;
-    width: 60%;
-    height: 80%;
-    margin-top: 1%;
-    align-items: center;
-    justify-content: center;
+	display: block;
+	width: 60%;
+	height: 80%;
+	margin-top: 1%;
+	align-items: center;
+	justify-content: center;
   }
 
   .sub-bubble {
-    position: relative;
-    height: 90%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    font-family: "SuisseIntl";
-    font-size: 20px;
-    font-weight: 700;
+	position: relative;
+	height: 90%;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	font-family: "SuisseIntl";
+	font-size: 20px;
+	font-weight: 700;
   }
 
   .sub-bubble img {
-    position: relative;
-    max-width: 40%;
-    max-height: 40%;
-    object-fit: contain;
+	position: relative;
+	max-width: 40%;
+	max-height: 40%;
+	object-fit: contain;
   }
 
   .sub-bubble span {
-    width: 70%;
-    text-align: center;
-    position: relative;
-    font-size: 18px;
-    object-fit: contain;
-    font-family: 'SuisseIntl';
-    font-weight: 700;
+	width: 70%;
+	text-align: center;
+	position: relative;
+	font-size: 18px;
+	object-fit: contain;
+	font-family: 'SuisseIntl';
+	font-weight: 700;
   }
 
   .midcontainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	height: 50%;
   }
 
   #upper_subbubbles {
-    align-items: end;
-  }
-
-  .sub-bubble + .sub-bubble {
-    margin-left: 5%;
+	align-items: end;
+  justify-content: right;
   }
 
   #lower_subbubbles {
-    justify-content: center;
     align-items: start;
+    justify-content: left;
   }
 
+  .sub-bubble + .sub-bubble {
+	margin-left: 3.5%;
+  }
+
+
   #upper-bubbles {
-    position: absolute;
-    top: 105%;
-    align-items: end;
+	position: absolute;
+	top: 103%;
+	align-items: end;
+  margin-right: 5%;
+  justify-content: right;
   }
 
   #lower-bubbles {
-    position: absolute;
-    top: 145%;
-    width: 66%;
-    align-items: start;
-  }
-
-  .bubble {
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 100%;
-    width: auto;
-    aspect-ratio: 1;
+	position: absolute;
+	top: 147%;
+	justify-content: left;
+	align-items: start;
+  margin-left: 4%;
   }
 
   .bubble + .bubble {
-    margin-top: 0px;
+    margin-left: 4%;
+    }
+
+  .bubble {
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 100%;
+	width: auto;
+	aspect-ratio: 1;
+  }
+
+  .bubble + .bubble {
+	margin-top: 0px;
   }
 
   .midcontainer + .midcontainer {
-    margin-top: 0px;
+	margin-top: 0px;
   }
 
   .bubble:hover {
-    transition: background-color 0.2s ease;
-    z-index: 3;
+	transition: background-color 0.2s ease;
+	z-index: 3;
   }
 
 
   .smaller {
-    width: 30%;
-    height: 20%;
+	width: 30%;
+	height: 20%;
   }
 
   .smaller img {
-    transform: scale(0.8);
-    filter: opacity(0.5);
+	transform: scale(0.8);
+	filter: opacity(0.5);
   }
 
   .smaller img:hover {
-    transform: scale(1.5);
-    filter: opacity(1);
-    transition: all 0.2s ease;
-    z-index: 3;
+	transform: scale(1.5);
+	filter: opacity(1);
+	transition: all 0.2s ease;
+	z-index: 3;
   }
 
   .text-description {
-    position: absolute;
-    padding: 7px;
-    color: #000;
-    border-radius: 5px;
-    white-space: normal;
-    width: 400px;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1;
-    text-align: left;
-    font-family: 'SuisseIntl';
-    transition: opacity 0.2s ease;
+	position: absolute;
+	padding: 7px;
+	color: #000;
+	border-radius: 5px;
+	white-space: normal;
+	width: 400px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 1;
+	text-align: left;
+	font-family: 'SuisseIntl';
+	transition: opacity 0.2s ease;
   }
 
   .text-description h3 {
-    margin: 0;
-    font-family: 'SuisseIntl';
-    font-size: 18px;
-    color: #000;
-    margin-bottom: 5px;
-    text-align: center;
+	margin: 0;
+	font-family: 'SuisseIntl';
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 5px;
+	text-align: center;
   }
 
   .smaller:hover .text-description {
-    visibility: visible;
-    opacity: 1;
-    z-index: 3;
+	visibility: visible;
+	opacity: 1;
+	z-index: 3;
   }
 
   .text-description:hover {
-    display: none;
+	display: none;
   }
 
 }
 
-/*Category 1*/
-
+/*category1*/
 #subbubble1 {
-  background: radial-gradient(circle farthest-side, #8284ff, #ffffc5);
+	background: radial-gradient(circle farthest-side,#8284ff, #ffffc5);
 }
 
 #border1 {
-  background: radial-gradient(circle farthest-side, #8284ff, transparent 100%);
+	background: radial-gradient(circle farthest-side, #8284ff, transparent 100%);
 }
 
 #bubble1 .text-description {
-  left: 125%;
-  top: 0%;
-  background-color: #a6a7ff;
+	background-color: #a6a7ff;
+	left: 125%;
+	top: 0%;
+
 }
-
-/*Category 2*/
-
+/*category2*/
 #subbubble2 {
-  background: radial-gradient(circle farthest-side, #95F823, #ffffc5);
+	background: radial-gradient(circle farthest-side,#95F823, #ffffc5);
 }
 
 #border2 {
-  background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
+	background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
 }
 
 #bubble2 .text-description {
-  left: 125%;
-  top: 0%;
-  background-color: #9ffc36;
+	background-color: #9ffc36;
+	right: 125%;
+	top: 0%;
+
 }
-
-/*Category 3*/
-
+/*category3*/
 #subbubble3 {
-  background: radial-gradient(circle farthest-side, #fb8b0c, #ffffc5);
+	background: radial-gradient(circle farthest-side,#70d6ff, #ffffc5);
 }
 
 #border3 {
-  background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
+	background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
 }
 
 #bubble3 .text-description {
-  right: 125%;
-  top: 0%;
-  background-color: #ffac4e;
-}
+	background-color: #54cbfa;
+	right: 125%;
+	top: 0%;
 
-/*Category 4*/
+}
+/*category4*/
 #subbubble4 {
-  background: radial-gradient(circle farthest-side, #ff70a6, #ffffc5);
+	background: radial-gradient(circle farthest-side,#ff70a6, #ffffc5);
 }
 
 #border4 {
-  background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
+	background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
 }
 
 #bubble4 .text-description {
-  left: 125%;
-  bottom: 0%;
-  background-color: #fda4c6;
+	background-color: #fda4c6;
+	left: 125%;
+	bottom: 0%;
+
 }
-
-/*Category 5*/
-
+/*category5*/
 #subbubble5 {
-  background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
+	background: radial-gradient(circle farthest-side,#9BC1BC, #ffffc5);
 }
 
 #border5 {
-  background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
+	background: radial-gradient(circle farthest-side, #9BC1BC, transparent 100%);
 }
 
 #bubble5 .text-description {
-  right: 125%;
-  bottom: 0%;
-  background-color: #54cbfa;
+	background-color: #9BC1BC;
+	left: 125%;
+	bottom: 0%;
+
+}
+/*category6*/
+#subbubble6 {
+	background: radial-gradient(circle farthest-side,#fb8b0c, #ffffc5);
+}
+
+#border6 {
+	background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
+}
+
+#bubble6 .text-description {
+	background-color: #ffac4e;
+	right: 125%;
+	bottom: 0%;
+
 }
