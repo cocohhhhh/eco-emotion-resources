@@ -109,10 +109,7 @@ def generate_detailed_bubbles(language, cat_len,categories, resources):
             # add resource description
             detailed_bubbles += f"""\t\t\t\t\t<div class="text-description">\n\t\t\t\t\t\t<h3>{resources[j]["Name"]}</h3>\n\t\t\t\t\t\t{resources[j][resource_content]}\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n"""
             j += 1
-            if j == len(resources):
-                print("j is ", j)
-                print("len is ", len(resources))
-                
+            if j == len(resources):                
                 detailed_bubbles += f"""\t\t\t</div>\n"""
                 detailed_bubbles += f"""\t\t</div>\n"""
                 return detailed_bubbles
@@ -134,9 +131,7 @@ def generate_end():
     end += """\t<script>\n\t\t$(document).click(function (event) {\n\t\t\tif (\n\t\t\t\t$('.toggle > input').is(':checked') &&\n\t\t\t\t!$(event.target).parents('.toggle').is('.toggle')\n\t\t\t) {\n\t\t\t\t$('.toggle > input').prop('checked', false);\n\t\t\t}\n\t\t})\n\t</script>\n\t<script>\n\t\t// Get a reference to the button and the target container\n\t\tconst scrollButton = document.getElementById('arrow');\n\t\tconst scrollButton2 = document.getElementById('subbubbles');\n\t\tconst targetContainer = document.getElementById('content');\n\n\t\t// Add a click event listener to the button\n\t\tscrollButton.addEventListener('click', function () {\n\t\t\t// Scroll to the target container smoothly\n\t\t\ttargetContainer.scrollIntoView({ behavior: 'smooth' });\n\t\t});\n\t\t// Add a click event listener to the button\n\t\tscrollButton2.addEventListener('click', function () {\n\t\t\t// Scroll to the target container smoothly\n\t\t\ttargetContainer.scrollIntoView({ behavior: 'smooth' });\n\t\t});\n\t</script>\n\t<script>\n\t\t$(document).ready(function () {\n\t\t\t// Wait for the page to fully load\n\n\t\t\t// Get the height of container1\n\t\t\tvar container1Height = $('#container1').height();\n\n\t\t\t// Set the height of container2 to match container1\n\t\t\t$('#container2').height(container1Height);\n\t\t});\n\t</script>\n\t<script src="position_computation.js"></script>\n</body>\n\n</html>\n\n"""
     return end
 
-# generate the css file
-def generate_css():
-    pass
+
 if __name__ == "__main__":
     print("Generating html...")
 
