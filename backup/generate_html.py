@@ -1,7 +1,7 @@
 # Read the category and the related resources from the tsv file
 # generate a html from that
 
-from csv import DictReader
+import pandas as pd
 import math
 
 # generate the start
@@ -13,7 +13,7 @@ def generate_start(language):
     return start
 
 # generate the sub-bubbles
-def generate_subbubbles(language, cat_len, categories):
+def generate_subbubbles(language, cat_len):
     subbubbles = ""
     if language == "en":
         category_name = "Category Name en"
@@ -22,12 +22,12 @@ def generate_subbubbles(language, cat_len, categories):
     
     # generate upper sub-bubbles
     for i in range(math.ceil(cat_len/2)):
-        subbubbles += f"""\t\t\t\t\t<div class="sub-bubble" id="subbubble{i+1}">\n\t\t\t\t\t\t<img src="logo\{categories[i]["Image"]}" alt="Image">\n\t\t\t\t\t\t<span>{categories[i][category_name]}</span>\n\t\t\t\t\t</div>\n"""
+        subbubbles += f"""\t\t\t\t\t<div class="sub-bubble" id="subbubble{i+1}">\n\t\t\t\t\t\t<img src="logo\{categories["Image"][i]}" alt="Image">\n\t\t\t\t\t\t<span>{categories[category_name][i]}</span>\n\t\t\t\t\t</div>\n"""
     subbubbles += """\t\t\t\t</div>\n\t\t\t\t<div class="midcontainer" id="lower_subbubbles">\n"""
     
     # generate lower sub-bubbles
     for i in range(math.ceil(cat_len/2),cat_len):
-        subbubbles += f"""\t\t\t\t\t<div class="sub-bubble" id="subbubble{i+1}">\n\t\t\t\t\t\t<img src="logo\{categories[i]["Image"]}" alt="Image">\n\t\t\t\t\t\t<span>{categories[i][category_name]}</span>\n\t\t\t\t\t</div>\n"""
+        subbubbles += f"""\t\t\t\t\t<div class="sub-bubble" id="subbubble{i+1}">\n\t\t\t\t\t\t<img src="logo\{categories["Image"][i]}" alt="Image">\n\t\t\t\t\t\t<span>{categories[category_name][i]}</span>\n\t\t\t\t\t</div>\n"""
     subbubbles += """\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t</div>\n\t\t<div class="arrow" id="arrow">\n\t\t\t<svg id="more-arrows">\n\t\t\t\t<polygon class="arrow-top" points="18.8,13.95 0.9,0.65 1.65,0 18.8,12.65 35.95,0 36.85,0.65 " />\n\t\t\t\t<polygon class="arrow-middle" points="18.8,22.9 0.4,9.35 2.2,8.2 18.8,20.6 35.6,8.2 37.25,9.35" />\n\t\t\t\t<polygon class="arrow-bottom" points="18.8,32 0,18.05 2.55,16.4 18.8,28.4 35.2,16.4 37.75,18.05" />\n\t\t\t</svg>\n\t\t</div>\n\t</div>\n\t<div class="container" id="content">\n"""
 
     return subbubbles
@@ -46,20 +46,19 @@ def generate_detailed_bubbles(language, cat_len,categories, resources):
     j = 0
     # generate the upper bubbles
     detailed_bubbles = f"""\t\t<div class="midcontainer" id="upper-bubbles">\n"""
-
     for i in range(math.ceil(cat_len/2)):
         #add comment
-        detailed_bubbles += f"""\t\t\t<!-- Category {i+1}: {categories[i][category_name]} -->\n"""
+        detailed_bubbles += f"""\t\t\t<!-- Category {i+1}: {categories[category_name][i]} -->\n"""
         #add bubble
-        detailed_bubbles += f"""\t\t\t<div class="bubble" id="bubble{i+1}">\n\t\t\t\t<img src="logo\{categories[i]["Image"]}" alt="Image">\n\t\t\t\t<span>{categories[i][category_name]}</span>\n\t\t\t\t<div class="border" id="border{i+1}"></div>\n"""
+        detailed_bubbles += f"""\t\t\t<div class="bubble" id="bubble{i+1}">\n\t\t\t\t<img src="logo\{categories["Image"][i]}" alt="Image">\n\t\t\t\t<span>{categories[category_name][i]}</span>\n\t\t\t\t<div class="border" id="border{i+1}"></div>\n"""
         #add resources
-        while resources[j]["Category"] == str(i+1):
+        while resources["Category"][j] == i+1:
             # add comment
-            detailed_bubbles += f"""\t\t\t\t<!-- Resource {j+1}: {resources[j]["Name"]} -->\n"""
+            detailed_bubbles += f"""\t\t\t\t<!-- Resource {j+1}: {resources["Name"][j]} -->\n"""
             # add resource img
-            detailed_bubbles += f"""\t\t\t\t<div class="bubble smaller" id="resource{j+1}">\n\t\t\t\t\t<a href="{resources[j]["Link"]}">\n\t\t\t\t\t\t<img src="logo\{resources[j][resource_image]}" alt="{resources[j]["Name"]}">\n\t\t\t\t\t</a>\n"""
+            detailed_bubbles += f"""\t\t\t\t<div class="bubble smaller" id="resource{j+1}">\n\t\t\t\t\t<a href="{resources["Link"][j]}">\n\t\t\t\t\t\t<img src="logo\{resources[resource_image][j]}" alt="{resources["Name"][j]}">\n\t\t\t\t\t</a>\n"""
             # add resource description
-            detailed_bubbles += f"""\t\t\t\t\t<div class="text-description">\n\t\t\t\t\t\t<h3>{resources[j]["Name"]}</h3>\n\t\t\t\t\t\t{resources[j][resource_content]}\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n"""
+            detailed_bubbles += f"""\t\t\t\t\t<div class="text-description">\n\t\t\t\t\t\t<h3>{resources["Name"][j]}</h3>\n\t\t\t\t\t\t{resources[resource_content][j]}\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n"""
             j += 1
             if j == len(resources):
                 break
@@ -73,26 +72,20 @@ def generate_detailed_bubbles(language, cat_len,categories, resources):
     detailed_bubbles += f"""\t\t<div class="midcontainer" id="lower-bubbles">\n"""
     for i in range(math.ceil(cat_len/2),cat_len):
         #add comment
-        detailed_bubbles += f"""\t\t\t<!-- Category {i+1}: {categories[i][category_name]} -->\n"""
+        detailed_bubbles += f"""\t\t\t<!-- Category {i+1}: {categories[category_name][i]} -->\n"""
         #add bubble
-        detailed_bubbles += f"""\t\t\t<div class="bubble" id="bubble{i+1}">\n\t\t\t\t<img src="logo\{categories[i]["Image"]}" alt="Image">\n\t\t\t\t<span>{categories[i][category_name]}</span>\n\t\t\t\t<div class="border" id="border{i+1}"></div>\n"""
+        detailed_bubbles += f"""\t\t\t<div class="bubble" id="bubble{i+1}">\n\t\t\t\t<img src="logo\{categories["Image"][i]}" alt="Image">\n\t\t\t\t<span>{categories[category_name][i]}</span>\n\t\t\t\t<div class="border" id="border{i+1}"></div>\n"""
         #add resources
-        while resources[j]["Category"] == str(i+1):
+        while resources["Category"][j] == i+1:
             # add comment
-            detailed_bubbles += f"""\t\t\t\t<!-- Resource {j+1}: {resources[j]["Name"]} -->\n"""
+            detailed_bubbles += f"""\t\t\t\t<!-- Resource {j+1}: {resources["Name"][j]} -->\n"""
             # add resource img
-            detailed_bubbles += f"""\t\t\t\t<div class="bubble smaller" id="resource{j+1}">\n\t\t\t\t\t<a href="{resources[j]["Link"]}">\n\t\t\t\t\t\t<img src="logo\{resources[j][resource_image]}" alt="{resources[j]["Name"]}">\n\t\t\t\t\t</a>\n"""
+            detailed_bubbles += f"""\t\t\t\t<div class="bubble smaller" id="resource{j+1}">\n\t\t\t\t\t<a href="{resources["Link"][j]}">\n\t\t\t\t\t\t<img src="logo\{resources[resource_image][j]}" alt="{resources["Name"][j]}">\n\t\t\t\t\t</a>\n"""
             # add resource description
-            detailed_bubbles += f"""\t\t\t\t\t<div class="text-description">\n\t\t\t\t\t\t<h3>{resources[j]["Name"]}</h3>\n\t\t\t\t\t\t{resources[j][resource_content]}\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n"""
+            detailed_bubbles += f"""\t\t\t\t\t<div class="text-description">\n\t\t\t\t\t\t<h3>{resources["Name"][j]}</h3>\n\t\t\t\t\t\t{resources[resource_content][j]}\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n"""
             j += 1
             if j == len(resources):
-                print("j is ", j)
-                print("len is ", len(resources))
-                
-                detailed_bubbles += f"""\t\t\t</div>\n"""
-                detailed_bubbles += f"""\t\t</div>\n"""
-                return detailed_bubbles
-            
+                break
         # end the bubble
         detailed_bubbles += f"""\t\t\t</div>\n"""
     
@@ -110,26 +103,17 @@ def generate_end():
     end += """\t<script>\n\t\t$(document).click(function (event) {\n\t\t\tif (\n\t\t\t\t$('.toggle > input').is(':checked') &&\n\t\t\t\t!$(event.target).parents('.toggle').is('.toggle')\n\t\t\t) {\n\t\t\t\t$('.toggle > input').prop('checked', false);\n\t\t\t}\n\t\t})\n\t</script>\n\t<script>\n\t\t// Get a reference to the button and the target container\n\t\tconst scrollButton = document.getElementById('arrow');\n\t\tconst scrollButton2 = document.getElementById('subbubbles');\n\t\tconst targetContainer = document.getElementById('content');\n\n\t\t// Add a click event listener to the button\n\t\tscrollButton.addEventListener('click', function () {\n\t\t\t// Scroll to the target container smoothly\n\t\t\ttargetContainer.scrollIntoView({ behavior: 'smooth' });\n\t\t});\n\t\t// Add a click event listener to the button\n\t\tscrollButton2.addEventListener('click', function () {\n\t\t\t// Scroll to the target container smoothly\n\t\t\ttargetContainer.scrollIntoView({ behavior: 'smooth' });\n\t\t});\n\t</script>\n\t<script>\n\t\t$(document).ready(function () {\n\t\t\t// Wait for the page to fully load\n\n\t\t\t// Get the height of container1\n\t\t\tvar container1Height = $('#container1').height();\n\n\t\t\t// Set the height of container2 to match container1\n\t\t\t$('#container2').height(container1Height);\n\t\t});\n\t</script>\n\t<script src="position_computation.js"></script>\n</body>\n\n</html>\n\n"""
     return end
 
-# generate the css file
-def generate_css():
-    pass
 if __name__ == "__main__":
     print("Generating html...")
-
-    with open("Descriptions - Categories.tsv", "r", encoding="utf-8") as f:
-        categories = DictReader(f, delimiter="\t")
-        categories = list(categories)
-    
+    # read the tsv file
+    categories = pd.read_csv("Descriptions - Categories.tsv", sep="\t")
+    resources = pd.read_csv("Descriptions - ressources.tsv", sep="\t")
     cat_len= len(categories)
-
-    with open("Descriptions - ressources.tsv", "r", encoding="utf-8") as f:
-        resources = DictReader(f, delimiter="\t")
-        resources = list(resources)
 
     # generate the english html
     html_en = generate_start("en")
     # generate sub-bubbles
-    html_en += generate_subbubbles("en", cat_len, categories)
+    html_en += generate_subbubbles("en", cat_len)
     # generate the detailed bubbles
     html_en += generate_detailed_bubbles("en", cat_len, categories, resources)
     # end the html
@@ -142,7 +126,7 @@ if __name__ == "__main__":
     # generate the french html
     html_fr = generate_start("fr")
     # generate sub-bubbles
-    html_fr += generate_subbubbles("fr", cat_len, categories)
+    html_fr += generate_subbubbles("fr", cat_len)
     # generate the detailed bubbles
     html_fr += generate_detailed_bubbles("fr", cat_len, categories, resources)
     # end the html
