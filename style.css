@@ -633,30 +633,30 @@ polygon.arrow-top {
 }
 /*category2*/
 #subbubble2 {
-	background: radial-gradient(circle farthest-side,#70d6ff, #ffffc5);
+	background: radial-gradient(circle farthest-side,#95F823, #ffffc5);
 }
 
 #border2 {
-	background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
+	background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
 }
 
 #bubble2 .text-description {
-	background-color: #54cbfa;
+	background-color: #9ffc36;
 	right: 125%;
 	top: 0%;
 
 }
 /*category3*/
 #subbubble3 {
-	background: radial-gradient(circle farthest-side,#95F823, #ffffc5);
+	background: radial-gradient(circle farthest-side,#70d6ff, #ffffc5);
 }
 
 #border3 {
-	background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
+	background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
 }
 
 #bubble3 .text-description {
-	background-color: #9ffc36;
+	background-color: #54cbfa;
 	right: 125%;
 	top: 0%;
 
