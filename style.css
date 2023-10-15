@@ -392,36 +392,6 @@ polygon.arrow-top {
   text-align: center;
 }
 
-/*Category 1*/
-
-#border1 {
-  background: radial-gradient(circle farthest-side, #8284ff, transparent 100%);
-}
-
-/*Category 2*/
-
-#border2 {
-  background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
-}
-
-/*Category 3*/
-
-#border3 {
-  background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
-}
-
-/*Category 4*/
-
-#border4 {
-  background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
-}
-
-/*Category 5*/
-
-#border5 {
-  background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
-}
-
 /* #endregion */
 
 @media only screen and (min-width: 1150px) {
@@ -562,26 +532,6 @@ polygon.arrow-top {
     align-items: start;
   }
 
-  #subbubble1 {
-    background: radial-gradient(circle farthest-side, #a6a7ff, #ffffc5);
-  }
-
-  #subbubble2 {
-    background: radial-gradient(circle farthest-side, #95F823, #ffffc5);
-  }
-
-  #subbubble3 {
-    background: radial-gradient(circle farthest-side, #fb8b0c, #ffffc5);
-  }
-
-  #subbubble4 {
-    background: radial-gradient(circle farthest-side, #ff70a6, #ffffc5);
-  }
-
-  #subbubble5 {
-    background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
-  }
-
   .bubble {
     margin-left: 0px;
     margin-right: 0px;
@@ -655,34 +605,83 @@ polygon.arrow-top {
     display: none;
   }
 
-  #bubble1 .text-description {
-    left: 125%;
-    top: 0%;
-    background-color: #a6a7ff;
-  }
+}
 
-  #bubble2 .text-description {
-    left: 125%;
-    top: 0%;
-    background-color: #9ffc36;
-  }
+/*Category 1*/
 
-  #bubble3 .text-description {
-    right: 125%;
-    top: 0%;
-    background-color: #ffac4e;
-  }
+#subbubble1 {
+  background: radial-gradient(circle farthest-side, #a6a7ff, #ffffc5);
+}
 
-  #bubble4 .text-description {
-    left: 125%;
-    bottom: 0%;
-    background-color: #fda4c6;
-  }
+#border1 {
+  background: radial-gradient(circle farthest-side, #8284ff, transparent 100%);
+}
 
-  #bubble5 .text-description {
-    right: 125%;
-    bottom: 0%;
-    background-color: #54cbfa;
-  }
+#bubble1 .text-description {
+  left: 125%;
+  top: 0%;
+  background-color: #a6a7ff;
+}
 
+/*Category 2*/
+
+#subbubble2 {
+  background: radial-gradient(circle farthest-side, #95F823, #ffffc5);
+}
+
+#border2 {
+  background: radial-gradient(circle farthest-side, #95F823, transparent 100%);
+}
+
+#bubble2 .text-description {
+  left: 125%;
+  top: 0%;
+  background-color: #9ffc36;
+}
+
+/*Category 3*/
+
+#subbubble3 {
+  background: radial-gradient(circle farthest-side, #fb8b0c, #ffffc5);
+}
+
+#border3 {
+  background: radial-gradient(circle farthest-side, #fb8b0c, transparent 100%);
+}
+
+#bubble3 .text-description {
+  right: 125%;
+  top: 0%;
+  background-color: #ffac4e;
+}
+
+/*Category 4*/
+#subbubble4 {
+  background: radial-gradient(circle farthest-side, #ff70a6, #ffffc5);
+}
+
+#border4 {
+  background: radial-gradient(circle farthest-side, #ff70a6, transparent 100%);
+}
+
+#bubble4 .text-description {
+  left: 125%;
+  bottom: 0%;
+  background-color: #fda4c6;
+}
+
+/*Category 5*/
+
+#subbubble5 {
+  background: radial-gradient(circle farthest-side, #70d6ff, #ffffc5);
+}
+
+#border5 {
+  background: radial-gradient(circle farthest-side, #70d6ff, transparent 100%);
+}
+
+#bubble5 .text-description {
+  right: 125%;
+  bottom: 0%;
+  background-color: #54cbfa;
 }
