@@ -6,4 +6,20 @@
         3) run (double click) the generate_html.exe file
 
     #Update Manually
-    
+        in the html file the ressources are arranged according to this schema:
+            <!-- Category 1: Inform Yourself -->
+            <div class="bubble" id="bubble1">
+				<img src="logo\Apprendre.png" alt="Image">
+				<span>Inform Yourself</span>
+				<div class="border" id="border1"></div>
+				<!-- Resource 1: Semaine de la durabilité -->
+				<div class="bubble smaller" id="resource1">
+					<a href="https://semaine-durable.unipoly.ch/">
+						<img src="logo\Semaine_de_la_durabilité transparent.png" alt="Semaine de la durabilité">
+					</a>
+					<div class="text-description">
+						<h3>Semaine de la durabilité</h3>
+						Sustainability Week is the largest student sustainability project in Switzerland. It takes place every spring semester on the UNILEPFL campus. It aims to raise students' awareness of sustainability and ecological issues.
+					</div>
+				</div>
+            <div>
