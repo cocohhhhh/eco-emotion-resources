@@ -1,5 +1,6 @@
 body {
-  background-color: #ffffc5;
+  /*background-color: #ffffc5;*/
+  background-color: #d4115c;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -25,6 +26,7 @@ body {
 }
 
 /* #endregion */
+
 
 /* #region Introductory page */
 
